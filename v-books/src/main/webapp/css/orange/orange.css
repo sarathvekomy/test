@@ -1,0 +1,1232 @@
+/*
+	page-content	
+	background: #fbdcb2;	/	#f2ead1;
+	
+				#FAEAB4;  	/	#FFFDF6;
+				#FFEFC5;    / 	#FFFDF6;
+				
+.search-results-list{
+	background: #fddeb3;	/ 	#FFFDF6;
+.green-result-row {
+	background: #ffeab1;	/	#FFFDF6;
+	
+				#F7BC87;	/	#f2ead1;
+*/
+body {
+	background: transparent url(images/container-bg.png);
+}
+
+
+.header {
+	background-color: #FFCC89;
+	border: solid 1px #FF9305;
+}
+.header-container {
+	background: transparent url(images/header-bg.png) no-repeat;
+}
+
+#header-school-name, #header-school-branch {
+	color: #a15a08;
+}
+
+
+.top-header-links li {
+	background: url(images/header-link-seperator.png) no-repeat right;
+}
+
+.top-header-links li a {
+	background: url(images/header-link-seperator.png) repeat-x;
+	color: #fff;
+}
+
+.top-header-links li a:hover {
+	background: url(images/header-link.png) repeat-x;
+}
+
+#login-page-content {
+	border: 1px solid #f7ca6f;
+}
+.module-bar {
+	background: #cccccc url(images/modulebar.png) no-repeat;
+}
+.page-selection {
+	background-color: #f2ead1;
+	border: solid 1px #ff9305;
+}
+.page-selection-seperator {
+	background: url(images/page-selection-seperator.png) no-repeat;
+}
+
+.module-title-bar {
+	background: url(images/module-title-bg.png) repeat-x;
+}
+
+.module-title, .profile-name {
+	color: #A15A08;
+}
+.ps-exp-exp {
+	background: transparent url(images/button-left.jpg);
+}
+
+.ps-exp-col {
+	background: transparent url(images/button-right.jpg) no-repeat;
+}
+
+.expand-icon {
+	background: transparent url(images/collapse.png) no-repeat;
+}
+
+.collapse-icon {
+	background: transparent url(images/expand.png) no-repeat;
+}
+
+
+.page-link-strip {
+	background: transparent url(images/link.png) no-repeat;
+}
+.widget-title, .profile-title {
+	background: transparent url(images/addstudent-tit-bg.jpg) repeat;
+	color: #A15A08;
+	border: 1px solid orange;
+	border-bottom: none;
+}
+
+#staff-tasks-content , #parent-messages-content ,#transport-alert-content ,#change-route-request-content {
+	border: 1px solid orange;
+	border-top: none;
+}
+
+.widget-content, .profile-content {
+	background: #fffacc;
+	/*border: #F8BD47;*/
+	
+}
+
+.profile-content {
+	border: 1px solid #f7ca6f;
+}
+#staff-tasks-content {
+	border: 1px solid #f8bd47;
+}
+
+.dashboard-task-title {
+	color: #A15A08;
+}
+.school-choose-links {
+	border: 1px solid #F8BD47;
+}
+
+.dashboard-property {
+	color: red;
+}
+.dashboard-school-name {
+	color: #A15A08;
+}
+
+.dashboard-school-name, .dashboard-student-name {
+	color: #A15A08;
+}
+
+.staff-calendar { /*overflow: scroll;*/
+	/*background-color: #fffacc;*/
+	border: 1px solid #f8bd47;
+}
+.parent-messages{
+	/*background-color: #fffacc;*/
+	/*border: 1px solid #f8bd47;*/
+} 
+
+
+a.jScrollArrowUp {
+	background: transparent url(images/basic_arrow_up.gif) repeat-x scroll 0
+		0;
+}
+
+.jScrollPaneTrack {
+	background: #d9d8d6;
+}
+
+.jScrollPaneDrag {
+    background:  orange;
+}
+
+a.jScrollArrowDown {
+	background: transparent url(images/basic_arrow_down.gif) repeat-x scroll
+		0 0;
+}
+
+.manage-application-icon {
+	background: transparent url(green-round-iconbg.png) no-repeat;
+}
+
+.manage-student-strip {
+	background: transparent url(images/manage-strip.png) no-repeat;
+	color: #A15A08;
+}
+.manage-app-strip {
+	background: transparent url(images/manag-app-2.png) no-repeat;
+}
+.manage-assessment-strip {
+	background: transparent url(images/assessment.png) no-repeat;
+}
+.pagelinks-filler { /*width: 700px;*/
+	background: #f2ead1;;
+	border-bottom: solid 1px #FF9305;
+	border-left: solid 1px #FF9305;
+	border-right: solid 1px #FF9305;
+}
+.page-links { /*width: 700px;*/
+	background: #FFFDF6;
+	border: solid 1px #ff9305;
+	border-bottom: 1px solid #FF9203;
+}
+.page-links ul li a { /*padding: 0px 0.2em;*/
+	color: #a15a08;
+}
+
+.page-links ul li a:hover {
+	color: red;
+}
+
+.page-links-active {
+	color: #A15A08;
+	background-color: #f2ead1;
+	border-left: 1px solid #FF9203;
+	border-right: 1px solid #FF9203;
+	border-top: 3px solid #FF9203;
+}
+.fav-links ul li a { /*padding: 0px 0.2em;*/
+	color: #A15A08;
+	margin-top: 10px;
+}
+
+.fav-links ul li a:hover {
+	color: red;
+}
+.footer-links-bg{
+	height: 100px;
+	background: #FFCC89;
+	border: 1px solid #FF9305;
+	border-top: none;
+}
+
+
+.page-content-filler {
+	border-left: 1px solid orange;
+	border-right: 1px solid orange;
+	background: #fff;
+}
+
+.page-content {
+	border: 1px solid #FF9305;
+	background: #f2ead1;
+}
+
+.page-title {
+	color: #FFFFFF;
+}
+.page-link-text{
+	color: #A15A08;
+}
+.form-panel {
+	background: #F2EAD1;
+}
+
+.form-panel-border {
+	border-bottom: 1px solid #ff9203;
+}
+.sms-circular-class-title{
+	background: url(images/sms/sms-circular-class-title.png) no-repeat;
+}
+.sms-circular-school-title{
+	background: url(images/sms/sms-circular-school-title.png) no-repeat;
+}
+.sms-circular-parent-title{
+	background: url(images/sms/sms-circular-parent-title.png) no-repeat;
+}
+.sms-history-title{
+	background: url(images/sms/sms-history-title.png) no-repeat;
+}
+
+.sms-circular-staff-title{
+	background: url(images/sms/sms-circular-staff-title.png) no-repeat;
+}
+
+
+
+.school-list-title {
+	background: url(images/siteadmin/organization-list-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.school-create-title {
+	background: url(images/siteadmin/school-create-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.school-edit-title {
+	background: url(images/siteadmin/school-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.under-construction-title {
+	background: url(images/under-construction-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.student-add-title {
+	background: url(images/admission/student-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.student-edit-title {
+	background: url(images/admission/student-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+.btn-add-syllabus{
+	background: url(images/staff/btn-add-syllabus.png) no-repeat;
+}
+
+
+.student-search-title {
+	background: url(images/admission/student-search-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.student-list-title {
+	background: url(images/admission/student-list-title.png) no-repeat;
+	margin-left: 5px;
+}
+.fee-details-title{
+	background: url(images/parent/fee-details-title.png) no-repeat;
+}
+
+
+.applicant-add-title {
+	background: url(images/admission/applicant-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.edit-applicant-title{
+	background: url(images/admission/edit-applicant-title.png) no-repeat;
+}
+
+.applicant-search-title {
+	background: url(images/admission/applicant-search-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.applicant-list-title {
+	background: url(images/admission/applicant-list-title.png) no-repeat;
+	margin-left: 5px;
+}
+.import-student-image-title{
+	background: url(images/admission/import-student-image-title.png) no-repeat;
+}
+
+.import-staff-image-title{
+	background: url(images/staff/import-staff-image-title.png) no-repeat;
+}
+
+.attendance-report-title {
+	background: url(images/parent/attendance-report-title.png) no-repeat;
+}
+.parent-fees-details-title{
+	background: url(images/parent/parent-fees-details-title.png) no-repeat;
+}
+
+.assessment-report-title {
+	background: url(images/parent/assessment-report-title.png) no-repeat;
+}
+.school-assessment-title{
+	background: url(images/assessment/school-assessment-title.png) no-repeat;
+}
+.assessment-schedules-title{
+	background: url(images/assessment/assessment-schedules-title.png) no-repeat;
+}
+.assessment-calendar-title{
+	background: url(images/assessment/assessment-calender-title.png) no-repeat;
+}
+
+.create-exam-timetable-title{
+	background: url(images/assessment/create-exam-timetable-title.png) no-repeat;
+}
+
+.assessment-types-title{
+	background: url(images/assessment/assessment-types-title.png) no-repeat;
+}
+
+
+.parent-change-route-title {
+	background: url(images/parent/parent-change-route-title.png) no-repeat;
+}
+
+.parent-contact-class-teacher-title {
+	background: url(images/parent/parent-contact-class-teacher-title.png) no-repeat;
+}
+
+.parent-inbox-title {
+	background: url(images/parent/parent-inbox-title.png) no-repeat;
+}
+
+
+.staff-add-title {
+	background: url(images/staff/staff-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.staff-search-title {
+	background: url(images/staff/staff-search-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.staff-edit-title {
+	background: url(images/staff/staff-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.task-add-title {
+	background: url(images/staff/task-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.task-search-title {
+	background: url(images/staff/task-search-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.task-edit-title {
+	background: url(images/staff/task-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.class-teacher-title {
+	background: url(images/staff/class-teacher-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.attendance-add-title {
+	background: url(images/assessment/attendance-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.attendance-search-title {
+	background: url(images/assessment/attendance-search-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.attendance-edit-title {
+	background: url(images/assessment/attendance-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+.edit-button{
+	background: url(images/assessment/edit-button.png);
+}
+
+.student-attendance-title {
+	background: url(images/assessment/student-attendance-title.png)	no-repeat;
+	margin-left: 5px;
+}
+
+.assessment-add-title {
+	background: url(images/assessment/assessment-add-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.assessment-edit-title {
+	background: url(images/assessment/assessment-edit-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+
+
+
+
+.teacher-timetable-title {
+	background: url(images/timetable/teacher-timetable-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.class-timetable-title {
+	background: url(images/timetable/class-timetable-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.create-timetable-title {
+	background: url(images/timetable/create-timetable-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.route-add-title {
+	background: url(images/transport/transport-list.png) no-repeat;
+	margin-left: 5px;
+}
+
+.student-route-title {
+	background: url(images/transport/student-route-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.route-stops-title {
+	background: url(images/transport/route-stops-title.png) no-repeat;
+	margin-left: 5px;
+}
+.change-route-title {
+	background: url(images/transport/change-student-title.png) no-repeat;
+	margin-left: 5px;
+}
+
+.syllabus-add-title {
+	background: url(images/staff/class-syllabus-title.png) no-repeat;
+}
+
+.syllabus-covered-title {
+	background: url(images/staff/add-syllabus-title.png) no-repeat;
+}
+
+.transport-add-title {
+	background: url(images/transport/add-transport-title.png) no-repeat;
+}
+.edit-transport-title{
+	background: url(images/transport/edit-transport-title.png) no-repeat;
+}
+.transport-search-title {
+	background: url(images/transport/search-transport-title.png) no-repeat;
+}
+
+.transport-expenses-title{
+	background: url(images/transport/add-expenses-title.png) no-repeat;
+}
+
+.transport-search-expenses-title{
+	background: url(images/transport/search-expenses-title.png) no-repeat;
+}
+.import-student-title{
+		background: url(images/admission/student-import-title.png) no-repeat;
+}
+
+.assessment-edit-title{
+	background: url(images/assessment/assessment-edit-title.png) no-repeat;
+}
+.classes-create-title{
+	background: url(images/timetable/create-classes-title.png) no-repeat;
+}
+.class-subjects-title{
+	background: url(images/timetable/class-subjects-title.png) no-repeat;
+}
+.school-subjects-title{
+	background: url(images/timetable/school-subjects-title.png) no-repeat;
+}
+.drop-down-title{
+	background: url(images/siteadmin/drop-down-title.png) no-repeat;
+}
+
+.grade-settings-title{
+	background: url(images/siteadmin/grade-settings-title.png) no-repeat;
+}
+
+.password-settings-title{
+	background: url(images/siteadmin/password-settings-title.png) no-repeat;
+}
+.btn-search {
+	background: url(images/btn-search.png) no-repeat;
+}
+.btn-delete {
+	background: url(images/btn-delete.png) no-repeat;
+}
+
+.btn-print {
+	background: url(images/btn-print.png) no-repeat;
+}
+
+.btn-clear {
+	background: url(images/btn-clear.png) no-repeat;
+}
+
+.btn-change-status {
+	background: url(images/btn-change-status.png) no-repeat;
+}
+
+.btn-cancel {
+	background: url(images/btn-cancel.png) no-repeat;
+}
+
+.btn-prev {
+	background: url(images/btn-prev.png) no-repeat;
+}
+
+.btn-next {
+	background: url(images/btn-next.png) no-repeat;
+}
+
+.btn-save {
+	background: url(images/btn-save.png) no-repeat;
+}
+.btn-send {
+	 background: url(images/send-btn.png) no-repeat;
+}
+.btn-update {
+	background: url(images/btn-update.png) no-repeat;
+}
+
+.btn-delete {
+	background: url(images/btn-delete.png) no-repeat;
+}
+
+.btn-go {
+	background: transparent url(images/transport/go-button.png) no-repeat;
+}
+
+.btn-edit-timetable {
+	background: url(images/timetable/btn-edit-timetable.png) no-repeat;
+}
+.btn-show {
+	background: url(images/timetable/btn-show.png) no-repeat;
+}
+
+.btn-canceledit {
+	background: url(images/timetable/btn-canceledit.png) no-repeat;
+}
+
+.footer-middle {
+	background: #ffcc89;
+	/*border-bottom: solid 1px #ff9304;*/
+	border-top: solid 1px #ff9304;
+}
+
+.student-title-bar {
+	background: #f5eace;
+	color: #A15A08;
+	border-bottom: 1px solid #fff;
+}
+
+.student-title-bar2 {
+	background: #f5eace url(images/title-bg.png) no-repeat;
+}
+
+.tabs-button {
+	background: transparent url(images/basicinfo-img-.png) no-repeat;
+	color: #A15A08;
+}
+
+.tabs-button-active {
+	color: red;
+	background: transparent url(images/basicinfo-img-.png) no-repeat;
+}
+.tabs-title {
+	color: #fff;
+}
+
+.step-selected {
+	background: transparent url(images/step-selected.png) repeat-x;
+}
+
+.step-selected-corner {
+	background: transparent url(images/step-selected-corner.png) repeat-x;
+}
+
+.step-no-select, .step-no-select1 {
+	background: transparent url(images/step-no-select.png) repeat-x;
+}
+
+.step-no-select-corner {
+	background: transparent url(images/step-no-select-corner.png) repeat-x;
+}
+
+.label {
+	color: #A15A08;
+}
+input,select { /*border: 1px solid #508614;*/
+	border: 1px solid #b2bac0;
+}
+
+.mandatory {
+	border: 1px solid #ff6909;
+}
+
+.footer-image {
+	background: transparent url(images/futter-img-add.png) no-repeat;
+}
+
+.action-change-transport {
+	background: transparent url(images/transport/change-routebtn.png) no-repeat;
+	color: #fff;
+}
+
+.action-from-change-route {
+	background: transparent url(images/transport/change-route.png) no-repeat;
+}
+
+.ui-button {
+	border: 1px solid #B2BAC0;
+	background: #AEFADC;
+	color: #3fa8fb;
+}
+
+.ui-widget-header {
+	background: transparent url(images/addstudent-tit-bg.jpg) repeat;
+	
+}
+
+.green2-title-bar {
+	background: transparent url(images/green-title-bar-bg.png) repeat;
+	border: 1px solid #B2BAC0;
+}
+
+.green-title-bar {
+	background: transparent url(images/addstudent-tit-bg.jpg) repeat;
+	border-bottom: solid 1px #FF9305;
+	
+}
+
+.green-title-bar2 {
+	background: transparent url(images/title-bg.png) no-repeat;
+}
+
+.green-footer-bar {
+	background: transparent url(images/student-table-footer.jpg) no-repeat;
+}
+
+.green-results-list {
+	background: #FFFDF6;
+	border: orange;
+}
+
+.green-result-row {
+	background: #FFFDF6;
+	border-bottom: 1px solid #ff9c00;
+	border-right: 1px solid #ff9c00;
+	color: #ff4800;
+}
+
+/*.green-result-col-1 {
+	background: #FFFDF6;
+}
+.green-result-col-2 {
+	background: #FFFDF6;
+}
+*/
+
+
+.green-result-col-action {
+	background: #f2ead1;
+}
+
+.property {
+	color: #5e2e03;
+}
+
+.property-value {
+	color: #ff0000;
+}
+.orange-title-bar {
+	background: #f5eace url(images/title-bg.png) no-repeat;
+	border: 1px solid #B2BAC0;
+}
+
+.orange-title-bar2 {
+	background: transparent url(images/title-bg.png) no-repeat;
+}
+
+.search-button {
+	background: url(images/search-button.jpg) no-repeat;
+	color: #FFFFFF;
+}
+
+#search-results-container {
+	background: #F2EAD1;
+}
+
+#search-results-container table {
+	background: #F2EAD1;
+}
+
+#search-results-container tbody {
+	background: #F8E5CB;
+}
+
+#search-results-container table td {
+	border: 1px solid #B2BAC0;
+}
+
+.search-results-list-alternate {
+	background: #FFFAcc;
+}
+
+#search-results-container table th {
+	background: transparent url(images/search-results-list-th.jpg) repeat-x;
+	border-right: 1px solid #FF9305;
+	color: #fff;
+}
+#timetable-list-container table {
+	background: #FFFACC;
+}
+
+#timetable-list-container table th {
+	background: transparent url(images/search-results-list-th.jpg) repeat-x;
+	border: 1px solid orange;
+	color: #fff;
+}
+#timetable-list-container table td {
+	border: 1px solid orange;
+}
+
+.timetable-subject {
+	color: #9c5805;
+}
+.teacher-name,.class-name {
+	color: red;
+}
+
+#timetable-form-container { 
+	background: #f2ead;
+}
+.teacher-name-input {
+	color: #A15A08;
+}
+
+.timetable-today-highlight {
+	background: #fcd383;
+}
+.timetable-teacher-suggestions, .parent-mobile-suggestions, .student-suggestions, .staff-mobile-suggestions, .staff-suggestions{
+	background: #FFFACC;
+}
+.timetable-teacher-suggestions li a, .parent-mobile-suggestions li a, .student-suggestions li a, .staff-mobile-suggestions li a, .staff-suggestions li a {	
+	color: black;
+}
+.timetable-teacher-suggestions li a:hover, .parent-mobile-suggestions li a:hover, .student-suggestions li a:hover, .staff-mobile-suggestions li a:hover, .staff-suggestions li a:hover {
+	background: url(images/header-link-seperator.png);
+	border: solid 1px orange;
+	color: red;
+	font-size: 18px;
+	
+}
+
+#transport-results-container,#from-transport-results-container,#to-transport-results-container
+	{
+	background: #E9FBFB;
+}
+
+#transport-results-container table,#from-transport-results-container table,#to-transport-results-container table
+	{
+	background: #c7cbca;
+}
+
+#transport-results-container tbody,#from-transport-results-container tbody,#to-transport-results-container tbody
+	{
+	background: #E9FBFB;
+}
+
+#transport-results-container table tr,#from-transport-results-container table tr,#to-transport-results-container table tr
+	{
+	height: 30px !important;
+	max-height: 30px !important;
+}
+
+#transport-results-container table td,#from-transport-results-container table td,#to-transport-results-container table td
+	{
+	border: 1px solid orange;
+}
+
+.transport-results-list-alternate,from-transport-results-list-alternate,to-transport-results-list-alternate
+	{
+	background: #fff;
+}
+
+#transport-results-container table th {
+	background: transparent url(images/transport/transport-list-th.jpg)	repeat-x;
+	border: 1px solid #ACACAC;
+}
+
+#action-add-route {
+	background: transparent url(images/transport/add-route-button.png)	no-repeat;
+}
+
+#transport-results-container .btn-edit {
+	background: transparent url(images/edit-green.png) no-repeat;
+}
+
+#action-select-route,#action-from-select-transport,#action-to-select-route
+	{
+	background: transparent url(images/transport/go-button.png) no-repeat;
+}
+
+#action-add-student-route {
+	background: transparent	url(images/transport/add-student-route-button.png) no-repeat;
+}
+
+.transport-button {
+	background: url(images/transport/button.png) no-repeat;
+	color: #FFFFFF;
+}
+
+.student-picker-label {
+	color: #A15A08;
+}
+.student-picker-button {
+	background: transparent url(images/transport/student-picker.png) no-repeat;
+}
+
+.popup-drop-shadow {
+	background: #4d6471;
+}
+
+.popup-container {
+	border: 1px solid #9aa7af;
+	background: #fff;
+}
+
+.popup-container .popup-heading {
+	color: #333;
+}
+
+.popup-container .popup-close {
+	background: url( "images/delete-img.png" ) no-repeat right 3px;
+	height: 20px;
+	width: 15px;
+	color: #6b8996;
+}
+
+.popup-container .popup-head {
+	background: #eaeff2;
+}
+
+#dashboard-task-detail .popup-container {
+	background: #f3f6f7;
+}
+#dashboard-task-detail-content .label {
+	color: #508614;
+}
+
+#dashboard-task-detail-buttons {
+	background: #eaeff2;
+}
+
+.student-attendance-list {
+	border: 1px solid orange;
+}
+
+
+#student-attendance-list .green-result-row {
+	border: 1px solid orange;
+	
+}
+
+#student-attendance-list .green-result-row-clicked {
+	background: #FFCC89;
+	border: 1px solid #fff;
+}
+
+#student-attendance-list .green-result-row-entered {
+	background: #f6e7b5;
+	border: 1px solid #fff;
+}
+
+#student-attendance-list .green-result-col-1 {
+	background: none;
+}
+
+#student-attendance-list .green-result-col-2 {
+	background: none;
+}
+
+.student-assessment-list {
+	border: 1px solid orange;
+}
+
+#student-assessment-list .green-result-row-clicked {
+	background: #FFCC89;
+	border: 1px solid orange;
+}
+
+#student-assessment-list .green-result-row-entered {
+	background: #F2EAD1;
+	border: 1px solid orange;
+}
+.expenses-header{
+	background: url("images/search-results-list-th.jpg") repeat-x scroll 0 0 #DDAACC;
+	color: #eee;
+	font-weight: bold;
+	border: 1px solid #bb4488;
+}
+
+#action-add-school {
+	background: transparent url(images/siteadmin/organization-add-button.png)	no-repeat;
+}
+.success-msg {
+	color: #A15A08;
+}
+
+.subject-main-title-bg{
+	border: solid 1px #F8BD47;	
+	background: #FFFACC;
+}
+.subject-label-bg{
+	background: transparent url(images/search-results-list-th.jpg);
+	border: solid 1px #979d99;
+	
+}
+.search-results-list{
+	background:  #FFFDF6;
+}
+.subject-label-text{
+	color: #961d01;
+}
+.indidual-fields-labels{
+	color: #A15A08;
+}
+.subject-table-labels{
+	border-right: solid 1px #fff;
+}
+.subject-table-labels-color{
+	color: #961d01;
+}
+.profile-theme-name {
+	color: #A15A08;
+}
+
+.add-fee-btn{
+	background: url(images/accounts/add-fee-btn.png) no-repeat;
+}
+
+.btn-add-fee-master {
+	background: url(images/accounts/btn-add-optional-fee.png) no-repeat;
+}
+
+.btn-generate-due-date{
+	background: url(images/accounts/btn-generate-due-date.png) no-repeat;
+}
+
+.import-staff-title{
+	background: url(images/staff/import-staff-title.png) no-repeat;
+}
+
+.add-fees-main-title {
+	background: url(images/admission/add-fee-details-title.png) no-repeat;
+}
+
+.add-fees-report-title {
+	background: url(images/admission/add-fee-report-title.png) no-repeat;
+}
+
+.add-fees-type-title {
+	background: url(images/admission/add-type-fee-title.png) no-repeat;
+}
+
+.add-fees-master-title {
+	background: url(images/admission/add-master-fee-title.png) no-repeat;
+}
+
+
+.report-header {
+	background: transparent url(images/addstudent-tit-bg.jpg) repeat;
+	color: #A15A08;
+	/*border: 1px solid #f7ca6f;*/
+}
+
+.report-content {
+	background: #FFFDF6;
+}
+.report-header .report-header-column{
+	border-right: 1px solid #f7ca6f;
+}
+.report-body .report-body-column {
+	border-left: 1px solid #f7ca6f;
+	color: #000;
+}
+.report-header .report-header-column1, .report-body .report-body-column1{
+	border-left: solid 1px orange;
+}
+
+.report-body {
+	border: 1px solid #f7ca6f;
+	border-top: none;
+}
+.inbox-content{
+	background: #FFFDF6;
+	border: 1px solid #f7ca6f;
+}
+
+.btn-dashboard-update {
+	background: url(images/btn-dashboard-update.png) no-repeat;
+}
+
+.btn-dashboard-reply {
+	background: url(images/btn-dashboard-reply.png) no-repeat;
+}
+
+.report-header .report-header-column1, .report-body .report-body-column1 ,.report-header .report-header-column2,.report-body .report-body-column2{
+	border-left: solid 1px orange;
+}
+
+.btn-dashboard-update {
+ background: url(images/btn-dashboard-update.png) no-repeat;
+}
+
+.btn-dashboard-reply {
+ background: url(images/btn-dashboard-reply.png) no-repeat;
+}
+.imform-text{
+	color: #A15A08;
+	text-align: center;
+	margin-top: 50px;
+}
+.expenses-report-body, .expenses-header {
+	border: solid 1px orange;
+	border-top: none;
+}
+.transport-list-title{
+	background: url(images/transport/transport-list-title.png) no-repeat;
+}
+.fav-links-title{
+	font-weight: bold;
+	color: #fff;
+}
+.ajax-loader-bg-color{
+	background: #FFFDF6;
+}
+.add-fee-type-title{
+ background: url(images/accounts/add-fee-type-title.png) no-repeat;
+}
+
+.fee-type-list-title{
+ background: url(images/accounts/fee-type-list-title.png) no-repeat;
+}
+.add-mandatary-fee-title{
+	 background: url(images/accounts/mandatory-fee-title.png) no-repeat;
+}
+
+.mandatary-fee-list-title{
+ 	background: url(images/accounts/mandatary-fee-list-title.png) no-repeat;
+}
+.add-master-fee-title {
+ 	background: url(images/accounts/master-fee-title.png) no-repeat;
+}
+
+.master-fee-list-title{
+ background: url(images/accounts/master-fee-list-title.png) no-repeat;
+}
+
+.generate-fee-due-title {
+	background: url(images/accounts/generate-fee-title.png) no-repeat;
+}
+
+.generate-fee-due-list-title {
+	background: url(images/accounts/generate-fee-list-title.png) no-repeat;
+}
+.fee-type-list-title{
+ background: url(images/accounts/fee-type-list-title.png) no-repeat;
+}
+
+.school-assessments-list-title{
+	background: url(images/assessment/school-assessments-list-title.png) no-repeat;
+}
+	
+.school-assessments-type-list-title{
+	background: url(images/assessment/school-assessments-type-list-title.png) no-repeat;
+}
+
+.fee-detail-title{
+	background: url(images/parent/fee-details-title.png) no-repeat;
+}
+.cumulate-mark-sheet-title{
+	background: url(images/assessment/cumulate-mark-sheet-title.png) no-repeat;
+}
+.assessment-calender-title{
+	background: url(images/assessment/assessment-calender-title.png) no-repeat;
+}
+.generate-hall-ticket-title{
+	background: url(images/assessment/generate-hall-ticket-title.png) no-repeat;
+}
+.green-result-row .green-result-col-3 {
+	background-color: #f2ead1;
+	border: solid 1px #ff9305;
+ 	border-bottom: none;
+}
+
+.green-result-row .green-result-col-4 {
+    background: #f2ead1;
+}
+
+.green-result-row .green-result-col-5 {
+	background-color: #f2ead1;
+	border: solid 1px #ff9305;
+    border-style: none solid dashed;
+    border-top: none;
+}
+.checkit {
+  color: black;
+ 
+}
+
+.checkit1 {
+	font: bold 12px arial-black;
+}
+
+.checkit2 {
+  color: black;
+}
+.leaves-add-title{
+	background: url(images/staff/add-leaves-title.png) no-repeat;
+}
+
+.leaves-report-title{
+	background: url(images/staff/leaves-report-title.png) no-repeat;
+}
+.student-profile-view-title{
+	background: url(images/admission/student-profile-view-title.png) no-repeat;
+}
+
+.drop-down-title{
+	background: url(images/siteadmin/drop-down-title.png) no-repeat;	
+}
+
+.reset-sms-limit-title{
+	background: url(images/siteadmin/reset-sms-limit-title.png) no-repeat;
+}
+.account-search-title{
+	background: url(images/siteadmin/account-search-title.png) no-repeat;
+}
+.school-holidays-title{
+	background: url(images/settings/school-holidays-title.png) no-repeat;
+}
+
+.school-print-header-title{
+	background: url(images/settings/school-print-header-title.png) no-repeat;
+}
+
+.btn-print{
+	background: url(images/btn-print.png) no-repeat;
+}
+.btn-upload {
+  	background: url(images/btn-upload.png) no-repeat scroll 0 0 transparent;
+	 border: medium none red;
+}
+
+.btn-approve {
+ 	background: url(images/btn-approve.png) no-repeat;
+ }
+ 
+.all-staff-leaves-report-title{
+	background: url(images/staff/all-staff-leaves-report-title.png) no-repeat;
+
+}
+.btn-back {
+  background: url(images/btn-back.png) no-repeat scroll 0 0 transparent;
+  border: medium none red;
+}
+
+.fees-paid-and-dues-report-title{
+	background: url(images/accounts/fees-paid-and-dues-report-title.png) no-repeat;
+}
+
+.expenditure-book-title{
+	background: url(images/accounts/expenditure-book-title.png) no-repeat;
+}
+.expenditure-details-title{
+	background: url(images/accounts/expenditure-details-title.png) no-repeat;
+}
+.expenditure-report-title{
+	background: url(images/accounts/expenditure-report-title.png) no-repeat;
+}
+ 

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 16, 2013 11:00:01 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbEmployeeAddress" table="vb_employee_address">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbEmployee" class="com.vekomy.vbooks.hibernate.model.VbEmployee" fetch="select">
+            <column name="employee_id" not-null="true" />
+        </many-to-one>
+        <property name="addressLine1" type="string">
+            <column name="address_line_1" length="200" not-null="true" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="address_line_2" length="200" />
+        </property>
+        <property name="locality" type="string">
+            <column name="locality" length="60" not-null="true" />
+        </property>
+        <property name="landmark" type="string">
+            <column name="landmark" length="60" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="60" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="60" not-null="true" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="zipcode" length="10" not-null="true" />
+        </property>
+        <property name="addressType" type="string">
+            <column name="address_type" length="30" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

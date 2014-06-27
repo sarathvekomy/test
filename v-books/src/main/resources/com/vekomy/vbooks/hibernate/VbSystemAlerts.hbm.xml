@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 16, 2013 11:00:01 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbSystemAlerts" table="vb_system_alerts">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbOrganization" class="com.vekomy.vbooks.hibernate.model.VbOrganization" fetch="select">
+            <column name="organization_id" />
+        </many-to-one>
+        <many-to-one name="vbAlertType" class="com.vekomy.vbooks.hibernate.model.VbAlertType" fetch="select">
+            <column name="alert_type_id" not-null="true" />
+        </many-to-one>
+        <property name="alertName" type="string">
+            <column name="alert_name" length="80" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" />
+        </property>
+        <property name="activeInactive" type="java.lang.Boolean">
+            <column name="active_inactive" />
+        </property>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <set name="vbSystemAlertsNotificationses" table="vb_system_alerts_notifications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="system_alert_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSystemAlertsNotifications" />
+        </set>
+        <set name="vbSystemAlertsHistories" table="vb_system_alerts_history" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="system_alert_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSystemAlertsHistory" />
+        </set>
+    </class>
+</hibernate-mapping>

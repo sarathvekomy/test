@@ -1,0 +1,3556 @@
+body {
+	font-family: Arial;
+	background: background: #84CF96 url(images/modulebar.png) no-repeat;
+	font-size: 82.5%;
+}
+
+form {
+	margin: 0px;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+.logo-container {
+	width: 1050px;
+	height: 0px;
+	margin: auto;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	float:left;
+}
+
+.header-container {
+	width: 900px;
+	height: 50px;
+	margin: auto;
+}
+
+.header-left {
+	float: left;
+	width: 430px;
+	height: 32px;
+	padding-top: 18px;
+}
+
+.header-logo {
+	float: left;
+}
+
+.header-caption {
+	float: left;
+	padding-top: 18px;
+}
+
+.header-right {
+	float: right;
+	width: 180px;
+	height: 50px;
+	text-align: right;
+	font: bold 12px Arial;
+}
+
+.header-right a {
+	text-decoration: none;
+	font: bold 12px Arial;
+}
+
+.header-right-top {
+	width: 180px;
+	height: 25px;
+}
+
+.header-right-bottom {
+	width: 180px;
+	height: 25px;
+	font: bold 12px Arial;
+}
+
+#header-school-name {
+	font: bold 18px Arial;
+}
+
+.top-header-links ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top:5px;
+}
+
+.top-header-links li {
+	display: inline;
+	margin: 0px;
+	
+}
+
+.top-header-links li a {
+	padding: 5px;
+	text-decoration: none;
+	font: bold 12px arial;
+	border-radius:3px;
+	margin-left:5px;
+}
+
+.top-header-links li a:hover {
+	background: url(images/header-link.png) repeat-x;
+}
+
+.filler {
+	height: 10px;
+}
+
+.dn-filler {
+	height: 40px
+}
+.vert-filler {
+	width: 10px;
+}
+
+.tsb-container {
+	height: 650px;
+	margin: 0 auto;
+	width: 900px;
+}
+
+.login-page {
+	width: 320px;
+	height: 150px;
+	/*overflow: scroll;*/
+	float: left;
+	margin: 10px;
+}
+
+#login-page-content {
+	width: 325px;
+	height: 120px;
+	overflow: auto;
+}
+
+.module-bar {
+	height: 70px;
+	width: 900px;
+	text-align: center;
+	/*opacity: 0.8;*/
+}
+
+.module-bar ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.module-bar ul li span a img{border-right:1px solid #c2e6fd; }
+.module-bar li {
+	display: inline;
+	text-decoration: none;
+	width: 80px;
+	height: 70px;
+}
+
+.module-link { /*width: 80px;
+	height: 70px;
+	float: left;*/
+	
+}
+
+.module-link a {
+	text-decoration: none;
+}
+
+.module-seperator {
+	/*background: transparent url(images/module-seperator.png) no-repeat;*/
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.main-container {
+	width: 900px;
+	height: 505px;
+}
+
+.page-selection {
+	float: left;
+	width: 183px;
+	height: 505px;
+}
+
+.page-selection-top {
+	width: 183px;
+}
+
+.page-selection-seperator {
+	width: 173px;
+	height: 12px;
+	margin-left: 5px;
+}
+
+.module-title-bar {
+	height: 35px;
+}
+
+.module-title {
+	font: 18px Arial;
+	float: left;
+	width: 123px;
+	height: 40px;
+	padding: 5px;
+	margin-left:10px;
+}
+
+.page-selection-expand {
+	padding: 5px;
+	float: left;
+	width: 30px;
+	height: 40px;
+	text-align: right;
+	height: 40px;
+}
+
+.ps-exp-exp {
+	width: 24px;
+	height: 24px;
+	padding: 0px;
+}
+
+.ps-exp-col {
+	width: 24px;
+	height: 24px;
+}
+.applicant-add-icon {
+	background: url(common/images/admission/applicant-add-icon.png) no-repeat;
+}
+.edit-applicant-icon{
+	background: url(common/images/admission/edit-applicant-icon.png) no-repeat;
+}
+
+.applicant-search-icon {
+	background: url(common/images/admission/applicant-search-icon.png) no-repeat;
+}
+.school-list-icon {
+	background: url(common/images/siteadmin/school-list-icon.png) no-repeat;
+}
+.account-search-icon{
+	background: url(common/images/siteadmin/account-search-icon.png) no-repeat;
+}
+
+.college-list-icon {
+	background: url(common/images/siteadmin/school-list-icon.png) no-repeat;
+}
+
+.school-create-icon {
+	background: url(common/images/siteadmin/school-create-icon.png) no-repeat;
+}
+
+.school-edit-icon {
+	background: url(common/images/siteadmin/school-edit-icon.png) no-repeat;
+}
+.drop-down-icon{
+	background: url(common/images/siteadmin/drop-down-icon.png) no-repeat;
+}
+
+.under-construction-icon {
+	background: url(common/images/under-construction-icon.png) no-repeat;
+}
+.student-add-title {
+	background: url(common/images/admission/student-add-title.png) no-repeat;
+}
+.student-add-icon {
+	background: url(common/images/admission/student-add-icon.png) no-repeat;
+}
+
+.student-edit-icon {
+	background: url(common/images/admission/student-edit-icon.png) no-repeat;
+}
+
+.student-search-icon {
+	background: url(common/images/admission/student-search-icon.png) no-repeat;
+}
+
+.attendance-report-icon {
+	background: url(common/images/parent/attendance-report-icon.png) no-repeat;
+}
+.fee-details-icon{
+	background: url(common/images/parent/edit-fee-dues-icon.png) no-repeat;
+}
+
+.assessment-report-icon {
+	background: url(common/images/parent/assessment-report-icon.png) no-repeat;
+}
+.assessment-types-icon{
+	background: url(common/images/assessment/assessment-types-icon.png) no-repeat;
+}
+
+.school-assessment-icon{
+	background: url(common/images/assessment/school-assessment-icon.png) no-repeat;
+}
+.assessment-schedules-icon{
+	background: url(common/images/assessment/assessment-schedules-icon.png) no-repeat;
+}
+.assessment-calendar-icon{
+	background: url(common/images/assessment/assessment-calender-icon.png) no-repeat;
+}
+
+.create-exam-timetable-title-icon{
+	background: url(common/images/assessment/create-exam-timetable-title-icon.png) no-repeat;
+}
+.generate-hall-ticket-icon{
+	background: url(common/images/assessment/hall-ticket-icon.png) no-repeat;
+}
+
+.parent-change-route-icon {
+	background: url(common/images/parent/parent-change-route-icon.png) no-repeat;
+}
+
+.parent-contact-class-teacher-icon {
+	background: url(common/images/parent/parent-contact-class-teacher-icon.png) no-repeat;
+}
+
+.parent-inbox-icon {
+	background: url(common/images/parent/parent-inbox-icon.png) no-repeat;
+}
+
+
+.staff-edit-icon {
+	background: url(common/images/staff/staff-edit-icon.png) no-repeat;
+}
+
+.staff-add-icon {
+	background: url(common/images/staff/staff-add-icon.png) no-repeat;
+}
+.btn-due-fee-paid{
+	background: url(common/images/accounts/btn-due-fee-paid.png) no-repeat;
+}
+
+.staff-search-icon {
+	background: url(common/images/staff/staff-search-icon.png) no-repeat;
+}
+
+.sms-circular-school-icon {
+	background: url(common/images/sms/sms-circular-school-icon.png) no-repeat;
+}
+
+.sms-circular-parent-icon {
+	background: url(common/images/sms/sms-circular-parent-icon.png) no-repeat;
+}
+
+.sms-circular-class-icon {
+	background: url(common/images/sms/sms-circular-class-icon.png) no-repeat;
+}
+
+.task-add-icon {
+	background: url(common/images/staff/task-add-icon.png) no-repeat;
+}
+
+.task-search-icon {
+	background: url(common/images/staff/task-search-icon.png) no-repeat;
+}
+
+.task-edit-icon {
+	background: url(common/images/staff/task-edit-icon.png) no-repeat;
+}
+.import-student-image-icon{
+	background: url(common/images/admission/import-student-img.png) no-repeat;
+}
+
+.import-staff-image-icon{
+	background: url(common/images/staff/import-staff-img.png) no-repeat;
+}
+
+.class-teacher-icon {
+	background: url(common/images/staff/class-teacher-icon.png) no-repeat;
+}
+
+.attendance-add-icon {
+	background: url(common/images/assessment/attendance-add-icon.png) no-repeat;
+}
+
+.attendance-edit-icon {
+	background: url(common/images/assessment/attendance-edit-icon.png) no-repeat;
+}
+
+.assessment-add-icon {
+	background: url(common/images/assessment/assessment-add-icon.png) no-repeat;
+}
+
+.assessment-edit-icon {
+	background: url(common/images/assessment/assessment-edit-icon.png) no-repeat;
+}
+.cumulate-mark-sheet-icon{
+	background: url(common/images/assessment/cumulate-mark-sheet-icon.png) no-repeat;
+}
+
+.teacher-timetable-icon {
+	background: url(common/images/timetable/teacher-timetable-icon.png) no-repeat;
+}
+
+.class-timetable-icon {
+	background: url(common/images/timetable/class-timetable-icon.png) no-repeat;
+}
+
+.create-timetable-icon {
+	background: url(common/images/timetable/create-timetable-icon.png) no-repeat;
+}
+
+.route-add-icon {
+	background: url(common/images/transport/route-add-icon.png) no-repeat;
+}
+.student-route-icon {
+	background: url(common/images/transport/student-route-icon.png) no-repeat;
+}
+
+.route-stops-icon {
+	background: url(common/images/transport/route-stops-icon.png) no-repeat;
+}
+.change-route-icon {
+	background: url(common/images/transport/change-route-icon.png) no-repeat;
+}
+
+.grade-settings-icon{
+	background: url(common/images/siteadmin/grade-setting-icon.png) no-repeat;
+}
+
+.password-settings-icon{
+	background: url(common/images/siteadmin/password-settings-icon.png) no-repeat;
+}
+
+
+.class-syllabus-icon{
+	background: url(common/images/staff/class-syllabus-icon.png) no-repeat;
+}
+
+.covered-syllabus-icon{
+	background: url(common/images/staff/add-coverd-syllabus-icon.png) no-repeat;
+
+}
+.class-teacher-icon{
+	background: url(common/images/staff/class-teacher-list-icon.png) no-repeat;
+}
+.transport-add-icon{
+	background: url(common/images/transport/route-add-icon.png) no-repeat;
+}
+.edit-transport-icon{
+	background: url(common/images/transport/edit-transport-icon.png) no-repeat;
+}
+
+
+.transport-search-icon{
+	background: url(common/images/transport/transport-search-icon.png) no-repeat;
+}
+.transport-add-expenses-icon{
+	background: url(common/images/transport/expenses-icon.png) no-repeat;
+}
+.transport-search-expenses-icon{
+	background: url(common/images/transport/search-expenses-icon.png) no-repeat;
+}
+.classes-create-icon{
+	background: url(common/images/siteadmin/create-class-icon.png) no-repeat;
+
+}
+
+.student-import-icon{
+	background: url(common/images/admission/student-import-icon.png) no-repeat;
+}
+
+.expand-icon {
+	width: 10px;
+	height: 14px;
+	float: right;
+}
+
+.collapse-icon {
+	width: 30px;
+	height: 24px;
+	float: right;
+}
+
+.left-nav {
+	margin-top: 0px;
+	height: 300px;
+}
+
+.left-nav ul {
+	height: 44px;
+	list-style-type: none;
+	padding: 0px 5px 10px 5px;
+	margin-left: 0px;
+	margin-top:0px;
+}
+
+.left-nav li {
+	
+	border-bottom:1px solid #f6f6f6;
+}
+
+.page-link {
+	height: 45px;
+	
+}
+
+.page-link-icon {
+	width: 35px;
+	height: 44px;
+	float: left;
+	margin-left:8px;
+	margin-top:-3px;
+	
+	/*background: green;*/
+}
+
+.page-link-strip {
+	width: 136px;
+	height: 44px;
+	float: left;
+	margin-left: -6px;
+	font: bold 12px arial;
+	/*background: yellow;*/
+	font: bold 12px arial;
+}
+
+.page-link-text {
+	margin:0px;
+}
+
+.widget-title {
+	padding: 5px;
+	font: bold 16px arial;
+	height: 20px;
+	width: 315px;
+}
+
+.staff-tasks , .parent-messages , .transport-messages , .parent-change-route-request , .staff-leaves {
+	width: 320px;
+	height: 150px;
+	/*overflow: scroll;*/
+	float: left;
+	margin: 10px;
+}
+
+#staff-tasks-content , #parent-messages-content ,#transport-alert-content ,#change-route-request-content , #staff-leaves-content{
+	width: 320px;
+	height: 120px;
+	overflow: auto;
+}
+
+ .btn-approve {
+ background: url(default/images/btn-approve.png) no-repeat;
+ width: 67px;
+ hight: 26px;
+ float: right;
+}
+
+.dashboard-task , .dashboard-message {
+	padding: 5px;
+}
+
+.widget-content-title {
+	font: bold 16px arial
+}
+
+.dashboard-task-title {
+	color: #044572;
+	font: bold 16px arial;
+}
+
+/*.dashboard-task-detail {
+	background: #aefadc;
+	border: 1px solid #9bccf2;
+	position: absolute;
+	width: 350px;
+}*/
+.school-choose-links {
+	width: 320px;
+	height: 150px;
+	/*overflow: scroll;*/
+	float: left;
+	margin: 10px;
+}
+
+.dashboard-school {
+	padding: 10px;
+	font: 12px arial
+}
+
+.dashboard-property {
+	font-weight: bold;
+	
+}
+
+.dashboard-school-name , .parent-student-name {
+	font: bold 16px arial;
+}
+
+
+.dashboard-school-name, .dashboard-student-name {
+	font: bold 16px arial;
+}
+
+.staff-calendar { /*overflow: scroll;*/
+	float: left;
+	margin: 10px;
+}
+.dashboard-period {
+	font: 12px arial;
+	padding: 5px;
+}
+
+#staff-calendar-content {
+	width: 320px;
+	height: 200px;
+	overflow: auto;
+}
+
+#error-message {
+	display: none;
+}
+
+.manage-student {
+	width: 180px;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.manage-student-strip {
+	width: 144px;
+	height: 24px;
+	float: left;
+	margin-left: -10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font: bold 14px arial;
+	text-align: center;
+}
+
+.manage-app-icon {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+.manage-app-strip {
+	width: 149px;
+	height: 24px;
+	float: left;
+	margin-left: -10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.manage-assessment-strip {
+	width: 144px;
+	height: 24px;
+	float: left;
+	margin-left: -10px;
+	margin-top: 6px;
+}
+
+.page-container {
+	float: right;
+	width: 702px;
+	height: 468px;
+}
+
+.pagelinks-filler { /*width: 700px;*/
+	height: 0px;
+}
+
+.page-links { /*width: 700px;*/
+	height: 33px;
+}
+
+.page-links ul {
+	margin: 0;
+	padding: 0px;
+	height: 30px;
+}
+
+.page-links ul li {
+	display: inline;
+	list-style-type: none;
+	/*padding:0px 2px 0px 2px;*/
+	width: 140px;
+	height: 28px;
+	font: bold 13px arial;
+}
+
+.page-links ul li a { /*padding: 0px 0.2em;*/
+	text-decoration: none;
+	float: left;
+	vertical-align: middle;
+	text-align: center;
+	/*border-left: 1px solid #e5f0f7;
+        border-right: 1px solid #e5f0f7;*/
+	width: auto;
+	font-size:12px;
+	margin-left: -1px;
+	padding:10px 5px 5px 5px;
+	border-right:1px solid #B2BAC0;
+	height:17px;
+}
+
+.page-links ul li a:hover {
+	/*background-color: #d3e6f5;
+        border-left: 1px solid #b2bac0;
+        border-right: 1px solid #b2bac0;
+        border-bottom:1px solid #d3e6f5;
+        border-top: 3px solid #b2bac0;
+        margin-top: -5px;
+        padding-top: 9px;
+        height:25px;*/
+	cursor: pointer;
+	font: bold 12px arial;
+}
+
+.page-links-active {
+	
+	height: 17px;
+	font: bold 12px arial;
+}
+
+.fav-links { /*width: 700px;*/
+	height: 20px;
+}
+
+.fav-links li {
+	width: 180px;
+	margin-top: 10px;
+	/*height: 20px;*/
+}
+
+.fav-links li {
+	margin-top: 10px;
+	list-style-type: none;
+	width: 150px;
+	font: normal 12px arial;
+	margin-top: -10px;
+}
+
+.fav-links li a { /*padding: 0px 0.2em;*/638
+	text-decoration: none;
+	padding-top: 10px;
+	/*float: left;*/
+	/*vertical-align: middle;
+	text-align: center;*/
+	/*width: 150px;*/
+	/*border-left: 1px solid #e5f0f7;
+        border-right: 1px solid #e5f0f7;*/
+	
+}
+
+.fav-links li a:hover {
+	margin-top: 10px;
+	font: bold 14px arial;
+	color: #1b1e6b;
+}
+.footer-links-bg{
+	background: 10px;
+	/*height: 100px;*/
+}
+
+.page-content-filler { /*width: 700px;*/
+	height: 1px;
+}
+
+.page-content { /*width: 700px;*/
+	height: 468px;
+}
+
+.page-title {
+	font: bold 18px arial;
+	float: left;
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+
+.page-icon {
+	width: 24px;
+	height: 24px;
+	margin-top: 2px;
+	float: left;
+}
+
+.full-content {
+	height: 433px;
+}
+
+.form-panel {
+	padding-top: 5px;
+}
+	
+
+.change-route-title {
+	width: 141px;
+	margin: 5px;
+	float: left;
+}
+
+.ui-btn {
+	width: 55px;
+	float: left;
+	margin-right: 10px;
+}
+.ui-btnedit {
+	width: 40px;
+	height: 10px;
+	float: right;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+.ui-btn-grid-action-next {
+	
+}
+.ui-btn-grid-action-previous {
+	
+}
+.ui-btnedit1 {
+	width: 85px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+}
+.edit-staff{
+	background: url(common/images/edit-staff-icon.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+}
+
+.edit-transport{
+	background: url(common/images/edit-transport-icon.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+}
+.btn-transport-edit{
+	background: url(common/images/transport/btn-transport-edit.png) no-repeat;
+	height: 20px;
+	float: left;
+	width: 20px;
+}
+.btn-view {
+	background: url(common/images/view-details.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.btn-change-staff-img{
+	background: url(common/images/staff/btn-change-staff-img.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+}
+.btn-change-stundent-img{
+	background: url(common/images/admission/btn-change-student-img.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+}
+
+.delete-icon {
+	background: url(common/images/delete-icon.png) no-repeat;
+	height: 16px;
+	float: left;
+	width: 16px;
+	cursor: pointer;
+}
+
+.edit-icon {
+	background: url(common/images/edit-icon.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 5px;
+	cursor: pointer;
+}
+.add {
+	background: url(common/images/add.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	margin: 0px;
+	cursor: pointer;
+}
+.first-btn {
+	background: url(common/images/first-btn.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	padding-bottom: 20px;
+	cursor: pointer;
+}
+.last-btn {
+	background: url(common/images/last-btn.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.next-btn {
+	background: url(common/images/next-btn.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.previous-btn {
+	background: url(common/images/previous-btn.png) no-repeat;
+	width: 30px;
+	height: 30px;
+	margin: 0px;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.edit-green-icon {
+	background: url(common/images/edit-green.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+.footer {
+	height: 40px;
+	/*background-color:#d2e6f5;
+	    border:solid 1px #9bccf2;*/
+	width: 900px;
+}
+.loading {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('common/images/add.png') 
+                50% 50% 
+                no-repeat;
+}
+
+.footer-left {
+	float: left;
+	width: 10px;
+}
+
+.footer-middle {
+	float: left;
+	width: 875px;
+	padding-bottom: 5px;
+	margin-top:5px;
+}
+
+.footer-right {
+	float: left;
+	width: 15px;
+}
+
+#student-add-form-container { /*width: 615px;*/
+	height: 355px;
+}
+
+.student-title-bar {
+	height: 30px;
+	width: 615px;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+}
+
+.student-title-bar2 {
+	padding: 5px;
+	padding-left: 20px;
+}
+
+#student-form,#staff-form,#staff-detail-form,#staff-address-form {
+	height: 350px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#student-detail-form,#student-address-form { /*width:600px;*/
+	height: 355px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.student-preview-container { /*width:600px;*/
+	height: 380px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.add-student-tabs {
+	
+	height: 45px;
+	margin-left: 5px;
+}
+
+tabs-page-fold {
+	width: 73px;
+	height: 55px;
+	float: left;
+	margin-left: 6px;
+}
+
+.tabs-button {
+	width: 116px;
+	height: 36px;
+	float: left;
+	padding: 5px;
+	font-size: 12px;
+	font-family: arial;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tabs-button-active {
+	float: left;
+	width: 116px;
+	height: 36px;
+	padding: 5px;
+	font-size: 12px;
+	font-family: arial;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tabs-title {
+	font: bold 14px Arial;
+	padding: 5px;
+	padding-left: 25px;
+}
+
+.step-selected {
+	height: 26px;
+	width: 150px;
+	float: left;
+}
+
+.step-selected-corner {
+	height: 26px;
+	width: 10px;
+	float: left;
+}
+
+.step-no-select {
+	height: 26px;
+	width: 145px;
+	float: left;
+}
+
+/*for student full profile...*/
+.step-no-select1 {
+	height: 26px;
+	width: 130px;
+	float: left;
+}
+
+.step-no-select-corner {
+	height: 26px;
+	width: 10px;
+	float: left;
+}
+
+.fieldset-row { /*width: 580px;
+	height: 340px;*/
+	margin: 0 auto;
+}
+
+.fieldset {
+	width: 278px;
+	height: 300px;
+	float: left;
+}
+
+.form-row {
+	width: 280px;
+	height: 30px;
+	float: left;
+}
+
+.full-container {
+	width: 100%;
+	padding-top: 5px;
+	margin-left: 5px;
+}
+
+.label {
+	width: 125px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-top:5px;
+}
+
+#message {
+	/*margin-left: 10px;*/
+	font-size: 12px;
+}
+
+.input-field {
+	width: 145px;
+	height: 30px;
+	float: left;
+}
+
+.input-field-date {
+	width: 145px;
+	height: 40px;
+	float: left;
+}
+.input-field-date input {
+	width: 149px;
+	height: 20px;
+	float: left;
+}
+
+.input-field input,select,#staff-select-id,#userName,#priority,#status,#from-route-select-routeNumber,#to-route-select-routeNumber,#route-select-routeNumber,#staffType,#assignedToStaffId,#createdById
+	{
+	width: 145px;
+}
+.input-field-float input,select,#staff-select-id,#userName,#priority,#status,#from-route-select-routeNumber,#to-route-select-routeNumber,#route-select-routeNumber,#staffType,#assignedToStaffId,#createdById
+	{
+	width: 125px;
+}
+.separator {
+	width: 20px;
+	height: 380px;
+	float: left;
+}
+
+.footer-image {
+	width: 610px;
+	height: 43px;
+	float: left;
+}
+
+.action-change-transport {
+	text-align: center;
+}
+
+.action-from-change-route {
+	width: 35px;
+	height: 32px;
+	float: left;
+}
+
+.button {
+	cursor: pointer;
+}
+
+.ui-button {
+	height: 25px;
+	font: bold 12px arial !important;
+	float: left;
+	padding: 3px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 15px;
+}
+
+#student-search-form,#staff-search-form,#task-search-form,#route-detail-form
+	{ /*height: 150px;*/
+	padding-left: 10px;
+}
+
+.green2-title-bar {
+	/*width: 698px;*/
+	height: 30px;
+}
+
+.green-title-bar {
+	/*width: 698px;*/
+	height: 30px;
+	border-left: none;
+	border-right: none;
+}
+
+.green-title-bar2 {
+	padding-left: 20px;
+	height: 30px;
+}
+
+ .green-results-list {
+    overflow: auto; 
+}
+
+ .green-results-list1 {
+    overflow: auto; 
+} 
+
+.green-result-row {
+	height: 55px;
+	font: 12px arial;
+	
+}
+
+
+/* .green-result-row-table {
+	height: 50px;
+	font: 12px arial;
+	padding-top: 10px;
+} */
+
+.dupe{
+	width: 650px;
+	background: red;
+	float: left;
+	padding: 2px 5px 2px 5px;
+	height: 30px;
+}
+
+.green-result-row2{
+	height: 30px;
+
+}
+
+.green-result-col-1 {
+	width: 350px;
+	float: left;
+	padding: 2px 5px 2px 5px;
+	/*height: 46px;*/
+}
+
+.green-result-col-2 {
+	width: 220px;
+	float: left;
+	padding: 2px 5px 2px 5px;
+	/*height: 46px;*/
+}
+
+.green-result-col-action {
+	width: 80px;
+	float: right;
+	padding: 10px 5px 2px 5px;
+	height: 43px;
+}
+.property-value, .profile-sub-name {
+	padding-right: 10px;
+	font: 12px arial;
+	
+}
+
+.result-title {
+	font: bold 12px arial;
+	width: 190px;
+	line-height:20px;
+	color:#000;
+}
+
+.orange-title-bar {
+	/*width: 698px;*/
+	height: 30px;
+}
+
+.orange-title-bar2 {
+	padding: 5px;
+	padding-left: 20px;
+}
+
+.page-buttons {
+	height: 40px;
+	position: absolute;
+	/*margin: 0 auto;*/
+}
+
+.search-buttons,.transport-buttons {
+	height: 35px;
+	width: 275px;
+	margin: 10px auto;
+}
+
+.search-button {
+	height: 30px;
+	color: #FFFFFF;
+	border: none;
+	font: bold 13px arial;
+}
+
+#search-results-container {
+	height: 332px;
+	background: #c6c6c6;
+}
+
+#search-results-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+#search-results-container table td {
+	text-align: left;
+	font: 12px Arial;
+	padding-left: 5px;
+}
+
+
+#search-results-container table th {
+	text-align: left;
+	font: bold 14px Arial;
+	padding-left: 5px;
+	height: 28px;
+}
+
+#timetable-list-container {
+	height: 332px;
+	/*background:#F4F2F3;*/
+	float: left;
+	width: 100%
+}
+
+#timetable-list-container table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#timetable-list-container table th {
+	text-align: center;
+	font: bold 14px Arial;
+	padding-left: 5px;
+	height: 28px;
+}
+
+#timetable-list-container table td {
+	text-align: left;
+	font: 14px Arial;
+	padding-left: 5px;
+	width: 80px;
+	
+}
+
+#timetable-list-container tr {
+	height: 70px;
+}
+
+.timetable-teacher {
+	font-weight: bold;
+	height: 50px;
+}
+
+.timetable-class {
+	font: bold 16px Arial;
+	height: 50px;
+}
+
+.timetable-subject {
+	height: 20px;
+}
+
+.change-teacher,.change-class,.change-subject {
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+
+.teacher-name,.class-name {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
+#timetable-form-container { /*padding: 10px;*/
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+
+#timetable-form-container .label {
+	width: 100px;
+}
+
+#timetable-form-container .input-field input,#timetable-form-container .input-field select
+	{
+	width: 130px;
+}
+
+#create-timetable-container #timetable-list-container {
+	/*padding-top: 10spx;*/ /*float: right;
+		width: 550px;*/
+	
+}
+
+#create-timetable-container #timetable-list-container tr {
+	height: 60px;
+}
+
+.teacher-name-input {
+	width: 50px;
+	height: 20px;
+	float: left;
+}
+
+.timetable-teacher-suggestions, .parent-mobile-suggestions , .staff-mobile-suggestions , .staff-suggestions {
+	position: absolute;
+}
+
+.timetable-teacher-suggestions li , .parent-mobile-suggestions li , .staff-mobile-suggestions li , .staff-suggestions li {
+	list-style: none;
+	height: 20px;
+	padding: 5px;
+	border-top: solid 1px #fff;
+	
+}
+.mandatory {
+	border: 1px solid #ff6909;
+}
+
+.timetable-teacher-suggestions, .parent-mobile-suggestions li a , .staff-mobile-suggestions li a , .staff-suggestions li a {
+	text-decoration: none;
+}
+
+.route-student-picker {
+	height: 45px;
+	display: none;
+}
+
+#transport-results-container,#from-transport-results-container,#to-transport-results-container
+	{
+	height: 332px;
+}
+
+#student-route-container .green-result-row {
+	height: 25px;
+}
+
+#transport-results-container table,#from-transport-results-container table,#to-transport-results-container table
+	{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#transport-results-container table tr,#from-transport-results-container table tr,#to-transport-results-container table tr
+	{
+	height: 30px !important;
+	max-height: 30px !important;
+}
+
+#transport-results-container table td,#from-transport-results-container table td,#to-transport-results-container table td
+	{
+	text-align: left;
+	font: 12px Arial;
+	padding-left: 5px;
+}
+
+#transport-results-container table th {
+	text-align: left;
+	font: bold 14px Arial;
+	padding-left: 5px;
+	height: 28px;
+}
+
+#action-add-route {
+	width: 185px;
+	height: 37px;
+	/*float: right;*/
+}
+
+/*#route-select-routeNumber {
+	background: transparent url(images/transport/select-box.png) no-repeat;
+	width: 72px;
+	height: 28px;
+	float: left;
+}*/
+#transport-results-container .btn-edit {
+	width: 16px;
+}
+
+#action-select-route,#action-from-select-transport,#action-to-select-route
+	{
+	width: 59px;
+	height: 30px;
+	float: left;
+	margin-top: -5px;
+}
+
+#action-add-student-route {
+	width: 160px;
+	height: 44px;
+	float: left;
+}
+
+.transport-button {
+	height: 30px;
+	width: 85px;
+	font: bold 13px arial;
+}
+
+.student-picker-row {
+	width: 250px;
+	height: 30px;
+	margin: 3px;
+}
+
+.student-picker-label {
+	width: 115px;
+	height: 30px;
+	float: left;
+	font: bold 14px Arial;
+	padding: 3px;
+	padding-left: 10px;
+}
+
+#studentId {
+	width: 70px;
+	float: left;
+	margin-right: 6px;
+}
+
+/*.student-picker-input {
+	width: 70px;
+	height: 30px;
+	float: left;
+	border: 0px;
+}*/
+.student-picker-button {
+	width: 50px;
+	height: 30px;
+	float: left;
+	margin-top: -5px;
+	margin-right: -10px;
+}
+
+/* popup Window*/
+.popup-top-pointer {
+	background: url( "common/images/popup-pointer.png" ) no-repeat;
+	width: 30px;
+	height: 17px;
+	position: absolute;
+	z-index: 115;
+	top: 0;
+}
+
+.popup-bottom-pointer {
+	background: url( "common/images/popup-pointer-down.png" ) no-repeat;
+	width: 30px;
+	height: 17px;
+	position: absolute;
+	z-index: 115;
+	top: 352px;
+}
+
+.popup-bottom-pointer1 {
+	background: url( "common/images/popup-pointer-down.png" ) no-repeat;
+	width: 30px;
+	height: 17px;
+	position: absolute;
+	z-index: 115;
+	top: 232px;
+}
+
+.popup-drop-shadow {
+	filter: alpha(opacity = 50);
+	/*Needed for IE*/
+	-moz-opacity: 0.5; /*Older mozilla broswers like NN*/
+	-khtml-opacity: 0.5;
+	/*Old versions of Safari and "KHTML" browser engines*/
+	opacity: 0.5; /*FF, Safari, and Opera*/
+	position: absolute;
+	top: 12px;
+	left: 0;
+	z-index: 100;
+}
+
+
+.popup-container {
+	position: absolute;
+	left: 4px;
+	top: 16px;
+	z-index: 105;
+}
+
+.popup-container .popup-heading {
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	padding: 5px;
+}
+
+.popup-container .popup-close {
+	float: right;
+	font-size: 10px;
+	margin: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+	height: 15px;
+	line-height: 15px;
+}
+
+.popup-container .popup-head {
+	line-height: 30px;
+	width: 100%;
+	float: left;
+}
+
+/* popup Window ends Here*/ /* dashboard-task-detail*/
+#build-detail,#dashboard-task-detail, #dashboard-message-detail, #dashboard-leaves-detail, #student-preview-popup, #change-header-popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 100;
+}
+
+#build-detail,#dashboard-task-detail, #dashboard-leaves-detail, #student-preview-popup, .popup-top-pointer {
+	left: 160px;
+}
+
+#change-header-popup .popup-bottom-pointer {
+	left: 240px;
+}
+
+#dashboard-task-detail, #dashboard-message-detail, #dashboard-leaves-detail, #student-preview-popup, .popup-drop-shadow {
+	width: 350px;
+	height: 240px;
+}
+#build-detail,.popup-drop-shadow {
+	width: 350px;
+	height: 220px;
+}
+
+#change-header-popup .popup-drop-shadow {
+	width: 860px;
+	height: 350px;
+}
+
+#build-detail,#dashboard-task-detail, #dashboard-message-detail, #dashboard-leaves-detail, #student-preview-popup, .popup-container {
+	width: 340px;
+	height:200px;
+	/*height: 185px;*/
+	/*padding: 15px 10px 10px 10px;*/
+}
+
+#change-header-popup .popup-container {
+	width: 850px;
+	height: 335px;
+}
+
+#dashboard-task-detail-content, #dashboard-message-detail-content , #dashboard-leaves-detail-content, #student-preview-popup-content  {
+	float: left;
+	clear: left;
+	width: 325px;
+	/*height: 95px;*/
+	height: 140px;
+	margin-top: 15px;
+	padding: 5px;
+	font: 12px arial;
+	overflow: auto;
+}
+#build-detail-content{
+	float: left;
+	clear: left;
+	width: 325px;
+	/*height: 95px;*/
+	height: 190px;
+	margin-top: 5px;
+	padding: 5px;
+	font: 12px arial;
+	overflow: auto;
+		
+	
+	}
+#change-header-popup-content {
+	float: left;
+	clear: left;
+	width: 822px;
+	/*height: 95px;*/
+	height: 240px;
+	margin-top: 15px;
+	padding: 5px;
+	font: 12px arial;
+	overflow: auto;
+}
+
+#build-detail-content,#dashboard-task-detail-content, #dashboard-message-detail-content , #dashboard-leaves-detail-content, #student-preview-popup-content, #change-header-popup-content  .label {
+	font-size: bold 12px arial;
+	float: none;
+}
+
+#dashboard-task-detail-buttons{
+	width: 330px;
+	background: #eaeff2;
+	/*height: 40px;*/
+	height:20px;
+	margin-top: 5px;
+	padding: 5px;
+	text-align: right;
+}
+
+#dashboard-message-detail-buttons{
+	width: 330px;
+	background: #eaeff2;
+	/*height: 40px;*/
+	height:20px;
+	margin-top: 5px;
+	padding: 5px;
+	text-align: right;
+}
+
+
+#dashboard-leaves-detail-buttons{
+	width: 330px;
+	background: #eaeff2;
+	/*height: 40px;*/
+	height:20px;
+	margin-top: 5px;
+	padding: 5px;
+	text-align: right;
+}
+
+/* dashboard-task-detail ends here */
+.attendance-add-container {
+	height: 385px;
+	width: 700px;
+}
+
+.student-attendance-form-container {
+	width: 350px;
+	height: 422px;
+	float: left;
+}
+
+.student-attendance-list {
+	width: 350px;
+	height: 428px;
+	float: left;
+}
+
+#student-attendance-list .result-title {
+	width: 190px;
+	overflow: hidden;
+}
+
+#student-attendance-list .green-result-row {
+	height: 70px;
+}
+
+#student-attendance-list .green-result-col-1 {
+	width: 190px;
+	height: 36px;
+}
+
+#student-attendance-list .green-result-col-2 {
+	width: 120px;
+	height: 36px;
+}
+
+.assessment-add-container {
+	height: 385px;
+	width: 700px;
+}
+
+.student-assessment-form-container {
+	width: 350px;
+	height: 422px;
+	float: left;
+}
+
+.student-assessment-list {
+	width: 350px;
+	height: 428px;
+	float: left;
+}
+
+#student-assessment-list .result-title {
+	width: 190px;
+	overflow: hidden;
+}
+
+#student-assessment-list .green-result-row {
+	height: 70px;
+}
+#student-assessment-list .green-result-col-1 {
+	width: 190px;
+	height: 36px;
+}
+
+#student-assessment-list .green-result-col-2 {
+	width: 120px;
+	height: 36px;
+}
+
+#class-teacher-list .green-result-row {
+	height: 36px;
+}
+
+#class-teacher-list .green-result-col-1 {
+	width: 130px;
+	height: 32px;
+}
+
+#class-teacher-list .green-result-col-2 {
+	width: 260px;
+	height: 32px;
+	/*border-left:1px solid #ACACAC;*/
+}
+
+#class-teacher-list .green-result-col-2 .result-body {
+	width: 225px;
+	float: left;
+}
+
+#student-route-container .green-result-list {
+	height: 280px;
+}
+
+#action-add-school {
+	width: 115px;
+	height: 15px;
+	margin-top:-34px;
+	background: rgb(109,179,242); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 ); /* IE6-9 */
+color:#fff; border-radius:5px; padding:6px; text-align:center; float:left;
+	/*float: right;*/
+}
+#action-add-school:hover{color:#000;}
+
+#action-add-college {
+	width: 105px;
+	height: 37px;
+	/*float: right;*/
+}
+
+
+#classes-list .green-result-col-1 {
+	width: 200px;
+	height: 26px;
+}
+
+#search-results-container2 .green-result-col-action .btn-edit {
+	width: 20px;
+	height: 20px;
+	float: left;
+	/*padding: 5px;*/
+}
+#search-results-container2 .green-result-col-action .btn-due-fee-paid {
+	width: 20px;
+	height: 20px;
+	float: left;
+	padding: 5px;
+}
+
+
+.btn-edit {
+	background: url(common/images/student-edit.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+	
+}
+.btn-changepassword {
+	background: url(common/images/btn-changepassword.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.btn-student-change-img{
+	background: url(common/images/admission/btn-change-student-img.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.btn-delete-icon{
+	background: url(common/images/admission/btn-delete-icon.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+.btn-staff-change-img{
+	background: url(common/images/staff/btn-change-staff-img.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.btn-edit-transport{
+	background: url(common/images/transport/btn-edit-transport.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+
+}
+
+#search-results-container2 .green-result-col-action .btn-view {
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+
+#task-search-form .fieldset,#task-add-form .fieldset {
+	width: 290px;
+}
+
+#from-route-select-container,#to-route-select-container {
+	height: 70px;
+	width: 300px;
+}
+
+#from-transport-results-container,#to-transport-results-container {
+	height: 360px;
+}
+
+#student-upload-form {
+	height: 100px;
+}
+
+#student-upload-form form-row {
+	width: 700px;
+}
+
+.success-msg {
+	font-size: 26px;
+	text-align: center;
+	padding-top: 75px;
+	font-weight: bold;
+}
+
+#from-transport-results-container .green-result-row,#from-transport-results-container .result-body,#from-transport-results-container .green-result-col-1,#from-transport-results-list
+	{
+	width: 330px;
+}
+
+.genderM,.genderF {
+	float: left;
+}
+
+.subjects-fields-container{
+	width: 660px;
+	height: 350px;
+	margin-top: 20px;
+	margin-left: 20px;
+	
+}
+.saparaer{
+	width: 15px;
+	height: 400px;
+}
+.filler{
+	height: 10px;
+}
+
+.subject-main-title-bg{
+	height: 330px;
+	width: 320px;
+	float: left;
+}
+.saparaer{
+	width: 15px;
+	height: 350px;
+	float: left;
+}
+.subject-label-bg{
+	height: 28px;
+}
+.subject-label-text{
+	font-family: arial;
+	font-size: 18px;
+}
+.indidual-fields-labels{
+	font-family: arial;
+	font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.subject-field-container{
+	width: 320px;
+	height: 30px;
+}
+.subject-field-sub-container{
+	width: 106px;
+	height: 30px;
+	float: left;
+}
+.subject-table-labels{
+	width: 105px;
+	height: 30px;
+	float: left;
+	margin-top: 5px;
+}
+.subject-table-labels-color{
+	font-size: 15px;
+}
+
+.profile-div{
+	width: 660px;
+	height: 350px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.themes-bg{
+	width: 660px;
+	height: 70px;
+	background: #C8EDFF;
+	border: solid 1px #8ED4F7;
+	
+}
+
+.theme-icon-bg{
+	width: 100px;
+	height: 60px;
+	background: #fff;
+	margin-left: 10px;
+	margin-top: 5px;
+	float: left;
+	
+}
+
+.theme-links-text{
+	color: #0090cc;
+	font-family: arial;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+
+}
+
+.edit-button{
+	height: 30px;
+	width: 63px;
+	margin-left: 80px;
+}
+
+.features-div{
+	width: 455px;
+	height: 450px;
+	margin-left: 20px;
+}
+
+.question-text{
+	color: #0078BD;
+	font-family: arial;
+	font-size: 18px;
+}
+
+.filler{
+	height: 10px;
+}
+
+.text{
+	color: #363636;
+	font-size: 16px;
+	font-family: arial,Candara,Segoe,Calibri,Segoe,sans-serifsans-serif;
+	margin-right: 20px;
+	text-align: justify;
+	margin-left: 5px;
+}
+.text-margen{
+	margin-left: 20px;
+}
+
+.school-list-title, .school-create-title, .school-edit-title,
+.under-construction-title, .student-add-title, .student-edit-title,
+.student-search-title, .student-list-title, .attendance-report-title, ..fee-details-title, 
+.assessment-report-title, .parent-change-route-title, .parent-contact-class-teacher-title, 
+.parent-inbox-title, .applicant-add-title, .applicant-search-title, .applicant-list-title,
+.staff-add-title, .syllabus-add-title, .syllabus-covered-title, 
+.transport-add-title, .edit-transport-title, .transport-search-title, .transport-expenses-title,  
+.transport-search-expenses-title, .import-student-title, .assessment-edit-title, 
+.classes-create-title, .grade-settings-title, .password-settings-title, 
+.staff-search-title, .staff-edit-title, .task-add-title, .task-search-title,
+.task-edit-title, .class-teacher-title, .attendance-add-title, 
+.attendance-search-title, .attendance-edit-title, .student-attendance-title,
+.assessment-add-title, .assessment-edit-title, .teacher-timetable-title,
+.class-timetable-title, .create-timetable-title, .route-add-title, 
+.student-route-title, .route-stops-title, .change-route-title, .sms-circular-class-title,
+.sms-circular-School-title, .sms-circular-parent-title, .school-assessment-title, .assessment-types-title, .college-list-title, .college-create-title,
+.master-fee-list-title, .add-master-fee-title, .mandatory-fee-list-title, .add-mandatary-fee-title,
+.fee-type-list-title, .add-fee-type-title, .generate-fee-due-list-title, .generate-fee-due-title, .school-assessments-list-title, .school-assessments-type-list-title,
+.sms-circular-staff-title, .sms-history-title, .fee-detail-title, .cumulate-mark-sheet-title, .assessment-calender-title, .generate-hall-ticket-title, .leaves-add-title,
+.student-profile-view-title, .edit-applicant-title, .import-staff-image-title, .import-student-image-title, .reset-sms-limit-title .drop-down-title, .create-exam-timetable-title,
+.assessment-schedules-title, .assessment-calendar-title, .account-search-title, .school-holidays-title, .school-print-header-title, class-subjects-title, school-subjects-title,
+.all-staff-leaves-report-title, .fees-paid-and-dues-report-title{
+	margin-left: 5px;
+}
+
+.profile-title {
+	padding: 5px;
+	font: bold 16px arial;
+	height: 20px;
+}
+
+.profile-content {
+	height: 200px;
+	overflow: auto;
+}
+
+.profile-theme-select {
+	padding: 20px;
+	width: 170px;
+	height: 110px;
+	float: left;
+}
+.profile-theme-name {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px;
+}
+.profile-name {
+	font: bold 20px Arial;
+	float: left;
+	height: 40px;
+	padding: 5px;
+}
+
+
+.jScrollPaneDrag {
+    background: url("common/images/scroll.png") repeat scroll 0 0;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.centered {
+	text-align: center;
+}
+.right-aligned {
+	text-align: right;
+}
+
+.label .error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+
+.report-header, .report-body {
+	height: 30px;
+	font: Bold 12px Arial;
+}
+
+.report-header .report-header-column,.report-body .report-body-column {
+	width: 120px;
+	height: 20px;
+	float: left;
+	padding: 5px;	
+	/*text-align: center;*/
+}
+.report-header .report-header-column1, .report-body .report-body-column1 {
+    float: left;
+    height: 20px;
+    padding: 5px;
+    width: 60px;
+}
+.report-header .report-header-column2, .report-body .report-body-column2 {
+    float: left;
+    height: 20px;
+    padding: 5px;
+    width: 110px;
+}
+
+
+.report-body {
+	font: 12px Arial;
+	line-height:20px;
+}
+
+.expenses-report {
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.expenses-report-column{
+	width: 120px;
+	/*height: 400px;*/
+	float: left;
+}
+.expenses-report-body, .expenses-header {
+	width: 120px;
+	height: 20px;
+	padding-top: 5px;
+	float: left;
+}
+.expenses-report-body{
+	text-align: center;
+	/*margin-right: 20px;*/
+}
+
+.image-text-bg{
+	width: 600px;
+	height: 80px;
+	margin-top: 50px;
+	margin: 0 auto;
+
+}
+.top-img{
+	width: 590px;
+	height: 13px;
+	background: transparent url(images/top-img.png);
+	
+}
+
+.mdl-img{
+	width: 590px;
+	height: 41px;
+	background: transparent url(images/mdl-img.png);
+}
+
+.bottom-img{
+	width: 590px;
+	height: 26px;
+	background: transparent url(images/bottom-img.png);
+}
+
+.background{
+	width: 600px;
+	height: 50px;
+}
+.filler{
+	height: 10px;
+}
+.inbox-content{
+	padding: 10px;
+}
+
+.inbox-top{
+	width: 590px;
+	height: 13px;
+	background: transparent url(common/images/inbox-top-img.png);
+}
+.inbox-mdl{
+	width: 570px;
+	background: transparent url(common/images/inbox-mdl-img.png);
+	padding: 10px;
+}
+.inbox-bottom{
+	width: 590px;
+	height: 26px;
+	background: transparent url(common/images/inbox-bottom-img.png);
+}
+
+.btn-dashboard-update, .btn-dashboard-reply {
+	margin-right: 10px;
+	width: 55px;
+	margin-top: -7px;
+	float: right;
+}
+
+.favorites-bg{
+	height: 30px;
+	width: 100px;
+	float: right;
+}
+.favorite-icon{
+	height: 30px;
+	width: 24px;
+	background: url(common/images/favorite-icon.png) no-repeat;
+	margin-right: 5px;
+	float: right;
+}
+.help-icon{
+	height: 30px;
+	width: 24px;
+	background: url(common/images/help-icon.png) no-repeat;
+	margin-right: 5px;
+	float: right;
+}
+.page-print-icon{
+	height: 30px;
+	width: 24px;
+	background: url(common/images/page-pring-icon.png) no-repeat;
+	margin-right: 5px;
+	float: right;
+}
+
+.left {
+	background: url(common/images/themes-buttion-left.png) no-repeat;
+}
+
+.right {
+	background: url(common/images/themes-buttion-right.png) no-repeat;
+}
+.imform-text{
+	font-family: arial;
+	font-size: 30px;
+}
+
+.school-choose-links-container{
+	 height: 150px;
+	 width: 320px;
+} 
+
+.star {
+	background: url(common/images/star.png) no-repeat;
+}
+
+/* .header-middle{
+	 height: 50px;
+	 width: 290px;
+	 float: left;
+}*/
+.header-middle {
+    float: left;
+    margin-left: -210px;
+    text-align: right;
+    width: 500px;
+	margin-top:8px;
+}
+
+.fav-links-title{
+	width: 190px;
+	float: left;
+	margin-left: 20px;
+}
+
+/*for fee type page...*/
+.add-fees-type-icon {
+	background: url(common/images/accounts/fee-type-icon.png) no-repeat;
+}
+
+.edit-fee-type-icon{
+ background: url(common/images/accounts/edit-fee-type-icon.png) no-repeat;
+}
+.add-fees-report-icon {
+	background: url(common/images/accounts/fee-report-icon.png) no-repeat;
+}
+.fees-paid-and-dues-report-icon{
+	background: url(common/images/accounts/fee-report-icon.png) no-repeat;
+}
+
+.rupee-icon {
+    height: 20px;
+    margin-left: 8px;
+    margin-top: 3px;
+    position: absolute;
+    width: 20px;
+    background: url(common/images/accounts/rupee-icon.png) no-repeat;
+}
+
+/*for mandatory fee page...*/
+
+.fees-add-icon {
+	background: url(common/images/accounts/fee-due-icon.png) no-repeat;
+	
+}
+
+.edit-fee-mandatory-icon{
+ background: url(common/images/accounts/edit-fee-mandatory-icon.png) no-repeat;
+}
+/*for other fee page...*/
+
+.fees-other-icon {
+	background: url(common/images/accounts/fees-other-icon.png) no-repeat;
+}
+.master-fee-list-icon{
+	background: url(common/images/accounts/master-fee-list-icon.png) no-repeat;
+}
+.edit-fee-other-icon{
+	 background: url(common/images/accounts/edit-fee-other-icon.png) no-repeat;
+}
+
+/*for generate fee dues page...*/
+
+.fee-due-icon{
+	background: url(common/images/accounts/fees-add-icon.png) no-repeat;
+}
+
+.fee-due-list-icon{
+ background: url(common/images/accounts/fee-due-list-icon.png) no-repeat;
+}
+
+.fee-due-paid-icon{
+ background: url(common/images/accounts/fee-due-paid-icon.png) no-repeat;
+}
+
+.fee-dues-paid-icon{
+ background: url(common/images/accounts/fee-dues-paid-icon.png) no-repeat;
+}
+
+.school-assessments-icon{
+ background: url(common/images/assessment/school-assessments-icon.png) no-repeat;
+}
+
+.edit-assessment-type-icon{
+ background: url(common/images/assessment/edit-assessment-type-icon.png) no-repeat;
+}
+
+.assessment-type-icon{
+ background: url(common/images/assessment/assessment-type-icon.png) no-repeat;
+}
+
+.edit-school-assessments-icon{
+ 	background: url(common/images/accounts/edit-school-assessments-icon.png) no-repeat;
+}
+.sms-history-icon{
+	background: url(common/images/sms/sms-history-icon.png) no-repeat;
+}
+
+.sms-circular-staff-icon{
+	background: url(common/images/sms/sms-circular-staff-icon.png) no-repeat;
+}
+
+.green-result-row .green-result-col-3 {
+  float: left;
+  padding: 2px 5px;
+  width: 804px;
+}
+
+.green-result-row .green-result-col-4 {
+    float: left;
+    padding: 2px 5px;
+    width: 806px;
+}
+
+.green-result-row .green-result-col-5 {
+    float: left;
+    padding: 2px 5px;
+    width: 804px;
+}
+
+.checkit {
+  color: black;
+  float: left;
+  font: Arial 12px cursive;
+  text-align: center;
+  width: 65px;
+}
+
+.checkit1 {
+	text-align: center;
+	font: bold 12px arial;
+	width:65px;
+	float: left;	
+}
+
+.checkit2 {
+  color: black;
+  float: left;
+  font: Bold 14px cursive;
+  text-align: right;
+  width: 105px;
+  position: relative;
+}
+
+.recurrenc-label {
+	width: 380px;
+	height: 20px;
+	float: left;
+	font-size: 13px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.anchor {
+	curser: pointer;
+}
+
+.leaves-add-icon{
+	background: url(common/images/staff/leaves-add-icon.png) no-repeat;
+}
+
+.leaves-report-icon{
+	background: url(common/images/staff/leaves-report-icon.png) no-repeat;
+}
+
+.student-profile-view-icon{
+	background: url(common/images/admission/student-view-icon.png) no-repeat;
+}
+
+.fee-detail-icon{
+	background: url(common/images/accounts/fee-due-icon.png) no-repeat;
+}
+
+/*--------------------  student view profile start ---------------*/
+
+.profile {
+	width: 800px;
+	height: 382px;
+	margin: 0 auto;
+	margin-left: 10px;
+	overflow: auto;
+}
+
+.profile-hide {
+	width: 800px;
+	height: 382px;
+	margin: 0 auto;
+	margin-left: 10px;
+	overflow: auto;
+}
+
+.student-profile-photobg{
+	width: 700px;
+	height: 190px;
+	margin: 0 auto;
+	border-top: solid 1px #808080;
+	border-left: solid 1px #808080;
+	margin-top: 10px;
+}
+.basic-profile{
+	width: 542px;
+	height: 190px;
+	float: left;
+	background: #fff;
+	border-right: solid 1px #808080;
+}
+
+.photo{
+	width: 100px;
+	height: 124px;
+	margin: 0 auto;
+	margin-top: 10px;
+	background: #808080;
+	border: solid 1px #000;
+	
+}
+
+.name-boxs{
+	width: 145px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+/*--------------------  student view profile end ---------------*/
+
+.not-available {
+	width: 100px;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 160px;
+}
+
+.checkit3 { 
+	color: black;
+	float: left;  
+	font: Arial 8px cursive;  
+	font-size: 12px;  
+	text-align: center;  
+	width: 65px;
+}
+.close{
+	background: url(common/images/delete-img.png) no-repeat;
+}
+
+
+.phone-list-container {
+    float: right;
+    height: 80px;
+    overflow: auto;
+    width: 450px;
+    overflow: auto;
+    margin-right: -32px;
+    background: #fff;
+    border: solid 1px #808080;
+}
+
+.reset-sms-limit-icon{
+	background: url(common/images/siteadmin/reset-sms-limit-icon.png) no-repeat;
+}
+
+
+
+/*---------------------------halltick css start------------------------*/
+.header-text-bg{
+	width: 750px;
+	height: 20px;
+	background: #fff;
+	border-top: solid 1px #808080;
+	border-left: solid 1px #808080;
+	margin: 0 auto;
+}
+
+.coloums{
+	width: 150px;
+	height: 20px;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	float: left;
+}
+
+/*---------------------------hall tick css end-------------------------------------*/
+
+/*.btn-print{
+	background: url(common/images/btn-print.png) no-repeat;
+}
+
+*/.page-print-icon{
+ height: 30px;
+ width: 24px;
+ background: url(common/images/page-pring-icon.png) no-repeat;
+ margin-right: 5px;
+ float: right;
+}
+
+/*.hide-element {
+	display: none;
+}*/
+
+.message {
+  width: 450px; 	
+}
+
+/*---------------------------halltick css start------------------------*/
+.header-text-bg{
+	width: 750px;
+	height: 20px;
+	background: #fff;
+	border-top: solid 1px #808080;
+	border-left: solid 1px #808080;
+	margin: 0 auto;
+}
+
+.coloums{
+	width: 150px;
+	height: 20px;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	float: left;
+}
+
+.btn-print{
+	background: url(default/images/btn-print.png) no-repeat;
+}
+.name-title-bg{
+	width: 693px; 
+	height: 30px; 
+	margin: 0 auto;
+}
+.subject-title-bg{
+	width: 500px; 
+	height: 15px; 
+	background: #f0f0f0; 
+	margin: 0 auto; 
+	border: solid 1px #808080; 
+	border-right: none;
+}
+
+.subjects-titles{
+	width: 124px; 
+	height:15px;
+	font-size:10px;
+	border-right: solid 1px #000; 
+	float: left; 
+	text-align: left;
+
+}
+
+.subjects-headers{
+	width: 124px; 
+	height:15px;
+	font-size:bold 10px;
+	border-right: solid 1px #000; 
+	float: left; 
+
+}
+.sig-title{
+	
+}
+/*---------------------------hall tick css end-------------------------------------*/
+
+
+.btn-change-header-submit {
+	margin-right: 10px;
+	width: 70px;
+	margin-top: -5px;
+	float: right;
+}
+
+#change-header-detail-buttons{
+	width: 839px;
+	background: #eaeff2;
+	/*height: 40px;*/
+	height:20px;
+	margin-top: 5px;
+	padding: 5px;
+	text-align: right;
+}
+
+.name-boxs1{
+	width: 145px;
+	height: 36px;
+	float: left;
+	background: #fff;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+
+.background{
+	background: #e5f7fa;
+}
+
+.fee-body-container {
+	height: 120px;
+}
+	
+
+.attendance-absent-list-container {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 1px solid #808080;
+  float: right;
+  height: 80px;
+  margin-right: 28px;
+  overflow: auto;
+  width: 270px;
+}
+
+.class-subjects-icon{
+	background: url(common/images/settings/class-subjects-icon.png) no-repeat; 
+ }
+.school-subjects-icon{
+	background: url(common/images/settings/school-subjects-icon.png) no-repeat; 
+ }
+.school-print-header-icon{
+	background: url(common/images/settings/school-print-header-icon.png) no-repeat; 
+ }
+
+.school-holidays-icon{
+	background: url(common/images/settings/school-holidays-icon.png) no-repeat; 
+ }
+.school-holidays-title{
+ }
+.parent-fees-details-icon{
+	background: url(common/images/parent/parent-fees-details-icon.png) no-repeat; 
+ }
+.parent-fees-details-title{
+ }
+.print-icon{
+	background: url(common/images/print-icon.png) no-repeat; 
+ }
+.btn-upload {
+	cursor: pointer;
+  	height: 32px;
+  	width: 100px;
+  	margin-right: 30px;
+}
+
+.btn-back {
+	cursor: pointer;
+  	height: 32px;
+  	width: 100px;
+}
+
+.studentName:HOVER {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.all-staff-leaves-report-icon{
+	background: url(common/images/staff/.all-staff-leaves-report-icon.png) no-repeat; 
+}
+
+
+.footer-middle-footer-div {
+  margin-left: 250px;
+}
+
+.footer-middle-footer-div-data {
+  float: left;
+  color: #868686;
+  font-size: 12px;
+  height: 11px;
+  padding: 3px 3px 3px 15px;
+}
+
+
+.footer-middle-footer-div-data:HOVER{
+	text-decoration: underline;	
+	cursor: pointer;
+}
+
+.tittle {
+  color: #868686;
+  font-size: 12px;
+  text-align: center;
+}
+
+.radio {
+	cursor: pointer;
+}
+.name-boxs2{
+	width: 349px;
+	height: 25px;
+	float: left;
+	background: #fff;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+.background{
+	background: #e5f7fa;
+}
+.last-login-time-bg{
+	width: 700px;
+	height: auto;
+	margin: 0 auto;
+	border-top: solid 1px #808080;
+	border-left: solid 1px #808080;
+	margin-top: 10px;
+}
+
+.play-slip{
+ height: 70px;
+ width: 700px;
+ background: #f0f0f0;
+ margin: 0 auto;
+ border: solid 1px #808080;
+ 
+}
+
+.school-header-name{
+ height: 70px;
+ width: 700px;
+}
+
+.school-logo{
+ height: 70px;
+ width: 70px;
+ /*background: #D2E6F5  url(images/krishnaveni-ts-logo.png) no-repeat ;*/
+ float: left;
+ margin-left: 10px;
+}
+
+.school-name{
+ height: 70px;
+ width: 480px;
+ float: left;
+ margin-left: 10px;
+}
+.print-btn-bg{
+ height: 70px;
+ width: 130px;
+ float: right;
+ 
+}
+.header-text-align {
+	text-align: center;
+}
+.submitbutton {
+padding: 5px 10px;
+background: #2664cf;
+font-family: Arial, sans-serif;
+color: #ffffff;
+text-align: center;
+display: inline;
+cursor: pointer
+}
+.submitbutton {
+border: 1px solid #4cadfc;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px
+}
+.submitbutton {
+background: -webkit-gradient(linear, left top, left bottom, from(#0a8ffe), to(#2b5cc6));
+background: -moz-linear-gradient(top, #0a8ffe, #2b5cc6);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a8ffe', endColorstr='#2b5cc6')
+}
+
+/* Table, general styling */
+
+.input-field-arrived-quantity{
+    width: 40px;
+	height: 30px;
+	float: left;
+	padding-top: 10px;
+	
+}
+.cell-product-names {
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 8px;
+    font: Bold 14px arial;
+    float: center;
+}
+.cell-arrived-quantity{
+	display: table-cell;
+    font: Bold 14px arial;
+    width: 30px;
+}
+#action-add-product{
+	width: 100px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+}
+#action-add-arrived-quantity {
+	width: 120px;
+	height: 30px;
+	float: right;
+	margin-right: 2px; 
+	border-radius: 8px;
+}
+#action-add-product-transaction {
+	width: 145px;
+	height: 30px;
+	float: right;
+	margin-right: 2px; 
+	border-radius: 8px;
+}
+//product search result onload grid css styles
+
+.product-search-report-header{
+      height: 40px;
+      width: 830px;	
+      float: left;
+      padding: 5px;
+}
+.product-search-report-header-column2{
+	width: 90px;
+	float: left;
+	padding: 5px;
+}
+.product-search-report-body{
+	 height: 50px;
+      width: 830px;	
+      float: left;
+      padding: 5px;
+}
+.product-search-report-body-column2{
+	height: 41px;
+	width: 90px;
+	float: left;
+	padding: 5px;
+}
+//end of product search result grid css styles
+
+//product transaction result onclick grid css styles
+
+.product-transaction-report-header{
+      height: 40px;
+      width: 830px;	
+      float: left;
+      padding: 5px;
+}
+.product-transaction-report-header-column2{
+	width: 105px;
+	padding: 5px;
+}
+.product-transaction-report-body{
+	 height: 50px;
+      width: 830px;	
+      float: left;
+      padding: 5px;
+}
+.product-transaction-report-body-column2{
+	height: 41px;
+	width: 105px;
+	float: left;
+	padding: 5px;
+}
+//end of product search result grid css styles
+
+.centered {
+	text-align: center;
+}
+ .report-header .report-header-column2, .report-body .report-body-column2 {
+    float: left;
+    height: 20px;
+    padding: 5px;
+    width: 80px;
+} 
+      
+//stock allot css
+.product_table_container 
+{
+display:  table;
+margin-left:0px;
+border-spacing:0px;
+}
+.product_table_container #header {
+color: white;
+width: auto;
+height: 20px;
+background-color: #d3e6f5;
+margin: 5px 0 0 0;
+}
+.product_row
+{
+display:table-row;
+float: left;
+}
+//preview styles for table structure
+.student-profile-photobgEdited {
+	width: 900px;
+	height: 100px;
+	margin: 0 auto;
+	border-top: solid 1px #808080;
+	border-left: solid 1px #808080;
+}
+.basic-profileEdited {
+	width: 1100px;
+	height: 200px;
+	float: center;
+	background: #fff;
+	border-right: solid 0px #808080;
+}
+.outer-table{
+	width: 700px;
+	height: 190px;
+	margin: 0 auto;
+	border-top: solid 1px #808080;
+	margin-top: 10px;
+}
+/*....................css for view and previews.......... */
+.table-field{
+	height: 100px;
+	width:662px;
+	float: left;
+	margin-top: 10px;
+	 margin-left:20px;
+}
+.main-table{
+	width: 330px;
+    height:100%;
+    margin-left:10px;
+    float:left;
+    margin: 10px auto;
+    border-top: solid 1px #808080;
+	margin-top: 10px;
+}
+.outline{
+	width: 960px;
+	min-height:100%;
+    float:left;
+	margin:10px 10px 1px 10px;
+	border:solid 1px #808080;
+}
+.first-row{
+	width: 960px;
+    min-height: 25px;
+    float: left;
+    border-bottom: solid 1px #808080;
+}
+.property{
+	padding:2px 2px 2px 2px;
+	font: 12px arial;
+
+}
+.property1{
+	padding:2px 2px 2px 2px;
+	font: 12px arial;
+	float:left;
+	width:100%;
+	text-align:center;
+
+}
+#row-one{
+	width: 325px;
+    height: 20px;
+	
+}
+#row-two{
+	width:325px;
+	 height: 20px;     
+}
+.second-row{
+	width: 960px;
+    min-height:50px;
+    float:left;
+    margin: 0px auto;
+	margin-top: 10px;
+	border-bottom:solid 1px #808080;
+}
+.second-row-heading{
+	width: 125px;
+    height: 20px;
+    float: left;
+    background: #E5F7FA;
+    padding-top: 1px;
+    margin-left:1px;
+}
+.number{
+	width: 200px;
+    height: 20px;
+    margin-top: -16px;
+    margin-left: 100px;
+     font: bold;
+}
+.number-view{
+	width: 145px;
+    height: 20px;
+    margin-top: -18px;
+    margin-left: 110px;
+     font: bold;
+}
+.number-lable{
+	width: 120px;
+    height: 20px;
+}
+.left-align{
+	width:300px;
+	height:25px;
+}
+.right-align{
+	width: 276px;
+    height: 25px;
+    float: right;
+    margin-top: -25px;
+}
+.invoice-boxes-colored{
+	width: 145px;
+	height: 20px;
+	float: left;
+	border-left: solid 0px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.invoice-boxes{
+	width: 200px;
+    height: 20px;
+    float: left;
+    border-left: solid 0px gray;
+    border-right: solid 1px gray;
+    padding-top: 3px;
+    word-wrap: break-word;
+}
+.invoice-boxes-overflow{
+	width: 200px;
+    height:auto;
+    float: left;
+    border-left: solid 0px gray;
+    border-right: solid 1px gray;
+    padding-top: 3px;
+    word-wrap: break-word;
+}
+.invoice-boxes-grid{
+	width: 200px;
+    height: inherit;
+    float: left;
+    border-right: solid 1px #9BCCF2;
+    padding-top: 3px;
+    word-wrap: break-word;
+}
+.input-field-preview{
+	height:auto;
+	width:650px;
+	word-wrap: break-word;
+	color: #1C8CF5;
+	float: left;
+	font: 12px arial;
+}
+.result-row{
+	width: 960px;
+    float: left;
+    border-left: solid 0px gray;
+    border-right: solid 1px gray;
+    padding-top: 0px;
+    border-bottom: solid 1px gray;
+}
+.invoice-main-table{
+	width: 960px;
+    height:100%;
+    margin-left:10px;
+    float:left;
+    margin: 10px auto;
+	margin-top: 0px;
+}
+.second-row-value {
+	width: 200px;
+height: 20px;
+float: left;
+padding-top: 1px;
+margin-top: -20px;
+margin-left: 70px;
+}
+.paymentset-row{
+	margin: 0 auto;
+}
+.paymentset{
+	width: 270px;
+	height: 200px;
+	float: left;
+}
+.paymentset-label {
+	width: 125px;
+	height: 30px;
+	float: left;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 10px;
+}
+.inner-table{
+	
+	width: 820px;
+	float: left;
+	background: #fff;
+	border-right: solid 0px #808080;
+}
+.display-boxes {
+	width: 200px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.display-boxes-colored{
+	width: 125px;
+	height: 20px;
+	float: left;
+	background: #71b6fd;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.property-value-view{
+	padding: 2px 2px 2px 2px;
+    font: 12px arial;
+    color:#1C8CF5;
+	
+}
+.display-boxes-view {
+	width: 261px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.display-boxes-product-view {
+	width: 400px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.property-right-float{
+	padding:0px 2px 2px 2px;
+	font: 12px arial;
+	float:left;
+	width:100%;
+	text-align:center;
+	color: #646464;
+}
+.display-boxes-product-view-colored{
+	width: 145px;
+	height: 20px;
+	float: left;
+	background: #56a4ee;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.display-boxes-view-colored{
+	width: 135px;
+	height: 20px;
+	float: left;
+	background: #e5f7fa;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.view-display-boxes-colored{
+	width: 145px;
+	height: 20px;
+	float: left;
+	background: #e5f7fa;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+	padding-top:3px;
+}
+.span-payment{
+	color: #1C8CF5;
+	font: 12px arial;
+	float: right;
+}
+.appostaphie{
+	color:#1C8CF5;
+}
+.span-label{
+	color: #808080;
+	font-size: 12px;
+	padding-left: 2px;
+	text-align: center;
+	margin-top:3px;
+	float:left;
+	font-weight: bold;
+	
+}
+.payment-span-label{
+	width: 125px;
+	height: 30px;
+	color: #808080;
+	font-size: 12px;
+	float: left;
+	font-weight: bold;
+	padding-top:1px;
+}
+//end of preview styles
+.cell-boxes {
+	width: 145px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+.cell-boxes-colored{
+	width: 125px;
+	height: 20px;
+	float: left;
+	background: #e5f7fa;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+//For input type with date picker
+.input-field-date {
+	width: 140px;
+	height: 20px;
+	float: left;
+}
+.input-field-date input {
+	width: 140px;
+	height: 20px;
+	padding-top:2px;
+	float: left;
+}
+.datepicker
+{
+	font-family:sans-serif;
+	font-size: 12px;
+}
+
+.auto-suggestions 
+{
+	display: none;
+	height: 200px;
+	width: 150px;
+	left: 500px;
+	overflow: auto;
+	position: absolute;
+	left: 589px;
+	top: 319px;
+	background: #D2E6F5;
+	solid: 10px #fff;
+}
+.auto-suggestions li a:hover {
+	font:bold 16px arial;
+	background: #a8cfec;
+}
+.business-name-suggestions 
+{
+	display: none;
+	height: 200px;
+	width: 150px;
+	left: 500px;
+	overflow: auto;
+	position: absolute;
+	left: 589px;
+	top: 319px;
+	background: #D2E6F5;
+	solid: 10px #fff;
+}
+.business-name-suggestions li a:hover {
+	font:bold 16px arial;
+	background: #a8cfec;
+}
+.sales-executive-name-suggestions 
+{
+	display: none;
+	height: 200px;
+	width: 150px;
+	left: 500px;
+	overflow: auto;
+	position: absolute;
+	left: 589px;
+	top: 319px;
+	background: #D2E6F5;
+	solid: 10px #fff;
+}
+.sales-executive-name-suggestions li a:hover {
+	font:bold 16px arial;
+	background: #a8cfec;
+}
+
+.customer-search-result{
+	height: 65px;
+	font: 12px arial;
+}
+.customer-search-result-col-action{
+	width: 80px;
+	float: right;
+	padding: 2px 5px 2px 5px;
+	height: 70px;
+}
+.remove-inputfield-style{
+	 background-color:inherit;
+	 border :0 none ;
+	 font-weight:bold;
+}
+.cr-view{
+    width: 270px;
+	height: 300px;
+}
+.view-cr{
+	width: 125px;
+	height: 30px;
+	float: right;
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	margin-right: 32px;
+}
+.cr-view-field{
+	width: 145px;
+	height: 30px;
+	float: right;
+}
+.cr-row{
+	width: 280px;
+	height: 30px;
+	float :left;
+	
+}
+.assign-customers-btn{
+	width: 150px;
+	height: 30px;
+	float: right;
+	margin-right: 140px;
+	border-radius: 5px;
+}
+.assign-customers-multiple-btn{
+	width: 150px;
+	height: 30px;
+	float: right;
+	margin-right: 140px;
+	border-radius: 5px;
+}
+
+.add-customers-delivery-note-btn{
+	width: 150px;
+	height: 30px;
+	float: right;
+	background-color: #FFFFFF;
+	margin-right: 60px;
+	border-radius: 5px;
+}
+ //css for previews
+.table-field{
+	height: 100px;
+	width:662px;
+	float: left;
+}
+.main-table{
+		width: 330px;
+    height:auto;
+    margin-left:10px;
+    float:left;
+    margin: 10px auto;
+    border-top: solid 1px #808080;
+	margin-top: 10px;
+
+}
+.inner-table{
+	width: 330px;
+	float: left;
+	background: #fff;
+	border-right: solid 0px #808080;
+
+}
+.display-boxes {
+	width: 200px;
+	height: 20px;
+	float: left;
+	background: #fff;
+	border-left: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-right: solid 1px #808080;
+}
+
+
+div.helppop {
+position: absolute;
+margin-left: 280px;
+background: url('common/images/help_ptr.gif') no-repeat left top;
+margin-top: -10px;
+z-index:99999;
+width:120px;
+color:#000;
+}
+
+div.helpctr {
+padding: 7px;
+padding-left:5px;
+margin-left: 2px;
+width: 110px;
+}
+
+div.helpctr p {
+padding: 0;
+margin: 0;
+margin-left:10px;
+}
+textarea.preview{
+    max-width: 820px;
+}
+.dashboard-icons-bg {
+background: #00abe3;
+width: 315px;
+height: 200px;
+border: solid 2px #abe0f8;
+border-radius: 10px 10px 10px 10px;
+padding: 10px;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+.dashboard-title {
+	padding: 5px 0px 5px 0px;
+	font: bold 14px arial;
+	height: 20px;
+	width: 210px;
+	float:left;
+	color:#fff;
+}
+.delivery-note-preview{
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+.read-only {
+	readonly :readonly;
+	border: none; 
+	background-color:inherit;
+}
+
+.test{
+	overflow-x:hidden;
+	overflow-y:auto; 
+	height:50px;
+}
+
+#change-password-container{
+	margin-top:-25px !important;}
+
+#qtyClosingBalance{text-align:center;}
+#closingStock{text-align:center;}
+#returnQty{text-align:center;}
+#availableQuantity{text-align:center;}
+#qtyOpeningBalance{text-align:center;}
+.report-body-column2{text-align:center;}
+
+
+.head{width:900px; margin:0px auto;}
+.cont-left{float:left;width:400px;}
+.cont-left span{ float:left; font-size:16px !important; font-weight:bold !important; margin-left:25px; color:#049fff !important;}
+
+.cont-right{float:right;}
+.cont-right span{ float:right;font-size:16px; font-weight:bold; margin-right:35px;color:#049fff;}

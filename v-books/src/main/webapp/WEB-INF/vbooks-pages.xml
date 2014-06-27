@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<bean name="moduleBar" class="com.vekomy.vbooks.spring.page.ModuleBar">
+		<property name="modules">
+			<props>
+			    <prop key="dashboard">dashBoard</prop>
+				<prop key="siteadmin">siteadminModule</prop>
+				<prop key="customer">customerModule</prop>
+				<prop key="employee">employeeModule</prop>
+				<prop key="product">productModule</prop>
+				<prop key="accounts">accountsModule</prop>
+				<prop key="mysales">mySalesModule</prop>
+				<prop key="grouphead">groupHeadModule</prop>
+			</props>
+		</property>
+		<property name="defaulModule" ref="dashBoard"></property>
+	</bean>
+	<bean name="dashBoard" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="dashboard"></property>
+		<property name="label" value="Dashboard"></property>
+		<property name="defaulPage" ref="approvals"></property>
+		<property name="pages">
+			<props>
+				<prop key="changetransactionrequest">approvals</prop>
+				<prop key="request">changeTransactionRequest</prop>
+				<prop key="alerts">alertsPage</prop>
+				<prop key="reports">reportsPage</prop>
+				<prop key="systemdefaults">systemDefaults</prop>
+			</props>
+		</property>
+	</bean>
+	<bean name="approvals" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="approvals"></property>
+		<property name="label" value="Approvals"></property>
+		<property name="icon" value="approval.png"></property>
+		<property name="url" value="dashboard/approvals/dashboard_main_approvals_view.jsp"></property>
+	</bean>
+	<bean name="changeTransactionRequest" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="changeTransactionRequest"></property>
+		<property name="label" value="Transaction CR"></property>
+		<property name="icon" value="transaction.png"></property>
+		<property name="url" value="dashboard/changetransactionrequest/dashboard_main_change_transaction_request.jsp"></property>
+	</bean>
+	<bean name="alertsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="alerts"></property>
+		<property name="label" value="Alerts"></property>
+		<property name="icon" value="alerts.png"></property>
+		<property name="url" value="accounts/alerts/alerts_main.jsp"></property>
+		<property name="linksUrl" value="accounts/alerts/alerts_links.jsp"></property>		
+	</bean>
+	<bean name="reportsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="reports"></property>
+		<property name="label" value="Reports"></property>
+		<property name="icon" value="reports.png"></property>
+		<property name="url" value="my-sales/reports/mysales_reports_main.jsp"></property>
+		<property name="linksUrl" value="my-sales/reports/mysales_reports_links.jsp"></property>		
+	</bean>
+	<bean name="systemDefaults" class="com.vekomy.vbooks.spring.page.Page">
+	  <property name="name" value="employee"></property>
+	  <property name="label" value="System Lookups"></property>
+	  <property name="icon" value="system.png"></property>
+	  <property name="url" value="system_defaults_main.jsp"></property>
+	 <property name="linksUrl" value="dashboard/dashboard_links.jsp"></property>
+	</bean>
+	<!-- ************ -->
+	<!-- ************ -->
+	<!-- ************ SITEADMIN MODULE - START ************ -->
+	<!-- ************ -->
+	<!-- ************ -->
+	<bean name="siteadminModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="siteadmin"></property>
+		<property name="icon" value="siteadmin.png"></property>
+		<property name="label" value="Site Admin"></property>
+		<property name="defaulPage" ref="manageOrganizationPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="siteadmin">manageOrganizationPage</prop>
+				<prop key="manageuser">manageUserPage</prop>
+				<prop key="report">mgtReportsPage</prop>
+				<prop key="dashboard">dashboardPage</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean name="manageOrganizationPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="manageOrganization"></property>
+		<property name="label" value="Manage Organization"></property>
+		<property name="icon" value="manage-organizations-icon.png"></property>
+		<property name="url" value="siteadmin/manage_organization_main.jsp"></property>
+		<property name="linksUrl" value="siteadmin/manage_organization_links.jsp"></property>
+	</bean>
+	
+	<bean name="manageUserPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="manageUser"></property>
+		<property name="label" value="Manage User"></property>
+		<property name="icon" value="manage_customer_icon.png"></property>
+		<property name="url" value="siteadmin/user/manage_user_main.jsp"></property>
+		<property name="linksUrl" value="siteadmin/user/manage_user_links.jsp"></property>
+	</bean>
+	
+	<bean name="mgtReportsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="reports"></property>
+		<property name="label" value="Reports"></property>
+		<property name="icon" value="reports_icon.png"></property>
+		<property name="url" value="siteadmin/reports/manage_reports_main.jsp"></property>
+		<property name="linksUrl" value="siteadmin/reports/manage_reports_links.jsp"></property>
+	</bean>
+	
+	<bean name="dashboardPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="dashboard"></property>
+		<property name="label" value="DashBoard"></property>
+		<property name="icon" value="view_transactions_icon.png"></property>
+		<property name="url" value="siteadmin/dashboard/manage_dashboard_main.jsp"></property>
+		<property name="linksUrl" value="siteadmin/dashboard/manage_dashboard_links.jsp"></property>
+	</bean>
+	
+	<!-- ************ -->
+	<!-- ************ -->
+	<!-- ************ EMPLOYEE MODULE - START ************ -->
+	<!-- ************ -->
+	<!-- ************ -->
+
+	<bean name="employeeModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="employee"></property>
+		<property name="icon" value="images/module/employee_1.png"></property>
+		<property name="label" value="Employee"></property>
+		<property name="defaulPage" ref="employeePage"></property>
+		<property name="pages">
+			<props>
+				<prop key="employee">employeePage</prop>
+				<prop key="assginCustomers">assignCustomers</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean name="employeePage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="employee"></property>
+		<property name="label" value="Manage Employee"></property>
+		<property name="icon" value="manage-employee-icon.png"></property>
+		<property name="url" value="employee/employee_main.jsp"></property>
+		<property name="linksUrl" value="employee/employee_links.jsp"></property>
+	</bean>
+	<bean name="assignCustomers" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="employee"></property>
+		<property name="label" value="Assign Customers"></property>
+		<property name="icon" value="assign_customers.png"></property>
+		<property name="url" value="employee/assign_customers_main.jsp"></property>
+		<property name="linksUrl" value="employee/assign_customers_links.jsp"></property>
+	</bean>
+	
+	<bean name="customerModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="customer"></property>
+		<property name="icon" value="images/module/customer_1.png"></property>
+		<property name="label" value="Customer"></property>
+		<property name="defaulPage" ref="customerPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="customer">customerPage</prop>
+			</props>
+		</property>
+	</bean>
+	<bean name="customerPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="customer"></property>
+		<property name="label" value="Manage Customers "></property>
+		<property name="icon" value="manage_customer_icon.png"></property>
+		<property name="url" value="customer/customer_main.jsp"></property>
+		<property name="linksUrl" value="customer/customer_links.jsp"></property>
+	</bean>
+	<!-- ************-->
+	<!-- ************-->
+	<!-- ************ PRODUCT MODULE - START ************-->
+	<!-- ************-->
+	<!-- ************-->
+
+	<bean name="productModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="product"></property>
+		<property name="icon" value="images/module/products_1.png"></property>
+		<property name="label" value="Product"></property>
+		<property name="defaulPage" ref="productPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="product">productPage</prop>
+				<prop key="productcustomercost">productCustomerCostPage</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean name="productPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="product"></property>
+		<property name="label" value="Manage Product"></property>
+		<property name="icon" value="manage_products_icon.png"></property>
+		<property name="url" value="product/product_main.jsp"></property>
+		<property name="linksUrl" value="product/product_links.jsp"></property>		
+	</bean>
+	<bean name="productCustomerCostPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="product customer cost"></property>
+		<property name="label" value="Product Customer Cost"></property>
+		<property name="icon" value="product_customer_cost_icon.png"></property>
+		<property name="url" value="product/product-customer-cost/product_customer_cost_main.jsp"></property>
+		<property name="linksUrl" value="product/product-customer-cost/product_customer_cost_links.jsp"></property>		
+	</bean>
+	
+	<!-- ************-->
+	<!-- ************-->
+	<!-- ************ ACCOUNTS MODULE - START ************-->
+	<!-- ************-->
+	<!-- ************-->
+
+	<bean name="accountsModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="accounts"></property>
+		<property name="icon" value="images/module/sales_1.png"></property>
+		<property name="label" value="Accounts"></property>
+		<property name="defaulPage" ref="salesBookPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="sales-book">salesBookPage</prop>
+				<prop key="mysales-views">viewSalesPage</prop>
+			</props>
+		</property>
+	</bean>
+	<bean name="salesBookPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="salesbook"></property>
+		<property name="label" value="Manage Sales Book"></property>
+		<property name="icon" value="sales-book.png"></property>
+		<property name="url" value="accounts/sales-book/accounts_main.jsp"></property>
+		<property name="linksUrl" value="accounts/sales-book/accounts_links.jsp"></property>		
+	</bean>
+	
+	<bean name="viewSalesPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="viewTransactionsPage"></property>
+		<property name="label" value="View Transactions"></property>
+		<property name="icon" value="transactions.png"></property>
+		<property name="url" value="accounts/view-transactions/view_transactions_main.jsp"></property>
+		<property name="linksUrl" value="accounts/view-transactions/view_trasactions_links.jsp"></property>		
+	</bean>
+	
+	
+	<!-- ************-->
+	<!-- ************-->
+	<!-- ************ MY SALES MODULE - START ************-->
+	<!-- ************-->
+	<!-- ************-->
+
+	<bean name="mySalesModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="mysales"></property>
+		<property name="icon" value="images/module/mysales_1.png"></property>
+		<property name="label" value="My Sales"></property>
+		<property name="defaulPage" ref="transactionsPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="transactions">transactionsPage</prop>
+				<prop key="daybook">dayBookPage</prop>
+				<prop key="viewTransactions">viewTransactionsPage</prop>
+				<prop key="changeTransactions">changeTransactionsPage</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean name="transactionsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="tansactions"></property>
+		<property name="label" value="Manage Transactions"></property>
+		<property name="icon" value="manage_transactions_icon.png"></property>
+		<property name="url" value="my-sales/transactions/transactions_main.jsp"></property>
+		<property name="linksUrl" value="my-sales/transactions/transactions_links.jsp"></property>		
+	</bean>
+	
+	<bean name="dayBookPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="daybook"></property>
+		<property name="label" value="Manage Day Book"></property>
+		<property name="icon" value="manage_day_book_icon.png"></property>
+		<property name="url" value="my-sales/day-book/day_book_main.jsp"></property>
+		<property name="linksUrl" value="my-sales/day-book/day_book_links.jsp"></property>		
+	</bean>
+	
+	<bean name="viewTransactionsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="viewTransactions"></property>
+		<property name="label" value="View Trasactions"></property>
+		<property name="icon" value="view_transactions_icon.png"></property>
+		<property name="url" value="my-sales/transactions/view-transactions/view_transactions_main.jsp"></property>
+		<property name="linksUrl" value="my-sales/transactions/view-transactions/view_trasactions_links.jsp"></property>		
+	</bean>
+	
+	<bean name="changeTransactionsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="changeTransactions"></property>
+		<property name="label" value="Change Transactions"></property>
+		<property name="icon" value="customer_change_request_icon.png"></property>
+		<property name="url" value="my-sales/transactions/change-transactions/change_transactions_main.jsp"></property>
+		<property name="linksUrl" value="my-sales/transactions/change-transactions/change_transactions_links.jsp"></property>		
+	</bean>
+	
+	<!-- ************ -->
+	<!-- ************ -->
+	<!-- ************ GROUPHEAD MODULE - START ************ -->
+	<!-- ************ -->
+	<!-- ************ -->
+	<bean name="groupHeadModule" class="com.vekomy.vbooks.spring.page.Module">
+		<property name="name" value="grouphead"></property>
+		<property name="icon" value="grouphead.png"></property>
+		<property name="label" value="Group Head"></property>
+		<property name="defaulPage" ref="groupHeadReportsPage"></property>
+		<property name="pages">
+			<props>
+				<prop key="report">groupHeadReportsPage</prop>
+				<prop key="dashboard">groupHeadDashboardPage</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean name="groupHeadReportsPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="reports"></property>
+		<property name="label" value="Reports"></property>
+		<property name="icon" value="reports_icon.png"></property>
+		<property name="url" value="mgt-user/mgt_reports_main.jsp"></property>
+		<property name="linksUrl" value="mgt-user/mgt_reports_links.jsp"></property>	
+	</bean>
+	
+	<bean name="groupHeadDashboardPage" class="com.vekomy.vbooks.spring.page.Page">
+		<property name="name" value="dashboard"></property>
+		<property name="label" value="DashBoard"></property>
+		<property name="icon" value="view_transactions_icon.png"></property>
+		<property name="url" value="siteadmin/dashboard/manage_dashboard_main.jsp"></property>
+		<property name="linksUrl" value="siteadmin/dashboard/manage_dashboard_links.jsp"></property>
+	</bean>
+</beans>

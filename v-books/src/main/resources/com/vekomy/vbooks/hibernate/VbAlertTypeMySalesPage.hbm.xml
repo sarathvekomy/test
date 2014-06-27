@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 16, 2013 11:00:01 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbAlertTypeMySalesPage" table="vb_alert_type_my_sales_page" >
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbAlertTypeMySales" class="com.vekomy.vbooks.hibernate.model.VbAlertTypeMySales" fetch="select">
+            <column name="alert_type_my_sales_id" not-null="true" />
+        </many-to-one>
+        <property name="alertMySalesPage" type="string">
+            <column name="alert_my_sales_page" length="80" not-null="true" />
+        </property>
+        <set name="vbMySaleses" table="vb_my_sales" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="alert_type_my_sales_page_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbMySales" />
+        </set>
+    </class>
+</hibernate-mapping>

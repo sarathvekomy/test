@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 16, 2013 11:00:01 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbCustomerChangeRequestDetails" table="vb_customer_change_request_details">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbCustomerChangeRequest" class="com.vekomy.vbooks.hibernate.model.VbCustomerChangeRequest" fetch="select">
+            <column name="customer_change_request_id" not-null="true" />
+        </many-to-one>
+        <property name="customerName" type="string">
+            <column name="customer_name" length="100" not-null="true" />
+        </property>
+        <property name="invoiceName" type="string">
+            <column name="invoice_name" length="100" not-null="true" />
+        </property>
+        <property name="addressLine1" type="string">
+            <column name="address_line_1" length="200" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="address_line_2" length="200" />
+        </property>
+        <property name="region" type="string">
+            <column name="region" length="50" not-null="true" />
+        </property>
+        <property name="locality" type="string">
+            <column name="locality" length="60" not-null="true" />
+        </property>
+        <property name="landmark" type="string">
+            <column name="landmark" length="60" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="60" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="60" not-null="true" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="zipcode" length="10" not-null="true" />
+        </property>
+        <property name="addressType" type="string">
+            <column name="address_type" length="30" not-null="true" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="80" not-null="true" />
+        </property>
+        <property name="alternateMobile" type="string">
+            <column name="alternate_mobile" length="80" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="directLine" type="string">
+            <column name="direct_line" length="80" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="0" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <property name="modifiedDate" type="timestamp">
+            <column name="modified_date" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
