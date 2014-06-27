@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#0e2837</color>
+    <color name="header_blue_bg">#d2e6f5</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_stroke_bg">#2d5a77</color>
+    <color name="dialog_bg">#f9fcfe</color>
+    <color name="edittext_bg">#b2bac0</color>
+    <color name="text_color">#3fa8fb</color>
+    <color name="button_text_color">#000000</color>
+    <color name="footer_bg">#d2e6f5</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ff6909</color>
+    <color name="table_bg">#f4f2f3</color>
+    <color name="bottom_bg">#6F6C6C</color>
+    <color name="yellow">#FCE300</color>
+    <color name="tabMedium">#449DEF</color>
+    <color name="tabDark">#2F6699</color>
+    <color name="tabTransparent">#10ffffff</color>
+</resources>

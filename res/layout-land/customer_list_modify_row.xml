@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bluegradient"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <!--
+       <RadioButton
+        android:id="@+id/rbtnsnoModify"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_weight="0.5"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:minWidth="30dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+       android:padding="5dp"
+         />
+    -->
+
+    <TextView
+        android:id="@+id/lblBName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_weight="5.5"
+        android:drawableLeft="@drawable/business_name"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="left|center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/background"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/lblInvoiceName"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_margin="1dp"
+        android:layout_weight="3.5"
+        android:drawableLeft="@drawable/invoice_name"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:gravity="left|center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnImgNext"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="1.5"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:gravity="right"
+        android:onClick="OnbtnNextClick"
+        android:paddingRight="40dp"
+        android:scaleType="center"
+        android:src="@drawable/forward_icon" />
+
+</LinearLayout>

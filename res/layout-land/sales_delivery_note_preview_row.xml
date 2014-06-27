@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/table_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_stroke_bg"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/lblSno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/lblProductNamePreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="23"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblBatchNoPreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="15"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txProductQtyPreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="15"
+            android:background="@drawable/border"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="8"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txbonusQtyPreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="15"
+            android:background="@drawable/border"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:maxLength="8"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblproductCostPreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="15"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="right|center_horizontal"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lbltotalCostPreview"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="17"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="right|center_horizontal"
+            android:padding="2dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblAvailableQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="2dp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

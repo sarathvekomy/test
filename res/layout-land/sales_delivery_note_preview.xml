@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="19"
+            android:text="Created By "
+            android:textColor="@color/background"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/colen_sigin"
+            android:textColor="@color/background" />
+
+        <TextView
+            android:id="@+id/lblCreatedBy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="35"
+            android:gravity="left"
+            android:textColor="@color/background"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/invoice_name"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/invoice"
+            android:textColor="#049"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <TableRow
+        android:id="@+id/trForInvoiceNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/lblInvoiceNoHdr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:gravity="left|center_horizontal"
+            android:text="@string/invoice_no"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/colen_sigin"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblInvoiceNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="4"
+            android:gravity="left|center_horizontal"
+            android:textColor="@color/background" />
+
+        <TextView
+            android:id="@+id/lblCurrentDateHdr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:text="@string/date"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/colen_sigin"
+            android:textColor="@color/background"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblCurrentDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:textColor="@color/background" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trForBusinessName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:text="@string/invoice_name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/colen_sigin"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/lblInvoiceName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="4"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1.5"
+            android:text="@string/business_name"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/colen_sigin"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/lblBusinessName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="2"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <LinearLayout
+        android:id="@+id/llHdrView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/trListViewHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".23"
+                android:gravity="center"
+                android:text="@string/productName"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:text="@string/batchNo"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:text="@string/productQty"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:text="@string/bonusQty"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:text="@string/productCost"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".17"
+                android:gravity="center"
+                android:text="@string/total_cost"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trListViewSRHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2.5"
+                android:gravity="center"
+                android:text="@string/productName"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/batchNo"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/damaged_qty"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/resaleable_qty"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/total_qty"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:text="@string/remarks"
+                android:textColor="@color/background"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </TableRow>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="3dip"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <ListView
+        android:id="@+id/lvProductPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dip" >
+    </ListView>
+
+</LinearLayout>

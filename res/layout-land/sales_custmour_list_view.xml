@@ -1,0 +1,100 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    -->
+
+    <LinearLayout
+        android:id="@+id/lltable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/blue_stroke_bg"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/lblsno"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight=".6"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/sno"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/lblbname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="4.4"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/bname"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblcredit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/credit"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lbladvance"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/advance"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblinvoicename"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/invoiceName"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>       -->
+
+        <ListView
+            android:id="@+id/lvcustlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/invoice_bg"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollingCache="false" />
+    </LinearLayout>
+    <!-- </HorizontalScrollView> -->
+
+</merge>

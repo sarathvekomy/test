@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10" >
+
+    <TextView
+        android:id="@+id/lblSno"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/lblAllowancesType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_weight="3.8"
+        android:background="@drawable/txt_box_boarder"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:textColor="@color/background"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/txAmt"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_weight="2"
+        android:background="@drawable/txt_box_boarder"
+        android:ellipsize="end"
+        android:gravity="right|center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="20"
+        android:padding="5dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/background"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/txRemarks"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:layout_weight="3.5"
+        android:background="@drawable/txt_box_boarder"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:imeOptions="actionDone"
+        android:maxLength="50"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/background"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnViewScanBill"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_weight="0.3"
+        android:src="@drawable/bill"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:visibility="gone"
+        android:onClick="OnbtnBillViewClick"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnAllowancesRemove"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="4dp"
+        android:layout_weight="0.3"
+        android:background="@drawable/delete_icon"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:onClick="OnbtnRemoveClick" />
+
+</LinearLayout>

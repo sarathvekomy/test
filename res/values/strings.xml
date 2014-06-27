@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VBooks</string>
+    <string name="salesExecutiveName">Sales Executive Name</string>
+    <string name="footer_text"><b> Copyright \u00A9 Vekomy Technologies Pvt.Ltd. All rights reserved.</b> </string>
+    <string name="pleaseLogin">Please Login</string>
+    <string name="ok">Ok</string>
+    <string name="login">Login</string>
+    <string name="reset">Reset</string>
+    <string name="balance">Balance</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="address_line1">Address Line 1</string>
+    <string name="address_line2">Address Line 2</string>
+    <string name="locality">Locality</string>
+    <string name="super_username">Super Username:</string>
+    <string name="landmark">Landmark</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="pincode">Pincode</string>
+    <string name="phone_1">Phone 1</string>
+    <string name="phone_2">Phone 2</string>
+    <string name="phone_3">Phone 3</string>
+    <string name="super_password">Password:</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="BillScan">Scan</string>
+    <string name="show_allowance">Show Allowance List</string>
+    <string name="edit_allowance">Edit Allowance List</string>
+    <string name="edit">Edit</string>
+    <string name="load">Load Details</string>
+    <string name="delete">Delete</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="user">User</string>
+    <string name="payment_add_delivery_note">Payment Add Delivery Note</string>
+    <string name="sales_add_delivery_note">Sales Add Delivery Note</string>
+    <string name="add_sales_return">Add Sales Return</string>
+    <string name="add_journal">Add Journal</string>
+    <string name="search_day_book">Search Day Book</string>
+    <string name="add_day_book">Add Day Book</string>
+    <string name="view_delivery_note">View Delivery Note</string>
+    <string name="view_sales_returns">View Sales Returns</string>
+    <string name="new_customer">New Customer</string>
+    <string name="customer_info">Customer Information</string>    
+    <string name="business_name">Business Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="change_request_type">Change Request Type</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="direct_line">Direct Line</string>
+    <string name="region">Region</string>
+    <string name="invoice_name">Invoice Name</string>
+    <string name="alternate_contact_number">Alternate Contact Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="address_1">Address 1</string>
+    <string name="address_2">Address 2</string>
+    <string name="address_type">Address Type</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="delivery_note">Delivery Note</string>
+    <string name="for_payments">For Payments</string>
+    <string name="invoice_date">Invoice Date</string>
+    <string name="Openingbalance">Opening Balance</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="cash">Cash</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="branch_name1">Branch Name</string>
+    <string name="cheque_no">Cheque No</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="branch_name">"Branch And Loc"</string>
+    <string name="branch_location">Branch Location</string>
+    <string name="damaged_qty">Damaged Qty</string>
+    <string name="resaleable_qty">Resaleable Qty</string>
+    <string name="return_qty">Return Quantity</string>
+    <string name="cost">Cost</string>    
+    <string name="invoice_no">Invoice NO</string>
+    <string name="colon">:</string>
+	<string name="date">Date</string>
+	<string name="sales_executive">Sales Executive</string>
+	<string name="customer">Customer</string>
+	<string name="dayBookfor">Day Book for </string>
+	<string name="sno">S NO</string>	
+	<string name="bname">Business Name</string>
+	<string name="credit">Credit</string>
+	<string name="advance">Advance </string>
+	<string name="invoiceName">InvoiceName</string>
+	<string name="submit">Submit</string>
+	<string name="update">Update</string>
+	<string name="modifyCust">Modify Custmour</string>
+	<string name="salereturn">Sales return</string>
+	<string name="generateInvoice">Generate invoice</string>
+	<string name="payment">Payment</string>
+	<string name="productName">Product Name</string>
+	<string name="batchNo">Batch No</string>
+	<string name="availableQty">Available Qty</string>
+	<string name="productCost">Product Cost</string>
+	<string name="requiredQty">Required Qty</string>
+	<string name="productQty">Product Qty</string>
+    <string name="bonus">Bonus</string>
+    <string name="bonusQty">Bonus Qty</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="total_qty">Total Qty</string>
+    <string name="bonus_reason">Bonus Reason</string>
+	<string-array name="PaymentTypes">
+    <item >Cash</item>
+    <item >Cheque</item>
+    </string-array>
+    <string name="grand_toatal">Grand Total :</string>
+    <string name="toatal_allowance">Total Allowances</string>
+    <string name="back">Back</string>
+    <string name="preview">Preview</string>
+    <string name="addSRProduct">Add Sold Product If Not Exists</string>
+    <string name="previous_credit">Previous Credit</string>
+    <string name="present_payable">Present Payable</string>
+    <string name="payable">Payable</string>
+	<string name="previous_advance">Previous Advance</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="present_payment">Present Payment</string>
+    <string name="remaining_bal">Balance</string>
+    <string name="cheque">Cheque</string>
+    <string name="account_no">Branch Name</string>
+    <string name="bank">Bank Name</string>
+    <string name="positve_sigin">(+)</string>
+    <string name="negitive_sigin">(-)</string>
+    <string name="equal_sigin">(=)</string>
+    <string name="colen_sigin">:</string>
+    <string name="zero">0.0</string>
+    <string name="invoice">INVOICE</string>
+    <string name="sign">( sign )</string>
+    <string-array name="expensesDetails">
+    <item >--Select Allowances--</item>
+    <item >Executive Allowances</item>
+    <item >Driver Allowances</item>
+    <item >Vehicle Fuel Expenses</item>
+    <item >OffLoading Charges</item>
+    <item >Vehicle Maintenance Expenses</item>
+    <item >Dealer Party Expenses</item>
+    <item >Municipal City Council</item>
+    <item >Miscellaneous Expenses</item>
+    <item >Amount to Bank</item>
+    </string-array>
+    <string name="amount">Amount</string>
+    <string name="journel_type">Journel Type</string>
+    <string name="vehicalno">Vehical No</string>
+    <string name="drivername">DriverName</string>
+    <string name="_startreading">->| startReading</string>
+    <string name="endreading_">EndReading   ->|</string>
+    <string name="amttobank">AmtToBank</string>
+    <string name="amttofactory">AmtToFactory</string>
+    <string name="totalreceived">TotalReceived</string>
+    <string name="allowances_details">Allowances List</string>
+    <string name="exptypebank">Amount To Bank</string>
+    <string-array name="journelType">
+        <item >--Select--</item>
+        <item >Product</item>
+    </string-array>
+	<string name="exit">Exit</string>
+	<string name="description">Description</string>
+	<string name="end_symbole">"&lt;-| End"</string>
+	<string name="dist_symbole">"&lt;-&gt;"</string>
+	<string name="remarks">Remarks</string>
+	<string name="fogetpasswd"><u>Forgot Password?</u></string>
+	<string name="adv">(Adv)</string>
+	<string name="reporting_manager">Reporting Manager</string>
+</resources>

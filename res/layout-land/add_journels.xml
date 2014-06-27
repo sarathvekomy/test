@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/widget_titlebar_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:weightSum="1" >
+
+        <Spinner
+            android:id="@+id/cmbJournalType"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".7"
+            android:background="@android:drawable/btn_dropdown"
+            android:entries="@array/journelType"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/lblJournalTypeErr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="left"
+            android:textSize="6pt"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/arrow_down_float" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/grid_border_blue"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="@string/invoice_no"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/lblJNInVoiceNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="@string/invoice_name"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/lblJNInVoiceName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2.5"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblJNDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="@string/business_name"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <TextView
+                android:id="@+id/lblJNBusinessName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="@string/amount"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/txtJNAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="4"
+                android:background="@drawable/txt_box_boarder"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="10"
+                android:textColor="@color/background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="left"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:text="@string/colon"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/txtDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="8.3"
+                android:background="@drawable/txt_box_boarder"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:lines="5"
+                android:textColor="@color/background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/btnJournelSave"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/button_blue"
+                android:text="@string/save"
+                android:textColor="@drawable/text_color_selection"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnJournelCancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_weight="3"
+                android:background="@drawable/button_blue"
+                android:text="@string/cancel"
+                android:textColor="@drawable/text_color_selection"
+                android:textStyle="bold" />
+        </TableRow>
+    </LinearLayout>
+
+</LinearLayout>

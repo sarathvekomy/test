@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical" >
+
+    <!-- Top Boarder For the Daybook Details -->
+
+    <LinearLayout
+        android:id="@+id/llAllowancesPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="100" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <!-- Basic Information for the daybook start -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:weightSum="100" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:drawableLeft="@drawable/daybook_first"
+                android:gravity="left"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDayBookSalesExecutive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_weight="35"
+                android:gravity="center|center_horizontal"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDayBookOpeningBal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="22"
+                android:drawableLeft="@drawable/opening_balance"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblDayBookDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="21"
+                android:drawableLeft="@drawable/calender"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:text="@string/date"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <!-- Vehical  Details Start -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:background="@drawable/grid_border_blue"
+            android:weightSum="100" >
+
+            <EditText
+                android:id="@+id/txtDayBookVehincalNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dip"
+                android:layout_weight="25"
+                android:background="@drawable/txt_box_boarder"
+                android:drawableLeft="@drawable/vehicle_no"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:hint="@string/vehicalno"
+                android:imeOptions="actionDone"
+                android:inputType="textCapCharacters"
+                android:maxLength="15"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtstartReading"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dip"
+                android:layout_weight="27"
+                android:background="@drawable/txt_box_boarder"
+                android:drawableLeft="@drawable/end_reading"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:hint="StartReading"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDriverName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dip"
+                android:layout_weight="42"
+                android:background="@drawable/txt_box_boarder"
+                android:drawableLeft="@drawable/driver_name"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:hint="@string/drivername"
+                android:imeOptions="actionDone"
+                android:inputType="textCapSentences"
+                android:maxLength="10"
+                android:padding="2dip"
+                android:singleLine="true"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnVehicleInfoSave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="6"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:text="@string/save"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <!-- Displaying ListItems For Expenses  With Two Buttons for Save And Contnue -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:background="@drawable/bluegradient"
+            android:weightSum="10" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_weight="3.7"
+                android:drawableLeft="@drawable/payment"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:padding="5dp"
+                android:text="Expenses Type"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_weight="2.1"
+                android:drawableLeft="@drawable/amount"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:text="@string/amount"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="3.7"
+                android:drawableLeft="@drawable/remarks"
+                android:drawablePadding="5dp"
+                android:gravity="left|center"
+                android:text="Remarks/MeterReading/Bank Names"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAddAllowance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".5"
+                android:background="@drawable/expense_add_selection"
+                android:gravity="right"
+                android:textColor="@drawable/text_color_selection"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/lvAllowancesList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="57"
+            android:cacheColorHint="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:orientation="vertical"
+            android:scrollingCache="false" >
+        </ListView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <LinearLayout
+            android:id="@+id/llAllowancesBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12"
+            android:background="@drawable/grid_border_yellow"
+            android:gravity="center"
+            android:padding="2dp"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btnDBAllowancesClose"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.1"
+                android:background="@drawable/back"
+                android:gravity="left" />
+
+            <CheckBox
+                android:id="@+id/cbDBReturnToFactory"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".18"
+                android:button="@drawable/check_box_selection"
+                android:text="ReturnToFactory"
+                android:textColor="@color/background"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txDBReportingManager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".20"
+                android:background="@drawable/edittext_boarder_normal"
+                android:drawableLeft="@drawable/reporting_mgr"
+                android:gravity="center"
+                android:hint="@string/reporting_manager"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:maxLength="60"
+                android:singleLine="true"
+                android:textColor="@color/background"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lblTotalAllowanceHdr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".15"
+                android:gravity="center"
+                android:text="@string/toatal_allowance"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".01"
+                android:text="@string/colen_sigin"
+                android:textColor="@color/background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTotalAllowanceAmt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".23"
+                android:gravity="left|center"
+                android:textColor="@color/background"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_margin="5dip"
+                android:layout_weight=".13"
+                android:background="@drawable/button_blue"
+                android:text="@string/next"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Start For the DayBook Amount And Products -->
+
+    <LinearLayout
+        android:id="@+id/llDaybookAmountProductView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/daybook_amount_product_view" >
+        </include>
+    </LinearLayout>
+    <!-- Start For the DayBook PriviewPage -->
+
+    <LinearLayout
+        android:id="@+id/llDaybookPreView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <include layout="@layout/daybook_final_preview" >
+        </include>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical"
+    android:scaleType="fitXY"
+    android:weightSum="10" >
+
+    <TableRow
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/imgforSales"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/sales_image_home_page" />
+
+        <TextView
+            android:id="@+id/txsalesexecuteName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="7.9"
+            android:gravity="left|center"
+            android:text="@string/salesExecutiveName"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/logout"
+            android:contentDescription="@string/app_name"
+            android:gravity="center" />
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <TextView
+        android:id="@+id/txsalesMsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/salesExecutiveName"
+        android:textColor="@color/white" />
+
+    <GridView
+        android:id="@+id/gridservices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="7.7"
+        android:background="@drawable/grid_border_blue"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="vertical"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

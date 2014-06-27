@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_stroke_bg"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/lblSno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/lblProductName"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="2.5"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="left|center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblBatchNo"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="left|center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txtDamagedQty"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/border"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="damaged"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txtReSaleQty"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Resale"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/lblTotalQty"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:background="@color/table_bg"
+            android:ellipsize="end"
+            android:gravity="left|center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/txRemarks"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_horizontal"
+            android:layout_margin="1dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:hint="Remarks"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grid_border_blue"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="2dp"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:text="Allowances Category"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="2dp"
+        android:background="@android:drawable/arrow_up_float" />
+
+    <Spinner
+        android:id="@+id/cmbExpensesType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/expensesDetails"
+        android:gravity="center|center_horizontal"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <!--
+             <TextView
+            android:id="@+id/lblexpensegive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="Expense Reason  :"
+            android:textColor="@color/background"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+        -->
+
+        <EditText
+            android:id="@+id/txtAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/txt_box_boarder_yellow"
+            android:gravity="center"
+            android:hint="Enter Amount"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/background"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtexpensegive"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="6"
+            android:background="@drawable/txt_box_boarder_yellow"
+            android:hint="Remarks"
+            android:imeOptions="actionDone"
+            android:inputType="none"
+            android:padding="5dp"
+            android:textColorHint="@color/white"
+            android:textSize="15sp"
+			 />
+
+        <Spinner
+            android:id="@+id/cmbOffloadingBusinessNames"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:inputType="none"
+            android:textSize="8pt"
+            android:visibility="gone" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnFuelSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight=".3"
+            android:background="@drawable/button_blue"
+            android:text="@string/save"
+            android:textColor="@drawable/text_color_selection"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSmartScan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight=".3"
+            android:background="@drawable/button_blue"
+            android:text="@string/BillScan"
+            android:textColor="@drawable/text_color_selection"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnFuelCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight=".3"
+            android:background="@drawable/button_blue"
+            android:text="@string/cancel"
+            android:textColor="@drawable/text_color_selection"
+            android:textStyle="bold" />
+    </TableRow>
+
+</LinearLayout>
