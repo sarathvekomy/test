@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="salesexecutivesaleswisemasterreport" language="groovy" pageWidth="1100" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="1060" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.band.1" value="pageHeader"/>
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.band.2" value="pageFooter"/>
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.keep.first.band.columnHeader" value="columnHeader"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="80"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MediationImage" class="java.lang.String"/>
+	<parameter name="OptimerImage" class="java.lang.String"/>
+	<parameter name="JasperSubReportDatasource1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportLocation1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<field name="createdOn" class="java.lang.String"/>
+	<field name="businessName" class="java.lang.String"/>
+	<field name="locality" class="java.lang.String"/>
+	<field name="soldValue" class="java.lang.Float"/>
+	<field name="oldBalance" class="java.lang.Float"/>
+	<field name="total" class="java.lang.Float"/>
+	<field name="totalReceived" class="java.lang.Float"/>
+	<field name="credit" class="java.lang.Float"/>
+	<field name="productName" class="java.lang.String"/>
+	<field name="productQty" class="java.lang.Integer"/>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<group name="createdOnGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<group name="BNDateGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{businessName}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<group name="LocBNDateGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{businessName}+$F{locality}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="57" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[S.No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="0" width="103" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Business Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Locality]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="137" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Product name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="597" y="0" width="83" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Sold Value]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="680" y="0" width="80" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Old Balance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="760" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="860" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Total Received]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="960" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Credit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="497" y="0" width="100" height="20"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Product Quantity]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="57" height="20"/>
+				<box rightPadding="2">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="260" y="0" width="100" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="260" y="0" width="100" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="260" y="1" width="100" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{locality}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="597" y="0" width="83" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="597" y="0" width="83" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="LocBNDateGroup" pattern="#,##0.00">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="597" y="1" width="83" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{soldValue}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="680" y="0" width="80" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="680" y="0" width="80" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="LocBNDateGroup" pattern="#,##0.00">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="680" y="1" width="80" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{oldBalance}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="760" y="0" width="100" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="760" y="0" width="100" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="LocBNDateGroup" pattern="#,##0.00">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="760" y="1" width="100" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="860" y="0" width="100" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="860" y="0" width="100" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="LocBNDateGroup" pattern="#,##0.00">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="860" y="1" width="100" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{totalReceived}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="960" y="0" width="100" height="1">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="960" y="0" width="100" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="LocBNDateGroup" pattern="#,##0.00">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="960" y="1" width="100" height="20" printWhenGroupChanges="LocBNDateGroup">
+					<printWhenExpression><![CDATA[$V{LocBNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{credit}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="360" y="0" width="137" height="20"/>
+				<box leftPadding="3">
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="#,###" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="497" y="0" width="100" height="20"/>
+				<box rightPadding="2">
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{productQty}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="57" y="0" width="103" height="1">
+					<printWhenExpression><![CDATA[$V{createdOnGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="57" y="0" width="103" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement stretchType="RelativeToBandHeight" x="57" y="1" width="103" height="20" printWhenGroupChanges="createdOnGroup">
+					<printWhenExpression><![CDATA[$V{createdOnGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box rightPadding="2">
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{createdOn}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="160" y="0" width="100" height="1">
+					<printWhenExpression><![CDATA[$V{BNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="160" y="0" width="100" height="20"/>
+				<box>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Group" evaluationGroup="BNDateGroup">
+				<reportElement stretchType="RelativeToBandHeight" isPrintRepeatedValues="false" x="160" y="1" width="100" height="20" printWhenGroupChanges="BNDateGroup">
+					<printWhenExpression><![CDATA[$V{BNDateGroup_COUNT}==1]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="3">
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{businessName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<summary>
+		<band height="50">
+			<line>
+				<reportElement x="0" y="0" width="1060" height="1"/>
+			</line>
+		</band>
+	</summary>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="1060" height="50" forecolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Sales Executive Wise Details Available]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

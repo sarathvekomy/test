@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="salesexecutivesaleswisemasterreport" language="groovy" pageWidth="1100" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="1060" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.band.1" value="pageHeader"/>
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.band.2" value="pageFooter"/>
+	<property name="net.sf.jasperreports.export.csv.exclude.origin.keep.first.band.columnHeader" value="columnHeader"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MediationImage" class="java.lang.String"/>
+	<parameter name="OptimerImage" class="java.lang.String"/>
+	<parameter name="JasperMasterReportDatasource1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperMasterReportLocation1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperSubReportDatasource1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportLocation1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<field name="createdOn" class="java.lang.String"/>
+	<field name="businessName" class="java.lang.String"/>
+	<field name="locality" class="java.lang.String"/>
+	<field name="soldValue" class="java.lang.Float"/>
+	<field name="oldBalance" class="java.lang.Float"/>
+	<field name="total" class="java.lang.Float"/>
+	<field name="totalReceived" class="java.lang.Float"/>
+	<field name="credit" class="java.lang.Float"/>
+	<field name="productName" class="java.lang.String"/>
+	<field name="productQty" class="java.lang.Integer"/>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="salesExecutive" class="java.lang.String"/>
+	<field name="businessNameSummary" class="java.lang.String"/>
+	<field name="reportType" class="java.lang.String"/>
+	<field name="startDate" class="java.lang.String"/>
+	<field name="endDate" class="java.lang.String"/>
+	<group name="createdOnGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<group name="BNDateGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{businessName}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<group name="LocBNDateGroup">
+		<groupExpression><![CDATA[$F{createdOn}+$F{businessName}+$F{locality}+$F{invoiceNo}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="1" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<image>
+				<reportElement mode="Opaque" x="0" y="0" width="512" height="55" backcolor="#C0C0C0"/>
+				<imageExpression><![CDATA[new File($P{MediationImage}, "images/distilleries.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Opaque" x="512" y="0" width="496" height="55" backcolor="#C0C0C0"/>
+				<imageExpression><![CDATA[new File($P{OptimerImage}, "images/sales-reports.png")]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="144">
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="235" y="8" width="129" height="38"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salesExecutive}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="474" y="8" width="129" height="38"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{businessNameSummary}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="115" y="8" width="120" height="38"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Sales Executive : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="8" width="110" height="38"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Business Name : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="46" width="120" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Report Type : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="235" y="46" width="129" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reportType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="364" y="46" width="110" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Start Date : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="474" y="46" width="129" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="364" y="82" width="110" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[End Date : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="474" y="82" width="129" height="36"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endDate}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="85">
+			<subreport>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="11" width="1060" height="63" isRemoveLineWhenBlank="true"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperMasterReportDatasource1}.getData())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{JasperMasterReportLocation1}]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="95">
+			<subreport>
+				<reportElement x="488" y="22" width="572" height="41"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperSubReportDatasource1}.getData())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{JasperSubReportLocation1}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="730" height="50" forecolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[There Are No Matching Records To Display]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

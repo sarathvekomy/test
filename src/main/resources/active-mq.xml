@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jms="http://www.springframework.org/schema/jms"
+	xsi:schemaLocation="
+         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+         http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms.xsd">
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<!-- <value>classpath:active-mq.properties</value> -->
+			<value>file:///${VBOOKS_HOME}/conf/active-mq.properties</value>
+		</property>
+	</bean>
+	
+	<bean id="customTransportListener" class="com.vekomy.vbooks.listener.CustomTransportListener" />
+
+	<bean id="customExceptionListener" class="com.vekomy.vbooks.listener.CustomExceptionListener" />
+
+	<bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="${broker.url}" />
+		<property name="transportListener" ref="customTransportListener" />
+	</bean>
+
+	<bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+		<property name="maxConnections" value="${max.connections}" />
+		<property name="maximumActive" value="${max.active}" />
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+	</bean>
+
+	<!-- Spring JMS Template -->
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+		<property name="explicitQosEnabled" value="${explicit.qos.enabled}"/>
+		<property name="deliveryMode" value="${delivery.mode}"/>
+		<property name="timeToLive" value="${time.to.live}"/>
+		<property name="priority" value="${priority}"/>
+	</bean>
+</beans>

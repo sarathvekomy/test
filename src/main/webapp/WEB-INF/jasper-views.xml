@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+  http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  http://www.springframework.org/schema/util
+  http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+ 
+ 	<bean id="reportsUtil" class="com.vekomy.vbooks.util.ReportsUtils"/>
+     <!--here all the url value should contains the valid path for the jrxml file-->
+     
+	<util:map id="exportParameterMap">
+		 <entry key="net.sf.jasperreports.engine.export.JRHtmlExporterParameter.IMAGES_URI">
+		    <value>${image.url}</value>
+		 </entry> 
+	</util:map>
+	
+	<util:map id="subReportUrls">
+	    <entry key="JasperSubReportLocation1" value="classpath:reports/saleswisesubreport1.jrxml"/>
+	    <entry key="JasperSubReportLocation2" value="classpath:reports/saleswisesubreport2.jrxml"/>
+	    <entry key="JasperSubReportLocation3" value="classpath:reports/saleswisesubreport3.jrxml"/>
+	    <entry key="JasperSubReportLocation4" value="classpath:reports/saleswisesubreport4.jrxml"/>
+	    <entry key="JasperSubReportLocation5" value="classpath:reports/saleswisesubreport5.jrxml"/>
+	</util:map>
+	
+	<util:list id="subReportDatasource">
+	    <value>JasperSubReportDatasource1</value>
+	    <value>JasperSubReportDatasource2</value>
+	    <value>JasperSubReportDatasource3</value>
+	    <value>JasperSubReportDatasource4</value>
+	</util:list>
+	
+	<util:map id="salesExecutiveSubReportUrls">
+	     <entry key="JasperMasterReportLocation1" value="classpath:reports/salesexecutivessaleswisemasterreport.jrxml"/>
+	    <entry key="JasperSubReportLocation1" value="classpath:reports/salesexecutivessaleswisesubreport.jrxml"/>
+	</util:map>
+	
+	<util:list id="salesExecutiveSubReportDatasource">
+	    <value>JasperMasterReportDatasource1</value>
+	    <value>JasperSubReportDatasource1</value>
+	</util:list>
+	
+	<util:map id="customerWiseSubReportUrls">
+	       <entry key="JasperCustomerWiseSubReportLocation" value="classpath:reports/customerwisesubreport.jrxml"/>
+	</util:map>
+	
+	<util:list id="customerWiseSubReportDatasource">
+	    <value>JasperCustomerWiseSubReportDatasource</value>
+	</util:list>
+	
+	<util:map id="productWiseSubReportUrls">
+	       <entry key="JasperProductWiseSubReportLocation" value="classpath:reports/productwisesubreport.jrxml"/>
+	</util:map>
+	
+	<util:list id="productWiseSubReportDatasource">
+	    <value>JasperProductWiseSubReportDatasource</value>
+	</util:list>
+	
+	<util:map id="salesReturnWiseSubReportUrls">
+	       <entry key="JasperSalesReturnWiseSubReportLocation" value="classpath:reports/salesreturnqtywisersubreport.jrxml"/>
+	</util:map>
+	
+	<util:list id="salesReturnWiseSubReportDatasource">
+	    <value>JasperSalesReturnWiseSubReportDatasource</value>
+	</util:list>
+	
+	<util:map id="salesExecutiveExpenditureWiseSubReportUrls">
+	       <entry key="JasperSalesExecutiveExpenditureWiseSubReportLocation" value="classpath:reports/salesexecutiveexpendituresubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="salesExecutiveExpenditureWiseSubReportDatasource">
+	    <value>JasperSalesExecutiveExpenditureWiseSubReportDatasource</value>
+	</util:list>
+	
+	<!-- Utils map for new report Start -->
+	
+	<util:map id="factoryProductWiseSubReportUrls">
+	       <entry key="JasperFactoryProductWiseSubReportLocation2" value="classpath:reports/factoryproductwisesubreport2.jrxml"/>
+	       <entry key="JasperFactoryProductWiseSubReportLocation3" value="classpath:reports/factoryproductwisesubreport3.jrxml"/>
+	</util:map> 
+	
+	 <util:list id="factoryProductWiseSubReportDatasource">
+	    <value>JasperFactoryProductWiseSubReportDatasource2</value>
+	    <value>JasperFactoryProductWiseSubReportDatasource3</value>
+	</util:list> 
+	
+	<util:map id="productWiseSalesSubReportUrls">
+	       <entry key="JasperProductWiseSalesSubReportLocation" value="classpath:reports/productwisesalessubreport1.jrxml"/>
+	       <entry key="JasperProductWiseSalesSubReportLocation1" value="classpath:reports/productwisesalessubreport2.jrxml"/>
+	</util:map>
+	
+	 <util:list id="productWiseSalesSubReportDatasource">
+	    <value>JasperProductWiseSalesSubReportDatasource</value>
+	     <value>JasperProductWiseSalesSubReportDatasource1</value>
+	</util:list>
+	 
+	 <util:map id="sleCustomerWiseSalesSubReportUrls">
+	       <entry key="JasperSLECustomerWiseSalesSubReportLocation" value="classpath:reports/slecustomerwisesalessubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="sleCustomerWiseSalesSubReportDatasource">
+	    <value>JasperSLECustomerWiseSalesSubReportDatasource</value>
+	</util:list>  
+	
+	<util:map id="salesExecutiveSalesWiseSubReportUrls">
+	       <entry key="JasperSalesExecutiveSalesWiseSubReportLocation" value="classpath:reports/newsalesexecutivesaleswisesubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="salesExecutiveSalesWiseSubReportDatasource">
+	    <value>JasperSalesExecutiveSalesWiseSubReportDatasource</value>
+	</util:list> 
+	
+   <util:map id="productReportWiseSubReportUrls">
+	       <entry key="JasperProductReportWiseSubReportLocation" value="classpath:reports/newproductwisesubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="productReportWiseSubReportDatasource">
+	    <value>JasperProductReportWiseWiseSubReportDatasource</value>
+	</util:list> 
+	<util:map id="customerProductSalesWiseSubReportUrls">
+	       <entry key="JasperCustomerProductSalesWiseSubReportLocation" value="classpath:reports/newcustomerproductsalessubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="customerCustomerProductSalesWiseSubReportDatasource">
+	    <value>JasperCustomerProductSalesWiseSubReportDatasource</value>
+	</util:list> 
+	
+	<util:map id="sleProductReportSalesWiseSubReportUrls">
+	       <entry key="JasperSLEProductReportSalesWiseSubReportLocation" value="classpath:reports/newproductreportslesubreport.jrxml"/>
+	</util:map>
+	
+	 <util:list id="sleProductReportSalesWiseSubReportDatasource">
+	    <value>JasperSLEProductReportSalesWiseSubReportDatasource</value>
+	</util:list> 
+	
+	<!-- Utils map for new report End -->
+	
+    <bean id="CUSTOMER_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/customerwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="customerWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerWiseSubReportDatasource"/>
+          
+    <bean id="PRODUCT_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/productwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource"/>
+		  
+    <bean id="MYSALES_PRODUCT_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/mysalesproductwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource"/>
+          
+          
+    <bean id="SALES_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/saleswisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="subReportUrls"
+		  p:subReportDataKeys-ref="subReportDatasource"/>
+		  
+	<bean id="SALES_RETURN_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/salesreturnqtywisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="salesReturnWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesReturnWiseSubReportDatasource"/>
+          
+          
+    <bean id="SALES_EXECUTIVE_EXPENDITURE_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/salesexecutiveexpenditurereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="salesExecutiveExpenditureWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveExpenditureWiseSubReportDatasource"/>
+          
+     <bean id="SALES_EXECUTIVE_SALES_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/salesexecutivesaleswisesupermasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="salesExecutiveSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSubReportDatasource"/>
+		  
+		  	<!-- Jasper Views for New Reports Starts for HTML views -->
+		  
+		 <bean id="FACTORY_PRODUCT_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/factoryproductwisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="factoryProductWiseSubReportUrls"
+		  p:subReportDataKeys-ref="factoryProductWiseSubReportDatasource"/> 
+		  
+		   <bean id="PRODUCT_WISE_SALES-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/productwisesalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="productWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSalesSubReportDatasource"/> 
+		  
+		   <bean id="SLE_CUSTOMER_WISE_SALES-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/slecustomerwisesalesreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="sleCustomerWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="sleCustomerWiseSalesSubReportDatasource"/>  
+		  
+		  <bean id="SLE_SALES_WISE-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/newsalesexecutivesaleswisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="salesExecutiveSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSalesWiseSubReportDatasource"/>  
+		  
+		      
+		  <bean id="PRODUCT_REPORT-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/newproductmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="productReportWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productReportWiseSubReportDatasource"/> 
+		  
+		  <bean id="CUSTOMER_PRODUCT_SALES-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/newcustomerproductsalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="customerProductSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerCustomerProductSalesWiseSubReportDatasource"/> 
+		  
+		    <bean id="SLE_PRODUCT_SALES-html"
+    	  class="com.vekomy.vbooks.util.VbooksJasperReportsHtmlView"
+          p:url="classpath:reports/newproductreportslemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:exporterParameters-ref="exportParameterMap"
+          p:subReportUrls-ref="sleProductReportSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="sleProductReportSalesWiseSubReportDatasource"/> 
+		  	
+		  	
+		  	
+		  	<!-- Jasper Views for New Reports End for HTML views -->
+          
+    <bean id="CUSTOMER_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/customerwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=CustomerWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="PRODUCT_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/productwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="MYSALES_PRODUCT_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/mysalesproductwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=MysalesProductWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="SALES_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/saleswisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="subReportUrls"
+		  p:subReportDataKeys-ref="subReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="SALES_RETURN_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/salesreturnqtywisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesReturnWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesReturnWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesReturnQtyWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="SALES_EXECUTIVE_EXPENDITURE_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/salesexecutiveexpenditurereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveExpenditureWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveExpenditureWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveExpenditureWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<bean id="SALES_EXECUTIVE_SALES_WISE-pdf"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/salesexecutivesaleswisesupermasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	
+  	<!-- Jasper Views for New Reports Starts for PDF views -->
+  	
+  	  <bean id="FACTORY_PRODUCT_WISE-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/factoryproductwisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="factoryProductWiseSubReportUrls"
+		  p:subReportDataKeys-ref="factoryProductWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=FactoryProductWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>  
+  	
+  	  <bean id="PRODUCT_WISE_SALES-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/productwisesalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSalesSubReportDatasource"> 
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseSalesReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>  
+  	
+     <bean id="SLE_CUSTOMER_WISE_SALES-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/slecustomerwisesalesreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleCustomerWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="sleCustomerWiseSalesSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveCustomerWiseSalesReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	 <bean id="SLE_SALES_WISE-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/newsalesexecutivesaleswisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>   
+  	
+		  <bean id="PRODUCT_REPORT-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/newproductmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productReportWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productReportWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductReport-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	
+		   <bean id="CUSTOMER_PRODUCT_SALES-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/newcustomerproductsalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerProductSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerCustomerProductSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=CustomerProductSales-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	
+		     <bean id="SLE_PRODUCT_SALES-pdf"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"
+          p:url="classpath:reports/newproductreportslemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleProductReportSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="sleProductReportSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveProductSales-#{reportsUtil.getDownloadDate()}.pdf
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	
+  	<!-- Jasper Views for New Reports End for PDF views -->
+  	
+  	<bean id="CUSTOMER_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/customerwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=CustomerWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="PRODUCT_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/productwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="MYSALES_PRODUCT_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/mysalesproductwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="SALES_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/saleswisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="subReportUrls"
+		  p:subReportDataKeys-ref="subReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="SALES_RETURN_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/salesreturnqtywisereport.jrxml"
+          p:reportDataKey="datasource" 
+          p:subReportUrls-ref="salesReturnWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesReturnWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesReturnQtyWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="SALES_EXECUTIVE_EXPENDITURE_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/salesexecutiveexpenditurereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveExpenditureWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveExpenditureWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveExpenditureWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<bean id="SALES_EXECUTIVE_SALES_WISE-xls"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/salesexecutivesaleswisesupermasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	<!-- Jasper Views for New Reports Starts for XLS views -->
+  	
+   	<bean id="FACTORY_PRODUCT_WISE-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/factoryproductwisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="factoryProductWiseSubReportUrls"
+		  p:subReportDataKeys-ref="factoryProductWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=FactoryProductWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>
+  	 <bean id="PRODUCT_WISE_SALES-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/productwisesalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSalesSubReportDatasource"> 
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseSalesReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>  
+ 
+  		  <bean id="SLE_CUSTOMER_WISE_SALES-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/slecustomerwisesalesreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleCustomerWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="sleCustomerWiseSalesSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveCustomerWiseSalesReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>  
+  	 
+   <bean id="SLE_SALES_WISE-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/newsalesexecutivesaleswisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>   
+    <bean id="PRODUCT_REPORT-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/newproductmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productReportWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productReportWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductReport-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	<bean id="CUSTOMER_PRODUCT_SALES-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/newcustomerproductsalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerProductSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerCustomerProductSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=Customer Product Sales-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	 <bean id="SLE_PRODUCT_SALES-xls"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"
+          p:url="classpath:reports/newproductreportslemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleProductReportSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="sleProductReportSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=Sales Executive Product Sales-#{reportsUtil.getDownloadDate()}.xls
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	<!-- Jasper Views for New Reports End for XLS views -->
+  	
+  	<bean id="CUSTOMER_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/customerwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=CustomerWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="PRODUCT_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/productwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="MYSALES_PRODUCT_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/mysalesproductwisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="SALES_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/saleswisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="subReportUrls"
+		  p:subReportDataKeys-ref="subReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="SALES_RETURN_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/salesreturnqtywisereport.jrxml"
+          p:reportDataKey="datasource" 
+          p:subReportUrls-ref="salesReturnWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesReturnWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesReturnQtyWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="SALES_EXECUTIVE_EXPENDITURE_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/salesexecutiveexpenditurereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveExpenditureWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveExpenditureWiseSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveExpenditureWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<bean id="SALES_EXECUTIVE_SALES_WISE-csv"
+          class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/salesexecutivesaleswisesupermasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSubReportDatasource">
+          <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+  	 	</property>
+  	</bean>
+  	
+  	<!-- Jasper Views for New Reports Starts for CSV views -->
+  	
+  	 <bean id="FACTORY_PRODUCT_WISE-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/factoryproductwisemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="factoryProductWiseSubReportUrls"
+		  p:subReportDataKeys-ref="factoryProductWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=FactoryProductWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	
+  	 <bean id="PRODUCT_WISE_SALES-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/productwisesalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="productWiseSalesSubReportDatasource"> 
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductWiseSalesReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>  
+  	 <bean id="SLE_CUSTOMER_WISE_SALES-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/slecustomerwisesalesreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleCustomerWiseSalesSubReportUrls"
+		  p:subReportDataKeys-ref="sleCustomerWiseSalesSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveCustomerWiseSalesReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>   
+  	
+  	 <bean id="SLE_SALES_WISE-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/newsalesexecutivesaleswisereport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="salesExecutiveSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="salesExecutiveSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveSalesWiseReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	 <bean id="PRODUCT_REPORT-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/newproductmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="productReportWiseSubReportUrls"
+		  p:subReportDataKeys-ref="productReportWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=ProductReport-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	<bean id="CUSTOMER_PRODUCT_SALES-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/newcustomerproductsalesmasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="customerProductSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="customerCustomerProductSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=CustomerProductSales-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean> 
+  	 <bean id="SLE_PRODUCT_SALES-csv"
+    	  class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"
+          p:url="classpath:reports/newproductreportslemasterreport.jrxml"
+          p:reportDataKey="datasource"
+          p:subReportUrls-ref="sleProductReportSalesWiseSubReportUrls"
+		  p:subReportDataKeys-ref="sleProductReportSalesWiseSubReportDatasource">
+	      <property name="headers">
+	        <props>
+	            <prop key="Content-Disposition">
+	                 attachment; filename=SalesExecutiveProductSales-#{reportsUtil.getDownloadDate()}.csv
+	            </prop>
+	        </props>
+	  	 </property>
+  	</bean>    
+  	   
+  	<!-- Jasper Views for New Reports End for CSV views-->
+          
+</beans>
