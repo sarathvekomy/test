@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbDayBookVehicleDetails" table="vb_day_book_vehicle_details">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDayBook" class="com.vekomy.vbooks.hibernate.model.VbDayBook" fetch="select">
+            <column name="day_book_id" not-null="true" />
+        </many-to-one>
+        <property name="driverName" type="string">
+            <column name="driver_name" length="50" />
+        </property>
+        <property name="vehicleNo" type="string">
+            <column name="vehicle_no" length="20" not-null="true" />
+        </property>
+        <property name="startingReading" type="float">
+            <column name="starting_reading" precision="20" not-null="true" />
+        </property>
+        <property name="endingReading" type="float">
+            <column name="ending_reading" precision="20" not-null="true" />
+        </property>
+        <property name="vehicleDetailsRemarks" type="string">
+            <column name="vehicle_details_remarks" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

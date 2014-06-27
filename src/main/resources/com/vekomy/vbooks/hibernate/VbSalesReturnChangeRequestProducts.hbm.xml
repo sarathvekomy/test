@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbSalesReturnChangeRequestProducts" table="vb_sales_return_change_request_products">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbSalesReturnChangeRequest" class="com.vekomy.vbooks.hibernate.model.VbSalesReturnChangeRequest" fetch="select">
+            <column name="sales_return_change_request_id" not-null="true" />
+        </many-to-one>
+        <property name="productName" type="string">
+            <column name="product_name" length="100" not-null="true" />
+        </property>
+        <property name="batchNumber" type="string">
+            <column name="batch_number" length="100" not-null="true" />
+        </property>
+        <property name="damaged" type="string">
+            <column name="damaged" length="10" />
+        </property>
+        <property name="resalable" type="string">
+            <column name="resalable" length="10" />
+        </property>
+        <property name="totalQty" type="string">
+            <column name="total_qty" length="10" />
+        </property>
+        <property name="resalableCost" type="string">
+            <column name="resalable_cost" precision="20" />
+        </property>
+        <property name="damagedCost" type="string">
+            <column name="damaged_cost" precision="20" />
+        </property>
+        <property name="totalCost" type="string">
+            <column name="total_cost" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

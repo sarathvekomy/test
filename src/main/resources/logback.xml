@@ -1,0 +1,39 @@
+<configuration debug="true">
+	<appender name="FILE_VBOOKS_APP" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>log/VbooksApp.log</file>
+		<append>true</append>
+		
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS}| thread | %-5level | %logger{15} | %msg%n</pattern>
+		</layout>
+		
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>log/VbooksApp-%d{yyyyMMdd}.log.zip</fileNamePattern>
+				<maxHistory>500<!-- days --></maxHistory>
+				<timeBasedFileNamingAndTriggeringPolicy	class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+					<maxFileSize>100MB</maxFileSize>
+				</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+		
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} | [%-10thread] | %-5level | %logger{25} | %msg%n</pattern>
+		</layout>
+	</appender>
+
+	<logger name="com.vekomy.vbooks.app" additivity="true">
+		<level value="debug" />
+		<appender-ref ref="FILE_VBOOKS_APP" />
+	</logger>
+	
+	<logger name="org.springframework" additivity="true">
+		<level value="debug" />
+		<appender-ref ref="FILE_VBOOKS_APP" />
+	</logger>
+	
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</root>	
+</configuration>

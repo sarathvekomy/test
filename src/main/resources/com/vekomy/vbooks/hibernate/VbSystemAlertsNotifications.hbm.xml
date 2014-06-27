@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbSystemAlertsNotifications" table="vb_system_alerts_notifications">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbSystemAlerts" class="com.vekomy.vbooks.hibernate.model.VbSystemAlerts" fetch="select">
+            <column name="system_alert_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="vbEmployee" class="com.vekomy.vbooks.hibernate.model.VbEmployee" fetch="select">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="vbRole" class="com.vekomy.vbooks.hibernate.model.VbRole" fetch="select">
+            <column name="role_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="vbNotifications" class="com.vekomy.vbooks.hibernate.model.VbNotifications" fetch="select">
+            <column name="notification_id" not-null="true" />
+        </many-to-one>
+        <property name="mailsTo" type="java.lang.Boolean">
+            <column name="mails_to" />
+        </property>
+        <property name="mailsCc" type="java.lang.Boolean">
+            <column name="mails_cc" />
+        </property>
+        <property name="mailsBcc" type="java.lang.Boolean">
+            <column name="mails_bcc" />
+        </property>
+    </class>
+</hibernate-mapping>
