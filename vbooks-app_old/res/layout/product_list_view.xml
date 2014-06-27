@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/hsProductsView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/lltable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/blue_stroke_bg"
+                android:orientation="horizontal"
+                android:weightSum="10" >
+
+                <TextView
+                    android:id="@+id/lblProductNameHdr"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/productName"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblAvailableQtyHdr"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/availableQty"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblProductCostHdr"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/productCost"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblRequiredQtyHdr"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/requiredQty"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblBonusHdr"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/bonus"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblTotalCostHdr"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/total_cost"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/lblBonusReasonHdr"
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/bonus_reason"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvProductlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grid_border"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/llPaymentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include
+            android:id="@+id/paymentview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/payments_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llProductsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight=".5"
+            android:text="@string/payment"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/lblTotalPriceHdr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".17"
+            android:gravity="center"
+            android:text="@string/grand_toatal"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/lblTotalPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".34"
+            android:gravity="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPaymentsBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:weightSum="1" 
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight=".5"
+            android:text="@string/back"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/btnSaveAndContinue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight=".5"
+            android:text="@string/saveAndcontinue"
+            android:textSize="10pt" />
+    </LinearLayout>
+
+</RelativeLayout>

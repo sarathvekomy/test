@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbOrganization" table="vb_organization">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="superUserName" type="string">
+            <column name="super_user_name" length="30" not-null="true" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="100" not-null="true" />
+        </property>
+        <property name="organizationCode" type="string">
+            <column name="organization_code" length="30" not-null="true" />
+        </property>
+        <property name="fullName" type="string">
+            <column name="full_name" length="100" not-null="true" />
+        </property>
+        <property name="branchName" type="string">
+            <column name="branch_name" length="100" not-null="true" />
+        </property>
+        <property name="mainBranch" type="string">
+            <column name="main_branch" length="5" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="description" length="65535" />
+        </property>
+        <property name="addressLine1" type="string">
+            <column name="address_line_1" length="200" not-null="true" />
+        </property>
+        <property name="addressLine2" type="string">
+            <column name="address_line_2" length="200" />
+        </property>
+        <property name="locality" type="string">
+            <column name="locality" length="60" not-null="true" />
+        </property>
+        <property name="landmark" type="string">
+            <column name="landmark" length="60" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="60" not-null="true" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="60" not-null="true" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="50" not-null="true" />
+        </property>
+        <property name="currencyFormat" type="string">
+            <column name="currency_format" length="20" not-null="true" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="zipcode" length="10" not-null="true" />
+        </property>
+        <property name="phone1" type="string">
+            <column name="phone1" length="20" />
+        </property>
+        <property name="phone2" type="string">
+            <column name="phone2" length="20" />
+        </property>
+        <property name="phone3" type="string">
+            <column name="phone3" length="20" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <set name="vbCustomerCreditInfos" table="vb_customer_credit_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbCustomerCreditInfo" />
+        </set>
+        <set name="vbJournalTypeses" table="vb_journal_types" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbJournalTypes" />
+        </set>
+        <set name="vbDeliveryNotes" table="vb_delivery_note" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNote" />
+        </set>
+        <set name="vbProductInventoryTransactions" table="vb_product_inventory_transaction" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbProductInventoryTransaction" />
+        </set>
+        <set name="vbDeliveryNoteChangeRequests" table="vb_delivery_note_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNoteChangeRequest" />
+        </set>
+        <set name="vbSalesReturns" table="vb_sales_return" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbSalesReturn" />
+        </set>
+        <set name="vbCustomerChangeRequests" table="vb_customer_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbCustomerChangeRequest" />
+        </set>
+        <set name="vbEmployees" table="vb_employee" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbEmployee" />
+        </set>
+        <set name="vbSalesReturnChangeRequests" table="vb_sales_return_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbSalesReturnChangeRequest" />
+        </set>
+        <set name="vbDayBookChangeRequests" table="vb_day_book_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbDayBookChangeRequest" />
+        </set>
+        <set name="vbOrganizationMappingsForMainBranchId" table="vb_organization_mapping" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="main_branch_id" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbOrganizationMapping" />
+        </set>
+        <set name="vbDayBooks" table="vb_day_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbDayBook" />
+        </set>
+        <set name="vbOrganizationMappingsForSubBranchId" table="vb_organization_mapping" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sub_branch_id" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbOrganizationMapping" />
+        </set>
+        <set name="vbJournals" table="vb_journal" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbJournal" />
+        </set>
+        <set name="vbCustomerAdvanceInfos" table="vb_customer_advance_info" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbCustomerAdvanceInfo" />
+        </set>
+        <set name="vbProducts" table="vb_product" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbProduct" />
+        </set>
+        <set name="vbAddressTypeses" table="vb_address_types" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbAddressTypes" />
+        </set>
+        <set name="vbProductCustomerCosts" table="vb_product_customer_cost" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbProductCustomerCost" />
+        </set>
+        <set name="vbCustomers" table="vb_customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbCustomer" />
+        </set>
+        <set name="vbEmployeeCustomers" table="vb_employee_customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbEmployeeCustomer" />
+        </set>
+        <set name="vbPaymentTypeses" table="vb_payment_types" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbPaymentTypes" />
+        </set>
+        <set name="vbAssignOrganizationses" table="vb_assign_organizations" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbAssignOrganizations" />
+        </set>
+        <set name="vbSalesBooks" table="vb_sales_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="organization_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbSalesBook" />
+        </set>
+    </class>
+</hibernate-mapping>

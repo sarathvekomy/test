@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbEmployeeDetail" table="vb_employee_detail">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbEmployee" class="com.vekomy.vbooks.app.hibernate.model.VbEmployee" fetch="select">
+            <column name="employee_id" not-null="true" />
+        </many-to-one>
+        <property name="mobile" type="string">
+            <column name="mobile" length="80" not-null="true" />
+        </property>
+        <property name="alternateMobile" type="string">
+            <column name="alternate_mobile" length="80" />
+        </property>
+        <property name="directLine" type="string">
+            <column name="direct_line" length="80" />
+        </property>
+        <property name="bloodGroup" type="string">
+            <column name="blood_group" length="20" not-null="true" />
+        </property>
+        <property name="nationality" type="string">
+            <column name="nationality" length="50" not-null="true" />
+        </property>
+        <property name="passportNumber" type="string">
+            <column name="passport_number" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

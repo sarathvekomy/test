@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbDayBookChangeRequestAmount" table="vb_day_book_change_request_amount">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDayBookChangeRequest" class="com.vekomy.vbooks.app.hibernate.model.VbDayBookChangeRequest" fetch="select">
+            <column name="day_book_change_request_id" not-null="true" />
+        </many-to-one>
+        <property name="executiveAllowances" type="string">
+            <column name="executive_allowances" length="12" />
+        </property>
+        <property name="driverAllowances" type="string">
+            <column name="driver_allowances" length="12" />
+        </property>
+        <property name="vehicleFuelExpenses" type="string">
+            <column name="vehicle_fuel_expenses" length="12" />
+        </property>
+        <property name="vehicleMeterReading" type="string">
+            <column name="vehicle_meter_reading" length="20" />
+        </property>
+        <property name="vehicleMaintenanceExpenses" type="string">
+            <column name="vehicle_maintenance_expenses" length="12" />
+        </property>
+        <property name="offloadingLoadingCharges" type="string">
+            <column name="offloading_loading_charges" length="12" />
+        </property>
+        <property name="dealerPartyExpenses" type="string">
+            <column name="dealer_party_expenses" length="12" />
+        </property>
+        <property name="municipalCityCouncil" type="string">
+            <column name="municipal_city_council" length="12" />
+        </property>
+        <property name="miscellaneousExpenses" type="string">
+            <column name="miscellaneous_expenses" length="12" />
+        </property>
+        <property name="reasonMiscellaneousExpenses" type="string">
+            <column name="reason_miscellaneous_expenses" length="65535" />
+        </property>
+        <property name="totalAllowances" type="string">
+            <column name="total_allowances" length="20" />
+        </property>
+        <property name="customerTotalPayable" type="string">
+            <column name="customer_total_payable" length="20" />
+        </property>
+        <property name="customerTotalReceived" type="string">
+            <column name="customer_total_received" length="20" />
+        </property>
+        <property name="customerTotalCredit" type="string">
+            <column name="customer_total_credit" length="20" />
+        </property>
+        <property name="amountToBank" type="string">
+            <column name="amount_to_bank" length="20" />
+        </property>
+        <property name="reasonAmountToBank" type="string">
+            <column name="reason_amount_to_bank" length="65535" />
+        </property>
+        <property name="amountToFactory" type="string">
+            <column name="amount_to_factory" length="20" />
+        </property>
+        <property name="closingBalance" type="string">
+            <column name="closing_balance" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

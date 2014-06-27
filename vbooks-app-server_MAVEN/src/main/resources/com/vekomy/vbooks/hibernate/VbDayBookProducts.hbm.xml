@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbDayBookProducts" table="vb_day_book_products" >
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDayBook" class="com.vekomy.vbooks.app.hibernate.model.VbDayBook" fetch="select">
+            <column name="day_book_id" not-null="true" />
+        </many-to-one>
+        <property name="productName" type="string">
+            <column name="product_name" length="100" />
+        </property>
+        <property name="batchNumber" type="string">
+            <column name="batch_number" length="100" not-null="true" />
+        </property>
+        <property name="openingStock" type="java.lang.Integer">
+            <column name="opening_stock" />
+        </property>
+        <property name="productsToCustomer" type="java.lang.Integer">
+            <column name="products_to_customer" />
+        </property>
+        <property name="productsToFactory" type="java.lang.Integer">
+            <column name="products_to_factory" />
+        </property>
+        <property name="closingStock" type="java.lang.Integer">
+            <column name="closing_stock" />
+        </property>
+    </class>
+</hibernate-mapping>

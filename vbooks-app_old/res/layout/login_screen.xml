@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e2837" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/header_bg"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:scaleType="center"
+            android:src="@drawable/vekomy_logo" />
+
+        <EditText
+            android:id="@+id/txUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/headerTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/usernametextbox001"
+            android:drawableLeft="@drawable/usernameicon"
+            android:ems="10"
+            android:hint="Username"
+            android:padding="15dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/txpaswd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txUsername"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/passwordtextbox001"
+            android:drawableLeft="@drawable/passwordicon"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+        <LinearLayout
+            android:id="@+id/llbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txpaswd"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button001"
+                android:padding="7dp"                
+            	android:layout_marginRight="10dp"
+            	android:layout_marginLeft="80dp"
+            	android:gravity="top|center"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/button001"                
+                android:padding="7dp"				
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="80dp"
+                android:gravity="top|center"
+                android:text="Exit"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llbutton"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="#d2e6f5"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:text="@string/footer_text"
+            android:textIsSelectable="false"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</ScrollView>

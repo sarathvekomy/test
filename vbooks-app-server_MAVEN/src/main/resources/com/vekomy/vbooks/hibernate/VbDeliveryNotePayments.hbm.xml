@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNotePayments" table="vb_delivery_note_payments">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDeliveryNote" class="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNote" fetch="select">
+            <column name="delivery_note_id" not-null="true" />
+        </many-to-one>
+        <property name="presentPayable" type="float">
+            <column name="present_payable" precision="20" not-null="true" />
+        </property>
+        <property name="previousCredit" type="float">
+            <column name="previous_credit" precision="29" not-null="true" />
+        </property>
+        <property name="presentAdvance" type="float">
+            <column name="present_advance" precision="20" not-null="true" />
+        </property>
+        <property name="totalPayable" type="float">
+            <column name="total_payable" precision="20" not-null="true" />
+        </property>
+        <property name="presentPayment" type="float">
+            <column name="present_payment" precision="20" not-null="true" />
+        </property>
+        <property name="balance" type="float">
+            <column name="balance" precision="20" not-null="true" />
+        </property>
+        <property name="paymentType" type="string">
+            <column name="payment_type" length="20" not-null="true" />
+        </property>
+        <property name="chequeNo" type="string">
+            <column name="cheque_no" length="50" />
+        </property>
+        <property name="bankName" type="string">
+            <column name="bank_name" length="100" />
+        </property>
+        <property name="branchName" type="string">
+            <column name="branch_name" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

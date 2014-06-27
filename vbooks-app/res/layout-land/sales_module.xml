@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bgimg"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:tabStripEnabled="false" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/grid_border_blue" >
+
+            <ImageView
+                android:id="@+id/imgListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/invoice_bg" />
+
+            <ListView
+                android:id="@+id/lvcustlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- Delivery Note start -->
+
+
+            <!--
+                 <RelativeLayout
+                android:id="@+id/rlDeliveryNoteView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:paddingTop="40dp" >
+
+                <include
+                    android:id="@+id/custlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    layout="@layout/sales_custmour_list_view" />
+
+                <Button
+                    android:id="@+id/btnDisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bottom_bg"
+                    android:text="@string/generateInvoice"
+                    android:textColor="@drawable/text_color_selection"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            -->
+            <!-- Delivery Note End -->
+
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

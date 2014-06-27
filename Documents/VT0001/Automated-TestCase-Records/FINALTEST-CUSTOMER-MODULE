@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.40:8080/v-books-1.0.10/login.jsp" />
+<title>customer-module</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">customer-module</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-v1.0/login.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>VKT.ESWAR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>Nageswar@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=businessName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=male</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=female</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=businessName</td>
+	<td>RDY11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>RDY11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>REDDYAA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>45896712</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HITECH</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=region</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=businessName</td>
+	<td>TECH11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>TECH11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>TECHAA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>04012354</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditLimit</td>
+	<td>50000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditOverdueDays</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>KPHB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=region</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>RDY1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-search-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.green-result-col-2 &gt; div.result-body</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='13'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='customer-view-container']/div[2]/div[2]/div/div[10]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//body/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.add-student-tabs</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-cancel-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//body/div[8]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='customer-search-form-container']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>RDY1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-search-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='13'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-enable-disable-view-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=row-11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='13'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='13'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='11'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-enable-disable-view-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//body/div[7]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=businessName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-cancel-edit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//body/div[7]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='customer-search-form-container']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>rdy1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-search-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=11</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>4589671234</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:background="@color/background"
+    	android:scaleType="fitXY" 
+    	android:layout_gravity="fill_vertical">
+
+		<RelativeLayout
+		    android:id="@+id/Header"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:background="@color/background" >
+	        
+			<TextView
+	            android:id="@+id/txsalesexecuteName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"            
+	            android:text="@string/salesExecutiveName"
+	            android:paddingLeft="5dp"
+	        	android:paddingRight="5dp"
+	            android:layout_centerInParent="true"
+	            android:layout_alignParentLeft="true"
+	            android:background="@color/background"/>						
+	        <Button
+	            android:id="@+id/logout"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/logout"
+	            android:gravity="center_vertical"
+	        	android:paddingRight="5dp"
+				android:layout_alignParentRight="true"
+	            android:contentDescription="@string/app_name"/>
+			<TextView
+		        android:id="@+id/tvline"
+		        android:layout_width="match_parent"
+		        android:layout_height="5dp"
+		        android:background="@color/blue_stroke_bg" 
+		        android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true" />	                
+	    </RelativeLayout>
+		
+		<TextView
+	            android:id="@+id/txsalesMsg"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"            
+	            android:text="@string/salesExecutiveName"
+	            android:scrollHorizontally="true"
+	            android:gravity="center_vertical"
+			    android:scaleType="fitXY"
+			    android:layout_weight=".1"/>
+			    		
+        <GridView
+            android:id="@+id/gridservices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+			android:verticalSpacing="10dp"
+            android:numColumns="auto_fit"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:background="@drawable/grid_border"
+            android:layout_weight=".7" >
+
+        </GridView>
+	</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbNotifications" table="vb_notifications">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="notificationType" type="string">
+            <column name="notification_type" length="80" not-null="true" />
+        </property>
+        <set name="vbSystemAlertsNotificationses" table="vb_system_alerts_notifications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="notification_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSystemAlertsNotifications" />
+        </set>
+        <set name="vbUserDefinedAlertsNotificationses" table="vb_user_defined_alerts_notifications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="notification_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbUserDefinedAlertsNotifications" />
+        </set>
+    </class>
+</hibernate-mapping>

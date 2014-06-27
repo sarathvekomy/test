@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/headerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/vekomy_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="5.5"
+            android:background="@drawable/grid_border_transpernt"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="10" >
+
+            <EditText
+                android:id="@+id/txUsername"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/grid_border_blue"
+                android:drawableLeft="@drawable/usernameicon"
+                android:ems="10"
+                android:hint="@string/username"
+                android:imeOptions="actionDone"
+                android:padding="15dp"
+                android:textColor="@color/background" >
+<!--                 <requestFocus /> -->
+            </EditText>
+
+            <EditText
+                android:id="@+id/txpaswd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="3"
+                android:background="@drawable/grid_border_blue"
+                android:drawableLeft="@drawable/passwordicon"
+                android:ems="10"
+                android:hint="@string/password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@color/background" />
+
+            <TableRow
+                android:id="@+id/llbutton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="3"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="10" >
+
+                <!-- Link to Forget password Screen -->
+
+                <Button
+                    android:id="@+id/btnforgetpswd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="6.8"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:text="@string/fogetpasswd"
+                    android:textColor="@drawable/text_color_selection_forgot"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_weight="3"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/login"
+                    android:textColor="@drawable/text_color_selection"
+                    android:textSize="@dimen/activity_horizontal_margin"
+                    android:textStyle="bold" />
+
+                <!--
+                     <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/button_blue"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/exit"
+                    android:textColor="@drawable/text_color_selection"
+                    android:textSize="@dimen/activity_horizontal_margin"
+                    android:textStyle="bold" />
+                -->
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/salesteam" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3.2"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/footerText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="bottom|center"
+            android:text="@string/footer_text"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

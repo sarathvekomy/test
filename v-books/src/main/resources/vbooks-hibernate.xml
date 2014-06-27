@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+			
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<!-- <value>classpath:jdbc.properties</value> -->
+			<value>file:///${VBOOKS_HOME}/conf/jdbc.properties</value>
+		</property>
+	</bean>
+	
+	<!-- Connection Pool Configuration -->
+    <bean id="dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+		<property name="url" value="${jdbc.url}" />
+		<property name="maxIdle" value="${jdbc.maxIdle}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="maxActive" value="${jdbc.maxActive}" />
+		<property name="initialSize" value="${jdbc.initialSize}" />
+		<property name="testOnBorrow" value="${jdbc.testOnBorrow}" />
+		<property name="testOnReturn" value="${jdbc.testOnReturn}" />
+		<property name="testWhileIdle" value="${jdbc.testWhileIdle}"/>
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="validationQuery" value="${jdbc.validationQuery}" />
+		<property name="defaultAutoCommit" value="${jdbc.defaultAutoCommit}"/>
+		<property name="removeAbandoned" value="${jdbc.removeAbandoned}" />
+		<property name="validationInterval" value="${jdbc.validationInterval}" />
+		<property name="removeAbandonedTimeout" value="${jdbc.removeAbandonedTimeout}"/>
+		<property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}" />
+    </bean>
+	
+	<!-- Hibernate SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/vekomy/vbooks/hibernate/VbAddressTypes.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbAlertCategory.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbAlertType.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbMySales.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbAlertTypeMySales.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbAlertTypeMySalesPage.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbExcessCash.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbNotifications.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSystemAlerts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSystemAlertsNotifications.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbTrending.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbUserDefinedAlerts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbUserDefinedAlertsNotifications.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbAssignOrganizations.hbm.xml</value>
+			    <value>com/vekomy/vbooks/hibernate/VbAuthority.hbm.xml</value>
+			    <value>com/vekomy/vbooks/hibernate/VbCustomer.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerChangeRequest.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerChangeRequestDetails.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerCreditInfo.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerAdvanceInfo.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerCreditTransaction.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerDebitTransaction.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCustomerDetail.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCashDayBook.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBook.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookAmount.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookVehicleDetails.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookChangeRequest.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookChangeRequestAmount.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDayBookChangeRequestProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbEmployee.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbEmployeeAddress.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbEmployeeDetail.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbInsystemAlertNotifications.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbInvoiceNoPeriod.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbJournal.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbJournalTypes.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbLogin.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbLoginTrack.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbModules.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbRoleModuleMapping.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbOrganization.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbOrganizationMapping.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbPaymentTypes.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbProduct.hbm.xml</value>	
+				<value>com/vekomy/vbooks/hibernate/VbProductCustomerCost.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbRole.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesBook.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesBookProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbUserSetting.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNote.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNotePayments.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNoteProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNoteChangeRequest.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNoteChangeRequestPayments.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbDeliveryNoteChangeRequestProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbJournalChangeRequest.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesReturn.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesReturnProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesReturnChangeRequest.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSalesReturnChangeRequestProducts.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbEmployeeCustomer.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbProductInventoryTransaction.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSystemNotifications.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbSystemAlertsHistory.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbUserDefinedAlertsHistory.hbm.xml</value>
+				<value>com/vekomy/vbooks/hibernate/VbCashDayBookCr.hbm.xml</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.connection.release_mode">${hibernate.connection.release_mode}</prop>
+				<prop key="hibernate.connection.autocommit">false</prop>
+				<prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!--
+		Transaction manager for a single Hibernate SessionFactory (alternative to JTA)
+	-->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="loginDao" class="com.vekomy.vbooks.security.LoginDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="siteadminDao" class="com.vekomy.vbooks.siteadmin.dao.SiteAdminDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="profileDao" class="com.vekomy.vbooks.profile.dao.ProfileDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="organizationDao" class="com.vekomy.vbooks.organization.dao.OrganizationDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="manageUserDao" class="com.vekomy.vbooks.siteadmin.dao.ManageUserDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+
+	<bean id="employeeDao" class="com.vekomy.vbooks.employee.dao.EmployeeDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="employeeCustomerDao" class="com.vekomy.vbooks.employee.dao.EmployeeCustomerDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="productDao" class="com.vekomy.vbooks.product.dao.ProductDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="productCustomerCostDao" class="com.vekomy.vbooks.product.dao.ProductCustomerCostDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="customerDao" class="com.vekomy.vbooks.customer.dao.CustomerDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="customerCrDao" class="com.vekomy.vbooks.customer.dao.CustomerChangeRequestDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="accountsSalesBookDao" class="com.vekomy.vbooks.accounts.dao.SalesBookDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="salesReturnDao" class="com.vekomy.vbooks.mysales.dao.SalesReturnDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="deliveryNoteDao" class="com.vekomy.vbooks.mysales.dao.DeliveryNoteDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="dayBookDao" class="com.vekomy.vbooks.mysales.dao.DayBookDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="reportsDao" class="com.vekomy.vbooks.reports.dao.ReportsDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="alertsDao" class="com.vekomy.vbooks.alerts.dao.AlertsDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="systemDefaultsDao" class="com.vekomy.vbooks.organization.dao.SyStemDefaultsDao">
+	<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	<bean id="journalDao" class="com.vekomy.vbooks.mysales.dao.JournalDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="deliveryNoteCrDao" class="com.vekomy.vbooks.mysales.cr.dao.DeliveryNoteCrDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+	
+	<bean id="salesReturnCrDao" class="com.vekomy.vbooks.mysales.cr.dao.SalesReturnCrDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="journalCrDao" class="com.vekomy.vbooks.mysales.cr.dao.JournalCrDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+	
+	<bean id="dayBookCrDao" class="com.vekomy.vbooks.mysales.cr.dao.DayBookCrDao">
+		<property name="sessionFactory">
+			<ref local="sessionFactory"/>
+		</property>
+	</bean>
+</beans>

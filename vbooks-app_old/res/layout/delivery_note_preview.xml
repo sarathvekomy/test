@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblInvoice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/invoice"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_below="@id/lblInvoice"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <TableRow
+            android:id="@+id/trForInvoiceNo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblInvoice"
+            android:weightSum="1" >
+
+            <TextView
+                android:id="@+id/lblInvoiceNoHdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".09"
+                android:gravity="left|center_horizontal"
+                android:textStyle="bold"
+                android:text="@string/invoice_no" />
+
+            <TextView
+                android:id="@+id/lblInvoiceNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".5"
+                android:gravity="left|center_horizontal"
+                 />
+
+            <TextView
+                android:id="@+id/lblCurrentDateHdr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dip"
+                android:layout_weight=".1"
+                android:textStyle="bold"
+                android:text="@string/date" />
+
+            <TextView
+                android:id="@+id/lblCurrentDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".3" />
+        </TableRow>
+
+        <View
+            android:id="@+id/viewForInvoice"
+            android:layout_width="fill_parent"
+            android:layout_height="3dip"
+            android:layout_below="@id/trForInvoiceNo"
+            android:background="@android:drawable/arrow_up_float" />
+
+        <TableRow
+            android:id="@+id/trForBesinessName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewForInvoice"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".19"
+                android:text="@string/invoice_name" />
+
+            <TextView
+                android:id="@+id/lblInvoiceName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".25" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".23"
+                android:text="@string/business_name" />
+
+            <TextView
+                android:id="@+id/lblBusinessName"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight=".3" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trListViewHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trForBesinessName"
+            android:layout_margin="5dp"
+            android:weightSum="1" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".23"
+                android:text="@string/productName"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="BatchNo"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/productQty"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+			<TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/bonusQty"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:text="@string/productCost"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight=".17"
+                android:text="@string/total_cost"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/listviewProductDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trListViewHeader">
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/listviewProductDisplay" >
+
+            <TableRow
+                android:id="@+id/tr1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:gravity="right"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:text="@string/previous_credit" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".01"
+                    android:text="@string/colen_sigin" />
+                <TextView
+                    android:id="@+id/lblpreviouscredit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr1"
+                android:layout_margin="5dip"
+                android:gravity="right"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:gravity="left"
+                    android:text="@string/present_advance" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".01"
+                    android:text="@string/colen_sigin" />
+                <TextView
+                    android:id="@+id/lbladvance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr2"
+                android:layout_margin="5dip"
+                android:gravity="right"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:gravity="left"
+                    android:text="@string/present_payment" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".01"
+                    android:text="@string/colen_sigin" />
+                <TextView
+                    android:id="@+id/lblPresentPay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr3"
+                android:layout_margin="5dip"
+                android:gravity="right"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".25"
+                    android:gravity="left"
+                    android:text="@string/remaining_bal" />
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".01"
+                    android:text="@string/colen_sigin" />
+                <TextView
+                    android:id="@+id/lblRemaingBal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4" />
+            </TableRow>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_below="@id/tr4"
+                android:background="@android:drawable/bottom_bar" />
+
+            <TableRow
+                android:id="@+id/tr5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr4"
+                android:layout_margin="5dip"
+                android:gravity="right"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".20"
+                    android:gravity="left"
+                    android:text="@string/total_cost" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".05"
+                    android:text="@string/equal_sigin" />
+
+                <TextView
+                    android:id="@+id/lblTotalPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".37" />
+            </TableRow>
+
+            <View
+                android:id="@+id/viewForSign"
+                android:layout_width="fill_parent"
+                android:layout_height="3dip"
+                android:layout_below="@id/tr5"
+                android:background="@android:drawable/bottom_bar" />
+
+            <TableRow
+                android:id="@+id/tr6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewForSign"
+                android:layout_marginTop="15dp"
+                android:gravity="left|bottom"
+                android:weightSum="1" >
+
+               <!--  <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight=".5"
+                    android:gravity="left"
+                    android:layout_gravity="center|center_horizontal" 
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".24" />
+ -->            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr6"
+                android:layout_margin="3dip"
+                android:weightSum="1" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight=".5"
+                    android:gravity="left"
+                    android:text="(SalesManSign)" />
+
+                <TextView
+                    android:id="@+id/lblBusinessman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".24"
+                    android:text="  (BesinessManSign)  " />
+            </TableRow>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

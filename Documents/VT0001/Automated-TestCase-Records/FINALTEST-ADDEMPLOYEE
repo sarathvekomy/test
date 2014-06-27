@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.40:8080/v-books-1.0.10/login.jsp" />
+<title>employeeadd</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">employeeadd</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-v1.0/login.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>VKT.ESWAR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>Nageswar@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>nagesh1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Nagesh@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>eswar</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>reddy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=employeeEmail</td>
+	<td>n.r@g.com</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=employeeType</td>
+	<td>label=Accountant</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>8945231672</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bloodGroup</td>
+	<td>A+</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passPortNumber</td>
+	<td>45ad</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nationality</td>
+	<td>indian</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>kphb</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>hyd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>hyd</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>ap</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=addressType</td>
+	<td>label=PRIMARY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

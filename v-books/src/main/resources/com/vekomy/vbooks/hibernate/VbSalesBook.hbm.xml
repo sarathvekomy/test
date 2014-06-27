@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2013 3:21:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbSalesBook" table="vb_sales_book">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbOrganization" class="com.vekomy.vbooks.hibernate.model.VbOrganization" fetch="select">
+            <column name="organization_id" not-null="true" />
+        </many-to-one>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <property name="salesExecutive" type="string">
+            <column name="sales_executive" length="50" not-null="true" />
+        </property>
+        <property name="salesBookNo" type="string">
+            <column name="sales_book_no" length="50" />
+        </property>
+        <property name="advance" type="java.lang.Float">
+            <column name="advance" precision="20" />
+        </property>
+        <property name="openingBalance" type="java.lang.Float">
+            <column name="opening_balance" precision="20" />
+        </property>
+        <property name="closingBalance" type="java.lang.Float">
+            <column name="closing_balance" precision="20" />
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name="flag" />
+        </property>
+        <property name="cycleId" type="java.lang.Integer">
+            <column name="cycle_id" />
+        </property>
+        <property name="allotmentType" type="string">
+            <column name="allotment_type" length="20" not-null="true" />
+        </property>
+        <set name="vbDayBookChangeRequests" table="vb_day_book_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDayBookChangeRequest" />
+        </set>
+        <set name="vbJournals" table="vb_journal" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbJournal" />
+        </set>
+        <set name="vbDayBooks" table="vb_day_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDayBook" />
+        </set>
+        <set name="vbDeliveryNotes" table="vb_delivery_note" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDeliveryNote" />
+        </set>
+        <set name="vbCashDayBookCrs" table="vb_cash_day_book_cr" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbCashDayBookCr" />
+        </set>
+        <set name="vbDeliveryNoteChangeRequests" table="vb_delivery_note_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDeliveryNoteChangeRequest" />
+        </set>
+        <set name="vbSalesReturns" table="vb_sales_return" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSalesReturn" />
+        </set>
+        <set name="vbCashDayBooks" table="vb_cash_day_book" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbCashDayBook" />
+        </set>
+        <set name="vbJournalChangeRequests" table="vb_journal_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbJournalChangeRequest" />
+        </set>
+        <set name="vbSalesBookProductses" table="vb_sales_book_products" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSalesBookProducts" />
+        </set>
+        <set name="vbSalesReturnChangeRequests" table="vb_sales_return_change_request" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="sales_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSalesReturnChangeRequest" />
+        </set>
+    </class>
+</hibernate-mapping>

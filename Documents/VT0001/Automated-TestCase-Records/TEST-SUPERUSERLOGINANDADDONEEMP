@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.40:8080/v-books-1.0.10/login.jsp" />
+<title>TEST-SUPERUSERLOGINANDADDONEEMP</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TEST-SUPERUSERLOGINANDADDONEEMP</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-v1.0/login.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>Vekomy@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=notifications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[4]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>CASH</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>DD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>CHEQUE</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressValue</td>
+	<td>PRIMARY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressValue</td>
+	<td>SECONDARY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>LOADING CHARGES</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>LOAD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>FUAL EPX</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>FUAL EXP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>FEXP</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Invoice No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceValue</td>
+	<td>0001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNoPeriod</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>emp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>VBemp@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>emp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>vekomy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=employeeEmail</td>
+	<td>emp@vekomy.c</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=employeeType</td>
+	<td>label=Sales Executive</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>040251436</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bloodGroup</td>
+	<td>A+</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passPortNumber</td>
+	<td>2541</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nationality</td>
+	<td>indian</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>AP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=addressType</td>
+	<td>label=PRIMARY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.module-link &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>VEK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>HARD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>VEK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>50000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-arrived-quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=qunatityArrived</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='qunatityArrived'])[2]</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-damaged-quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=damagedQuantity</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='damagedQuantity'])[2]</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[7]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=businessName</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>VEK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>VEK</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>04022115</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>KPHB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=region</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=assign-customers</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=uName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=VB.emp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=locality-val-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=business-val-0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-assign-multiple-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-assign-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.module-link &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[2]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=salesExecutive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=VB.emp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=advance</td>
+	<td>10,000.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=quantityAllotted</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[2]</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

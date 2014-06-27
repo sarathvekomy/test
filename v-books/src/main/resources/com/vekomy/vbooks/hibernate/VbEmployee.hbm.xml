@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbEmployee" table="vb_employee">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbOrganization" class="com.vekomy.vbooks.hibernate.model.VbOrganization" fetch="select">
+            <column name="organization_id" />
+        </many-to-one>
+        <property name="username" type="string">
+            <column name="username" length="20" not-null="true" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="first_name" length="35" not-null="true" />
+        </property>
+        <property name="middleName" type="string">
+            <column name="middle_name" length="35" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="35" not-null="true" />
+        </property>
+        <property name="employeeNumber" type="string">
+            <column name="employee_number" length="100" />
+        </property>
+        <property name="employeeType" type="string">
+            <column name="employee_type" length="30" not-null="true" />
+        </property>
+        <property name="employeeHierarchyLevel" type="java.lang.Integer">
+            <column name="employee_Hierarchy_level" />
+        </property>
+        <property name="employeeEmail" type="string">
+            <column name="employee_email" length="100" not-null="true" />
+        </property>
+        <property name="gender" type="java.lang.Character">
+            <column name="gender" length="1" />
+        </property>
+        <property name="grantedDays" type="java.lang.Integer">
+            <column name="granted_days" />
+        </property>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <set name="vbSystemAlertsNotificationses" table="vb_system_alerts_notifications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="user_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbSystemAlertsNotifications" />
+        </set>
+        <set name="vbUserDefinedAlertsNotificationses" table="vb_user_defined_alerts_notifications" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="user_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbUserDefinedAlertsNotifications" />
+        </set>
+        <set name="vbEmployeeAddresses" table="vb_employee_address" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="employee_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbEmployeeAddress" />
+        </set>
+        <set name="vbEmployeeCustomers" table="vb_employee_customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="employee_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbEmployeeCustomer" />
+        </set>
+        <set name="vbAssignOrganizationses" table="vb_assign_organizations" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="employee_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbAssignOrganizations" />
+        </set>
+        <set name="vbEmployeeDetails" table="vb_employee_detail" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="employee_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbEmployeeDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

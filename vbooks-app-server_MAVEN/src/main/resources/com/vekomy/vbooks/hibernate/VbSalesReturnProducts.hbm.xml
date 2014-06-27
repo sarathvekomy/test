@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbSalesReturnProducts" table="vb_sales_return_products">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbSalesReturn" class="com.vekomy.vbooks.app.hibernate.model.VbSalesReturn" fetch="select">
+            <column name="sales_return_id" not-null="true" />
+        </many-to-one>
+        <property name="productName" type="string">
+            <column name="product_name" length="100" not-null="true" />
+        </property>
+        <property name="batchNumber" type="string">
+            <column name="batch_number" length="100" not-null="true" />
+        </property>
+        <property name="damaged" type="java.lang.Integer">
+            <column name="damaged" />
+        </property>
+        <property name="resalable" type="java.lang.Integer">
+            <column name="resalable" />
+        </property>
+        <property name="totalQty" type="java.lang.Integer">
+            <column name="total_qty" />
+        </property>
+        <property name="cost" type="float">
+            <column name="cost" precision="20" not-null="true" />
+        </property>
+        <property name="totalCost" type="float">
+            <column name="total_cost" precision="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

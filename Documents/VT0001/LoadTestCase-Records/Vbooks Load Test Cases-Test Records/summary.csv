@@ -1,0 +1,126 @@
+sampler_label,aggregate_report_count,average,aggregate_report_min,aggregate_report_max,aggregate_report_stddev,aggregate_report_error%,aggregate_report_rate,aggregate_report_bandwidth,average_bytes
+/v-books-v1.0/j_spring_security_check,1,38,38,38,0.0,0.0,26.31578947368421,364.48910361842104,14183.0
+/v-books-v1.0/index.jsp,2,5,5,5,0.0,0.0,4.065040650406504,14.6484375,3690.0
+/v-books-v1.0/js/lib/jquery-1.5.1.min.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/css/jScrollPane.css,1,3,3,3,0.0,0.0,333.3333333333333,437.5,1344.0
+/v-books-v1.0/css/ui-lightness/jquery-ui-1.8.10.custom.css,1,6,6,6,0.0,0.0,166.66666666666666,5828.61328125,35811.0
+/v-books-v1.0/css/datePicker.css,1,2,2,2,0.0,0.0,500.0,1349.609375,2764.0
+/v-books-v1.0/js/lib/date.js,1,4,4,4,0.0,0.0,250.0,900.87890625,3690.0
+/v-books-v1.0/js/lib/jquery.mCustomScrollbar.concat.min.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/lib/jquery.datePicker.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/lib/jScrollPane.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/lib/jscharts.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/lib/jquery-ui-1.8.10.custom.min.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/siteadmin/siteadmin_organization.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/images/default/pages/reports_icon.png,1,3,3,3,0.0,0.0,333.3333333333333,1476.2369791666667,4535.0
+/v-books-v1.0/images/default/pages/manage_customer_icon.png,1,2,2,2,0.0,0.0,500.0,2230.46875,4568.0
+/v-books-v1.0/images/default/pages/manage-organizations-icon.png,1,3,3,3,0.0,0.0,333.3333333333333,1498.046875,4602.0
+/v-books-v1.0/images/default/button-left.jpg,1,4,4,4,0.0,0.0,250.0,3164.55078125,12962.0
+/v-books-v1.0/images/bell.png,1,8,8,8,0.0,0.0,125.0,340.8203125,2792.0
+/v-books-v1.0/css/default/default.css,1,7,7,7,0.0,0.0,142.85714285714286,7788.783482142857,55830.0
+/v-books-v1.0/css/site.css,1,9,9,9,0.0,0.0,111.1111111111111,7778.862847222223,71690.0
+/v-books-v1.0/css/jquery.mCustomScrollbar.css,1,3,3,3,0.0,0.0,333.3333333333333,4394.53125,13500.0
+/v-books-v1.0/js/feed-reader.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/js/common/common.js,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/css/default/images/student-table-footer.jpg,2,2,2,2,0.0,1.0,5.154639175257732,6.158887725515464,1223.5
+/v-books-v1.0/css/default/images/title-bg.png,1,3,3,3,0.0,0.0,333.3333333333333,5904.296875,18138.0
+/v-books-v1.0/css/default/images/addstudent-tit-bg.jpg,1,3,3,3,0.0,0.0,333.3333333333333,1026.6927083333333,3154.0
+/v-books-v1.0/organization.json,14,5,5,8,0.8112726208286124,0.0,36.64921465968586,132.06601767015707,3690.0
+/v-books-v1.0/images/default//button-left.jpg,1,3,3,3,0.0,0.0,333.3333333333333,4219.401041666667,12962.0
+/v-books-v1.0/employee.json,2,4,4,5,0.5,0.0,5.617977528089887,20.244469803370787,3690.0
+/v-books-v1.0/css/default/images/module-title-bg.png,1,2,2,2,0.0,0.0,500.0,1496.09375,3064.0
+/v-books-v1.0/siteadmin/organization_list.jsp,2,4,4,5,0.5,0.0,5.865102639296188,21.13498900293255,3690.0
+/v-books-v1.0/images/default/vekomy-logo.png,1,3,3,3,0.0,0.0,333.3333333333333,4393.880208333333,13498.0
+/v-books-v1.0/css/default/images/wine1.png,1,174,174,174,0.0,0.0,5.747126436781609,11046.639278017243,1968246.0
+/v-books-v1.0/css/common/images/edit-icon.png,1,4,4,4,0.0,0.0,250.0,231.689453125,949.0
+/v-books-v1.0/css/default/images/basic_arrow_up.gif,1,3,3,3,0.0,0.0,333.3333333333333,453.125,1392.0
+/v-books-v1.0/css/common/images/view-details.png,1,2,2,2,0.0,0.0,500.0,474.609375,972.0
+/v-books-v1.0/css/common/images/disable-icon.png,1,2,2,2,0.0,0.0,500.0,398.4375,816.0
+/v-books-v1.0/css/default/images/basic_arrow_down.gif,1,2,2,2,0.0,0.0,500.0,670.41015625,1373.0
+/v-books-v1.0/siteadmin/organization_create.jsp,2,5,5,5,0.0,0.0,166.66666666666666,600.5859375,3690.0
+/v-books-v1.0/images/common/ajax-loader.gif,1,3,3,3,0.0,0.0,333.3333333333333,3282.5520833333335,10084.0
+/v-books-v1.0/css/default/images/step-selected-corner.png,1,2,2,2,0.0,0.0,500.0,1738.28125,3560.0
+/v-books-v1.0/css/default/images/step-no-select-corner.png,1,3,3,3,0.0,0.0,333.3333333333333,1147.7864583333333,3526.0
+/v-books-v1.0/images/default//button-right.jpg,1,3,3,3,0.0,0.0,333.3333333333333,4228.190104166667,12989.0
+/v-books-v1.0/css/common/images/help_ptr.gif,1,2,2,2,0.0,0.0,500.0,588.8671875,1206.0
+/v-books-v1.0/css/default/images/step-selected.png,1,3,3,3,0.0,0.0,333.3333333333333,1009.765625,3102.0
+/v-books-v1.0/css/default/images/step-no-select.png,1,2,2,2,0.0,0.0,500.0,1511.71875,3096.0
+/v-books-v1.0/images/waiting.gif,1,3,3,3,0.0,0.0,333.3333333333333,292.6432291666667,899.0
+/v-books-v1.0/images/available.gif,1,2,2,2,0.0,0.0,500.0,616.69921875,1263.0
+/v-books-v1.0/images/taken.gif,1,2,2,2,0.0,0.0,500.0,635.7421875,1302.0
+/v-books-v1.0/siteadmin/organization_preview.jsp,1,5,5,5,0.0,0.0,200.0,720.703125,3690.0
+/v-books-v1.0/logout,1,7,7,7,0.0,0.0,142.85714285714286,536.4118303571429,3845.0
+/v-books-v1.0/,1,4,4,4,0.0,0.0,250.0,900.87890625,3690.0
+/v-books-v1.0/login.jsp,1,3,3,3,0.0,0.0,333.3333333333333,1133.4635416666667,3482.0
+TOTAL,71,7,2,174,20.413315062937674,0.028169014084507043,123.05025996533796,4104.9576202339695,34160.64788732395
+1382965327043,38,/v-books-v1.0/j_spring_security_check,200,OK,Thread Group 1-1,text,true,14110,27
+1382965327083,5,/v-books-v1.0/index.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327089,4,/v-books-v1.0/js/lib/jquery-1.5.1.min.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327095,2,/v-books-v1.0/css/jScrollPane.css,200,OK,Thread Group 1-1,text,true,1344,2
+1382965327098,5,/v-books-v1.0/css/ui-lightness/jquery-ui-1.8.10.custom.css,200,OK,Thread Group 1-1,text,true,35811,2
+1382965327104,2,/v-books-v1.0/css/datePicker.css,200,OK,Thread Group 1-1,text,true,2764,2
+1382965327107,5,/v-books-v1.0/js/lib/date.js,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327113,5,/v-books-v1.0/js/lib/jquery.mCustomScrollbar.concat.min.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327119,5,/v-books-v1.0/js/lib/jquery.datePicker.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327125,5,/v-books-v1.0/js/lib/jScrollPane.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327131,4,/v-books-v1.0/js/lib/jscharts.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327136,5,/v-books-v1.0/js/lib/jquery-ui-1.8.10.custom.min.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327142,5,/v-books-v1.0/js/siteadmin/siteadmin_organization.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327148,2,/v-books-v1.0/images/default/pages/reports_icon.png,200,OK,Thread Group 1-1,bin,true,4535,2
+1382965327152,2,/v-books-v1.0/images/default/pages/manage_customer_icon.png,200,OK,Thread Group 1-1,bin,true,4568,2
+1382965327156,2,/v-books-v1.0/images/default/pages/manage-organizations-icon.png,200,OK,Thread Group 1-1,bin,true,4602,2
+1382965327159,3,/v-books-v1.0/images/default/button-left.jpg,200,OK,Thread Group 1-1,bin,true,12962,2
+1382965327163,3,/v-books-v1.0/images/bell.png,200,OK,Thread Group 1-1,bin,true,2792,3
+1382965327167,7,/v-books-v1.0/css/default/default.css,200,OK,Thread Group 1-1,text,true,55830,2
+1382965327175,8,/v-books-v1.0/css/site.css,200,OK,Thread Group 1-1,text,true,71690,2
+1382965327184,3,/v-books-v1.0/css/jquery.mCustomScrollbar.css,200,OK,Thread Group 1-1,text,true,13500,2
+1382965327188,5,/v-books-v1.0/js/feed-reader.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327194,5,/v-books-v1.0/js/common/common.js,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327200,2,/v-books-v1.0/css/default/images/student-table-footer.jpg,404,Not Found,Thread Group 1-1,text,false,1214,2
+1382965327203,4,/v-books-v1.0/css/default/images/title-bg.png,200,OK,Thread Group 1-1,bin,true,18138,3
+1382965327208,2,/v-books-v1.0/css/default/images/addstudent-tit-bg.jpg,200,OK,Thread Group 1-1,bin,true,3154,2
+1382965327211,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327217,3,/v-books-v1.0/images/default//button-left.jpg,200,OK,Thread Group 1-1,bin,true,12962,2
+1382965327221,5,/v-books-v1.0/employee.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327227,3,/v-books-v1.0/css/default/images/module-title-bg.png,200,OK,Thread Group 1-1,bin,true,3064,3
+1382965327231,5,/v-books-v1.0/siteadmin/organization_list.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327237,3,/v-books-v1.0/images/default/vekomy-logo.png,200,OK,Thread Group 1-1,bin,true,13498,2
+1382965327241,172,/v-books-v1.0/css/default/images/wine1.png,200,OK,Thread Group 1-1,bin,true,1968246,4
+1382965327414,6,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327421,2,/v-books-v1.0/css/common/images/edit-icon.png,200,OK,Thread Group 1-1,bin,true,949,2
+1382965327424,2,/v-books-v1.0/css/default/images/basic_arrow_up.gif,200,OK,Thread Group 1-1,bin,true,1392,2
+1382965327427,3,/v-books-v1.0/css/common/images/view-details.png,200,OK,Thread Group 1-1,bin,true,972,3
+1382965327431,2,/v-books-v1.0/css/common/images/disable-icon.png,200,OK,Thread Group 1-1,bin,true,816,2
+1382965327434,2,/v-books-v1.0/css/default/images/basic_arrow_down.gif,200,OK,Thread Group 1-1,bin,true,1373,2
+1382965327437,5,/v-books-v1.0/siteadmin/organization_create.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327443,5,/v-books-v1.0/siteadmin/organization_create.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327449,3,/v-books-v1.0/images/common/ajax-loader.gif,200,OK,Thread Group 1-1,bin,true,10084,2
+1382965327453,3,/v-books-v1.0/css/default/images/step-selected-corner.png,200,OK,Thread Group 1-1,bin,true,3560,3
+1382965327457,3,/v-books-v1.0/css/default/images/step-no-select-corner.png,200,OK,Thread Group 1-1,bin,true,3526,3
+1382965327462,3,/v-books-v1.0/images/default//button-right.jpg,200,OK,Thread Group 1-1,bin,true,12989,2
+1382965327466,2,/v-books-v1.0/css/common/images/help_ptr.gif,200,OK,Thread Group 1-1,bin,true,1206,2
+1382965327469,3,/v-books-v1.0/css/default/images/step-selected.png,200,OK,Thread Group 1-1,bin,true,3102,3
+1382965327473,3,/v-books-v1.0/css/default/images/step-no-select.png,200,OK,Thread Group 1-1,bin,true,3096,3
+1382965327477,6,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327484,2,/v-books-v1.0/images/waiting.gif,200,OK,Thread Group 1-1,bin,true,899,2
+1382965327487,2,/v-books-v1.0/images/available.gif,200,OK,Thread Group 1-1,bin,true,1263,2
+1382965327491,4,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327497,2,/v-books-v1.0/images/taken.gif,200,OK,Thread Group 1-1,bin,true,1302,2
+1382965327500,6,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327507,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327513,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327519,6,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327526,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327532,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327538,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327545,5,/v-books-v1.0/siteadmin/organization_preview.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327551,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327557,5,/v-books-v1.0/index.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327563,5,/v-books-v1.0/siteadmin/organization_list.jsp,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327569,5,/v-books-v1.0/employee.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327575,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,3
+1382965327582,2,/v-books-v1.0/css/default/images/student-table-footer.jpg,404,Not Found,Thread Group 1-1,text,false,1233,2
+1382965327585,5,/v-books-v1.0/organization.json,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327591,7,/v-books-v1.0/logout,200,OK,Thread Group 1-1,text,true,3845,2
+1382965327599,5,/v-books-v1.0/,200,OK,Thread Group 1-1,text,true,3690,2
+1382965327605,3,/v-books-v1.0/login.jsp,200,OK,Thread Group 1-1,text,true,3482,3

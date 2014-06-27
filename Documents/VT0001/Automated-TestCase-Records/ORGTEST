@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.70:8080/v-books-1.0.10/login.jsp" />
+<title>ORGTEST</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">ORGTEST</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-v1.1/login.jsp;jsessionid=7D42438805CCE3B231BB6D14CC92DA6B</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=img[alt=&quot;logo&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=header-organization-name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=notifications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=header-login-name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-add-school</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-strip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=school-results-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-school</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=organizationCode</td>
+	<td>VKT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=branchName</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currencyFormat</td>
+	<td>INR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usernamePrefix</td>
+	<td>VKT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>AP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=country</td>
+	<td>INDIA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone1</td>
+	<td>040262654</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fullName</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>VKTvekomy@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>040212325</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>nag.xyz@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=organization-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='2'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='2'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-school</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainBranch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=mainBranch</td>
+	<td>label=No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=organizationCode</td>
+	<td>HEY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>HEYDAY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=branchName</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currencyFormat</td>
+	<td>INR</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usernamePrefix</td>
+	<td>HEY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>AP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=country</td>
+	<td>INDIA</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone1</td>
+	<td>040525153</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=mainBranchName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=VEKOMY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fullName</td>
+	<td>VEKOMT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>HEYvekomy@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>040212523</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>nag.xyz@gmail.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=organization-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-view-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-view-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=green-result-col-action-2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='2'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-list-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-list-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=organization-list-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=error-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=phone1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone1</td>
+	<td>0405251535</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=error-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=error-message</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>0402125235</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=organization-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=add-user</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-add-school</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Vekomy@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=fullName</td>
+	<td>vekomy</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>040121513</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=directLine</td>
+	<td>040582316</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=employeeEmail</td>
+	<td>vek.@vek.vek</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bloodGroup</td>
+	<td>O+</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passPortNumber</td>
+	<td>45621</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nationality</td>
+	<td>INDIAN</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=employeeEmail</td>
+	<td>vek@vek.C</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=organizationType</td>
+	<td>label=VEKOMY</td>
+</tr>
+<tr>
+	<td>addSelection</td>
+	<td>id=organizationType</td>
+	<td>label=HEYDAY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>AP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=addressType</td>
+	<td>label=Primary</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.table-field</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=user-enable-disable-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=user-enable-disable-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//div[@id='3'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=organization</td>
+	<td>label=VEKOMY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;VEKOMY&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=reportType</td>
+	<td>label=Daily</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=startDate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='reports-add-form-container']/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-show</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='report-container']/table/tbody/tr/td[2]/table/tbody/tr[3]/td[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

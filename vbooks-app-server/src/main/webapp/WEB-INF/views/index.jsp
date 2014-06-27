@@ -1,0 +1,3 @@
+<center>
+WELCOME PAGE
+</center>

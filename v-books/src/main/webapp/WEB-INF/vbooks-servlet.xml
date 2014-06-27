@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+			http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+			http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- the application context definition for the springapp DispatcherServlet -->
+	<import resource="classpath:vbooks-hibernate.xml" />
+	<import resource="jasper-views.xml" />
+	
+	<bean name="handlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+		<property name="alwaysUseFullPath" value="true" />
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
+
+	<bean name="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	
+	<bean name="xmlViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="order" value="1" />
+	</bean>
+	
+	<bean name="jasperViewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
+		<property name="basename">
+			<value>views</value>
+		</property>
+		<property name="order" value="2" />
+	</bean>
+	
+ 	<bean id="purgeQueueTimerTask" class="com.vekomy.vbooks.util.PurgeQueueTimerTask"/>
+	
+	<bean id="timerTaskFactoryBean" class="org.springframework.scheduling.timer.MethodInvokingTimerTaskFactoryBean">
+		<property name="targetObject" ref="purgeQueueTimerTask"/>
+		<property name="targetMethod" value="execute"/>
+	</bean>
+
+    <bean id="timerTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+		<property name="timerTask" ref="timerTaskFactoryBean"/>
+		<property name="period" value="${queue.cleanup}"/>
+	</bean>
+
+    <bean class="org.springframework.scheduling.timer.TimerFactoryBean">
+		<property name="scheduledTimerTasks">
+			<list>
+				<ref local="timerTask"/>
+			</list>
+		</property>
+	</bean>
+
+	<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+
+	<!-- Configurer that replaces ${...} placeholders with values from a properties 
+		file -->
+	
+	<bean name="organizationAction" class="com.vekomy.vbooks.organization.action.OrganizationAction">
+		<property name="daoName">
+			<value>organizationDao</value>
+		</property>
+	</bean>
+
+	<bean name="organizationWidgetController" class="com.vekomy.vbooks.organization.controller.OrganizationWidgetController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	
+	<bean name="systemDefaultAction" class="com.vekomy.vbooks.organization.action.SystemDefaultsAction">
+	   <property name="daoName">
+	   <value>systemDefaultsDao</value>
+	</property>
+	</bean>
+	<bean name="systemDefaultController" class="com.vekomy.vbooks.organization.controller.SyStemDefaultsController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/organization.json">organizationWidgetController</prop>
+				<prop key="/default.json">systemDefaultController</prop>
+				<prop key="/employee.json">employeeController</prop>
+				<prop key="/profile.json">profileController</prop>
+				<prop key="/customer.json">customerController</prop>
+				<prop key="/customerCr.json">customerCrController</prop>
+				<prop key="/product.json">productController</prop>
+				<prop key="/productCustomerCost.json">productCustomerCostController</prop>
+				<prop key="/salesReturn.json">salesReturnController</prop>
+				<prop key="/deliveryNote.json">deliveryNoteController</prop>
+				<prop key="/dayBook.json">dayBookController</prop>
+				<prop key="/accounts.json">accountsSalesBookController</prop>
+				<prop key="/assignCustomers.json">employeeCustomerController</prop>
+				<prop key="/reports.json">reportsController</prop>
+				<prop key="/customerWiseReport.json">customerWiseReportsController</prop>
+				<prop key="/productWiseReport.json">productWiseReportsController</prop>
+				<prop key="/salesWiseReport.json">salesWiseReportsController</prop>
+				<prop key="/salesReturnReport.json">salesReturnReportsController</prop>
+				<prop key="/salesExecutiveExpenditureReport.json">salesExecutiveExpenditureReportsController</prop>
+				<prop key="/salesExecutiveSalesReport.json">salesExecutiveSalesWiseReportsController</prop>
+				<prop key="/manageUser.json">manageUserController</prop>
+				<prop key="/journal.json">journalController</prop>
+				<prop key="/deliveryNoteCr.json">deliveryNoteCrController</prop>
+				<prop key="/salesReturnCr.json">salesReturnCrController</prop>
+				<prop key="/journalCr.json">journalCrController</prop>
+				<prop key="/dayBookCr.json">dayBookCrController</prop>
+				<prop key="/alerts.json">alertsController</prop>
+				<prop key="/dynamicReports.json">dynamicReportsController</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<bean name="profileAction" class="com.vekomy.vbooks.profile.action.ProfileAction">
+		<property name="daoName">
+			<value>profileDao</value>
+		</property>
+	</bean>
+
+	<bean name="profileController" class="com.vekomy.vbooks.profile.controller.ProfileController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="employeeAction" class="com.vekomy.vbooks.employee.action.EmployeeAction">
+		<property name="daoName">
+			<value>employeeDao</value>
+		</property>
+	</bean>
+
+	<bean name="employeeController" class="com.vekomy.vbooks.employee.controller.EmployeeController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="employeeCustomerAction" class="com.vekomy.vbooks.employee.action.EmployeeCustomersAction">
+		<property name="daoName">
+			<value>employeeCustomerDao</value>
+		</property>
+	</bean>
+	<bean name="employeeCustomerController" class="com.vekomy.vbooks.employee.controller.EmployeeCustomerController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="customerAction" class="com.vekomy.vbooks.customer.action.CustomerAction">
+		<property name="daoName">
+			<value>customerDao</value>
+		</property>
+	</bean>
+	<bean name="customerController" class="com.vekomy.vbooks.customer.controller.CustomerController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="customerCrAction" class="com.vekomy.vbooks.customer.action.CustomerChangeRequestAction">
+		<property name="daoName">
+			<value>customerCrDao</value>
+		</property>
+	</bean>
+	<bean name="customerCrController" class="com.vekomy.vbooks.customer.controller.CustomerChangeRequestController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="productAction" class="com.vekomy.vbooks.product.action.ProductAction">
+		<property name="daoName">
+			<value>productDao</value>
+		</property>
+	</bean>
+
+	<bean name="productController" class="com.vekomy.vbooks.product.controller.ProductController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="productCustomerCostAction" class="com.vekomy.vbooks.product.action.ProductCustomerCostAction">
+		<property name="daoName">
+			<value>productCustomerCostDao</value>
+		</property>
+	</bean>
+
+	<bean name="productCustomerCostController" class="com.vekomy.vbooks.product.controller.ProductCustomerCostController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+
+	<bean name="salesReturnController" class="com.vekomy.vbooks.mysales.controller.SalesReturnController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="salesReturnAction" class="com.vekomy.vbooks.mysales.action.SalesReturnAction">
+		<property name="daoName">
+			<value>salesReturnDao</value>
+		</property>
+	</bean>
+
+	<bean name="deliveryNoteController" class="com.vekomy.vbooks.mysales.controller.DeliveryNoteController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="deliverynoteAction" class="com.vekomy.vbooks.mysales.action.DeliveryNoteAction">
+		<property name="daoName">
+			<value>deliveryNoteDao</value>
+		</property>
+	</bean>
+
+	<bean name="dayBookController" class="com.vekomy.vbooks.mysales.controller.DayBookController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="dayBookAction" class="com.vekomy.vbooks.mysales.action.DayBookAction">
+		<property name="daoName">
+			<value>dayBookDao</value>
+		</property>
+	</bean>
+
+	<bean name="accountsSalesBookController" class="com.vekomy.vbooks.accounts.controller.SalesBookController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="accountsAction" class="com.vekomy.vbooks.accounts.action.SalesBookAction">
+		<property name="daoName">
+			<value>accountsSalesBookDao</value>
+		</property>
+	</bean>
+	
+	<!--Reports related bean configuration-START  -->
+	<bean name="reportsController" class="com.vekomy.vbooks.reports.controller.ReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="reportsAction" class="com.vekomy.vbooks.reports.action.ReportsAction">
+		<property name="daoName">
+			<value>reportsDao</value>
+		</property>
+	</bean>
+	
+	<bean name="customerWiseReportsController" class="com.vekomy.vbooks.reports.controller.CustomerWiseReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="dynamicReportsController" class="com.vekomy.vbooks.reports.controller.DynamicReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="productWiseReportsController" class="com.vekomy.vbooks.reports.controller.ProductWiseReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="salesWiseReportsController" class="com.vekomy.vbooks.reports.controller.SalesWiseReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="salesReturnReportsController" class="com.vekomy.vbooks.reports.controller.SalesReturnReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="salesExecutiveExpenditureReportsController" class="com.vekomy.vbooks.reports.controller.SalesExecutiveExpenditureReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	
+	<bean name="salesExecutiveSalesWiseReportsController" class="com.vekomy.vbooks.reports.controller.SalesExecutiveSalesWiseReportsController">
+		<property name="formView">
+			<value>jsonView</value>
+		</property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<!--Reports related bean configuration-END  -->
+	<bean name="manageUserAction" class="com.vekomy.vbooks.siteadmin.action.ManageUserAction">
+		<property name="daoName">
+	   		<value>manageUserDao</value>
+		</property>
+	</bean>
+	<bean name="manageUserController" class="com.vekomy.vbooks.siteadmin.controller.ManageUserController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="journalAction" class="com.vekomy.vbooks.mysales.action.JournalAction">
+	   <property name="daoName">
+	   <value>journalDao</value>
+	</property>
+	</bean>
+	<bean name="journalController" class="com.vekomy.vbooks.mysales.controller.JournalController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	
+	<bean name="deliveryNoteCrAction" class="com.vekomy.vbooks.mysales.cr.action.DeliveryNoteCrAction">
+	   <property name="daoName">
+	   <value>deliveryNoteCrDao</value>
+	</property>
+	</bean>
+	<bean name="deliveryNoteCrController" class="com.vekomy.vbooks.mysales.cr.controller.DeliveryNoteCrController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="salesReturnCrAction" class="com.vekomy.vbooks.mysales.cr.action.SalesReturnCrAction">
+	   <property name="daoName">
+	   <value>salesReturnCrDao</value>
+	</property>
+	</bean>
+	<bean name="salesReturnCrController" class="com.vekomy.vbooks.mysales.cr.controller.SalesRetunCrController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="journalCrAction" class="com.vekomy.vbooks.mysales.cr.action.JournalCrAction">
+	   <property name="daoName">
+	   <value>journalCrDao</value>
+	</property>
+	</bean>
+	<bean name="journalCrController" class="com.vekomy.vbooks.mysales.cr.controller.JournalCrController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<bean name="dayBookCrAction" class="com.vekomy.vbooks.mysales.cr.action.DayBookCrAction">
+	   <property name="daoName">
+	   <value>dayBookCrDao</value>
+	</property>
+	</bean>
+	<bean name="dayBookCrController" class="com.vekomy.vbooks.mysales.cr.controller.DayBookCrController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	
+	<!-- Alerts Configurations -->
+	<bean name="alertsAction" class="com.vekomy.vbooks.alerts.action.AlertsAction">
+	   <property name="daoName">
+	   <value>alertsDao</value>
+	</property>
+	</bean>
+	<bean name="alertsController" class="com.vekomy.vbooks.alerts.controller.AlertsController">
+	   <property name="formView">
+			<value>jsonView</value>
+	   </property>
+		<property name="successView">
+			<value>jsonView</value>
+		</property>
+	</bean>
+	<!-- Alerts Configurations  -->
+</beans>

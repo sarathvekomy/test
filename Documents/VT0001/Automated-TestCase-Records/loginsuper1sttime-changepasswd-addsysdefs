@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.70:8080/v-books-1.0.10/login.jsp" />
+<title>loginsuper1sttime-changepasswd-addsysdefs</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">loginsuper1sttime-changepasswd-addsysdefs</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-v1.1/login.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>VKT.VEKOMY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>VKTvekomy@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=oldPassword</td>
+	<td>VKTvekomy@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newPassword</td>
+	<td>Vekomy@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirmPassword</td>
+	<td>Vekomy@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=action-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=header-organization-name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=notifications</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-strip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[3]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[4]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[5]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=span.module-link &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[2]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[3]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[4]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//li[5]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[4]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>dd</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>cash</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>cheque</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressValue</td>
+	<td>primary</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressValue</td>
+	<td>secondary</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>Loading charges</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>LCH</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>Fual exp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>FEXp</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>FEXP</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Invoice No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceValue</td>
+	<td>0001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNoPeriod</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

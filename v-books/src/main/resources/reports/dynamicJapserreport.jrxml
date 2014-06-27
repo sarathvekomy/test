@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dynamicreport5" language="groovy" pageWidth="1100" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="1060" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1">
+		<parameter name="showTotalRecieved" class="java.lang.Boolean">
+			<defaultValueExpression><![CDATA[false]]></defaultValueExpression>
+		</parameter>
+		<field name="startDate" class="java.util.Date"/>
+		<field name="endDate" class="java.util.Date"/>
+		<field name="businessName" class="java.lang.String"/>
+		<field name="locality" class="java.lang.String"/>
+		<field name="totalPayable" class="java.lang.Float"/>
+		<field name="totalRecieved" class="java.lang.Float"/>
+		<field name="bonusAmount" class="java.lang.Float"/>
+		<field name="presentAdvance" class="java.lang.Float"/>
+		<field name="productName" class="java.lang.String"/>
+		<field name="batchNumber" class="java.lang.String"/>
+		<field name="qtyAllotted" class="java.lang.Integer"/>
+		<field name="returnToFactory" class="java.lang.Integer"/>
+		<field name="productQty" class="java.lang.Integer"/>
+		<field name="bonusQty" class="java.lang.Integer"/>
+		<field name="damaged" class="java.lang.Integer"/>
+		<field name="resalable" class="java.lang.Integer"/>
+		<field name="expenditureType" class="java.lang.String"/>
+		<field name="expenditureDetails" class="java.lang.String"/>
+		<field name="expenditureAmount" class="java.lang.Float"/>
+		<field name="amtRecieved" class="java.lang.Float"/>
+		<field name="amtToBank" class="java.lang.Float"/>
+		<field name="amtToFactory" class="java.lang.Float"/>
+		<field name="journalType" class="java.lang.String"/>
+		<field name="amount" class="java.lang.Float"/>
+		<field name="description" class="java.lang.String"/>
+		<field name="previousCredit" class="java.lang.Float"/>
+		<field name="createdOn" class="java.lang.String"/>
+		<field name="showTotalRecieved" class="java.lang.Boolean"/>
+		<field name="showBusinessName" class="java.lang.Boolean"/>
+		<field name="showLocality" class="java.lang.Boolean"/>
+		<field name="showTotalPayable" class="java.lang.Boolean"/>
+		<field name="showBonusAmount" class="java.lang.Boolean"/>
+		<field name="showPresentAdvance" class="java.lang.Boolean"/>
+		<field name="showPreviousCredit" class="java.lang.Boolean"/>
+		<field name="showQtyAllotted" class="java.lang.Boolean"/>
+		<field name="showReturnToFactory" class="java.lang.Boolean"/>
+		<field name="showProductQty" class="java.lang.Boolean"/>
+		<field name="showBonusQty" class="java.lang.Boolean"/>
+		<field name="showDamaged" class="java.lang.Boolean"/>
+		<field name="showResalable" class="java.lang.Boolean"/>
+		<field name="showExpenditureType" class="java.lang.Boolean"/>
+		<field name="showExpenditureDetails" class="java.lang.Boolean"/>
+		<field name="showExpenditureAmount" class="java.lang.Boolean"/>
+		<field name="showAmtRecieved" class="java.lang.Boolean"/>
+		<field name="showAmtToBank" class="java.lang.Boolean"/>
+		<field name="showAmtToFactory" class="java.lang.Boolean"/>
+		<field name="showJournalType" class="java.lang.Boolean"/>
+		<field name="showAmount" class="java.lang.Boolean"/>
+		<field name="showInvoiceNo" class="java.lang.Boolean"/>
+		<field name="showBatchNumber" class="java.lang.Boolean"/>
+		<field name="showProductName" class="java.lang.Boolean"/>
+		<field name="showDescription" class="java.lang.Boolean"/>
+		<field name="invoiceNo" class="java.lang.String"/>
+		<field name="showCreatedOn" class="java.lang.Boolean"/>
+		<field name="showCreatedBy" class="java.lang.Boolean"/>
+		<field name="createdBy" class="java.lang.String"/>
+		<variable name="test" class="java.lang.Boolean">
+			<variableExpression><![CDATA[$P{showTotalRecieved}]]></variableExpression>
+		</variable>
+	</subDataset>
+	<parameter name="showTotalRecieved" class="java.lang.Boolean"/>
+	<parameter name="datasource" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<field name="startDate" class="java.util.Date"/>
+	<field name="endDate" class="java.util.Date"/>
+	<field name="businessName" class="java.lang.String"/>
+	<field name="locality" class="java.lang.String"/>
+	<field name="totalPayable" class="java.lang.Float"/>
+	<field name="totalRecieved" class="java.lang.Float"/>
+	<field name="bonusAmount" class="java.lang.Float"/>
+	<field name="presentAdvance" class="java.lang.Float"/>
+	<field name="productName" class="java.lang.String"/>
+	<field name="batchNumber" class="java.lang.String"/>
+	<field name="qtyAllotted" class="java.lang.Integer"/>
+	<field name="returnToFactory" class="java.lang.Integer"/>
+	<field name="productQty" class="java.lang.Integer"/>
+	<field name="bonusQty" class="java.lang.Integer"/>
+	<field name="damaged" class="java.lang.Integer"/>
+	<field name="resalable" class="java.lang.Integer"/>
+	<field name="expenditureType" class="java.lang.String"/>
+	<field name="expenditureDetails" class="java.lang.String"/>
+	<field name="expenditureAmount" class="java.lang.Float"/>
+	<field name="amtRecieved" class="java.lang.Float"/>
+	<field name="amtToBank" class="java.lang.Float"/>
+	<field name="amtToFactory" class="java.lang.Float"/>
+	<field name="journalType" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Float"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="previousCredit" class="java.lang.Float"/>
+	<field name="createdOn" class="java.lang.String"/>
+	<field name="showTotalRecieved" class="java.lang.Boolean"/>
+	<field name="showBusinessName" class="java.lang.Boolean"/>
+	<field name="showLocality" class="java.lang.Boolean"/>
+	<field name="showTotalPayable" class="java.lang.Boolean"/>
+	<field name="showBonusAmount" class="java.lang.Boolean"/>
+	<field name="showPresentAdvance" class="java.lang.Boolean"/>
+	<field name="showPreviousCredit" class="java.lang.Boolean"/>
+	<field name="showQtyAllotted" class="java.lang.Boolean"/>
+	<field name="showReturnToFactory" class="java.lang.Boolean"/>
+	<field name="showProductQty" class="java.lang.Boolean"/>
+	<field name="showBonusQty" class="java.lang.Boolean"/>
+	<field name="showDamaged" class="java.lang.Boolean"/>
+	<field name="showResalable" class="java.lang.Boolean"/>
+	<field name="showExpenditureType" class="java.lang.Boolean"/>
+	<field name="showExpenditureDetails" class="java.lang.Boolean"/>
+	<field name="showExpenditureAmount" class="java.lang.Boolean"/>
+	<field name="showAmtRecieved" class="java.lang.Boolean"/>
+	<field name="showAmtToBank" class="java.lang.Boolean"/>
+	<field name="showAmtToFactory" class="java.lang.Boolean"/>
+	<field name="showJournalType" class="java.lang.Boolean"/>
+	<field name="showAmount" class="java.lang.Boolean"/>
+	<field name="showInvoiceNo" class="java.lang.Boolean"/>
+	<field name="showBatchNumber" class="java.lang.Boolean"/>
+	<field name="showProductName" class="java.lang.Boolean"/>
+	<field name="showDescription" class="java.lang.Boolean"/>
+	<field name="invoiceNo" class="java.lang.String"/>
+	<field name="showCreatedOn" class="java.lang.Boolean"/>
+	<field name="showCreatedBy" class="java.lang.Boolean"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<variable name="test" class="java.lang.Boolean">
+		<variableExpression><![CDATA[$P{showTotalRecieved}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="141" splitType="Stretch">
+			<elementGroup>
+				<componentElement>
+					<reportElement key="table" style="table" x="0" y="0" width="1060" height="140"/>
+					<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+						<datasetRun subDataset="Table Dataset 1">
+							<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{datasource}.getData())]]></dataSourceExpression>
+						</datasetRun>
+						<jr:column width="90">
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[S.No]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TD" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showBusinessName}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Business Name]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{businessName}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showCreatedBy}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Sales Executive]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{createdBy}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showBonusAmount}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Bonus Amount]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{bonusAmount}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showPresentAdvance}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Advance]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{presentAdvance}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showCreatedOn}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Date]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{createdOn}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showTotalPayable}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Total Payable]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{totalPayable}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showLocality}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Locality]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{locality}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showTotalRecieved}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Total Recieved]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{totalRecieved}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showProductQty}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Product Quantity]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{productQty}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showReturnToFactory}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Quantity Returned Facrtory]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###" isBlankWhenNull="false">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{returnToFactory}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showDamaged}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Damaged Quantity]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{damaged}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showProductName}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Product Name]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showBatchNumber}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Batch Number]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{batchNumber}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showBonusQty}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Bonus Quantity]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###" isBlankWhenNull="false">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{bonusQty}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showQtyAllotted}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Allotted Quantity]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{qtyAllotted}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showExpenditureAmount}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Expenditure Amount]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{expenditureAmount}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showExpenditureType}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Expenditure Type]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{expenditureType}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showExpenditureDetails}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Expenditure Details]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{expenditureDetails}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showAmtToFactory}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Amount To Factory]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{amtToFactory}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showDescription}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Journal Description]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showJournalType}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Journal Type]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{journalType}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showAmtRecieved}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[SLE Amount Recieved]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{amtRecieved}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showResalable}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Resalable Quantity]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,###">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{resalable}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showAmtToBank}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Amount To Bank]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{amtToBank}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showAmount}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Amount]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="90">
+							<printWhenExpression><![CDATA[$F{showPreviousCredit}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Previous Credit]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField pattern="#,##0.00">
+									<reportElement x="0" y="0" width="90" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{previousCredit}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+						<jr:column width="180">
+							<printWhenExpression><![CDATA[$F{showInvoiceNo}==true]]></printWhenExpression>
+							<jr:tableHeader style="table_TH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement x="0" y="0" width="180" height="30"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font isBold="true"/>
+									</textElement>
+									<text><![CDATA[Invoice No]]></text>
+								</staticText>
+							</jr:tableHeader>
+							<jr:tableFooter style="table_TH" height="0" rowSpan="1"/>
+							<jr:columnHeader style="table_CH" height="0" rowSpan="1"/>
+							<jr:columnFooter style="table_CH" height="0" rowSpan="1"/>
+							<jr:detailCell style="table_TD" height="30" rowSpan="1">
+								<textField>
+									<reportElement x="0" y="0" width="180" height="30"/>
+									<textElement/>
+									<textFieldExpression><![CDATA[$F{invoiceNo}]]></textFieldExpression>
+								</textField>
+							</jr:detailCell>
+						</jr:column>
+					</jr:table>
+				</componentElement>
+			</elementGroup>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="1460" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[There Are No Matched Records Found]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

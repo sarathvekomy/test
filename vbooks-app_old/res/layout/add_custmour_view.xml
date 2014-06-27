@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TableRow
+                android:id="@+id/tr1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtBusinessName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/business_name" />
+
+                <EditText
+                    android:id="@+id/txtCustomerName"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_edittext_focus"
+                    android:gravity="center"
+                    android:hint="@string/customer_name"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr1"
+                android:weightSum="1" >
+
+                <TextView
+                    android:id="@+id/txtgender"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".2"
+                    android:gravity="center"
+                    android:text="@string/gender"
+                    android:textColor="@color/white"
+                    android:textSize="6pt"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbtnMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="@string/male"
+                        android:checked="true"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="@string/female"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr2"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtcontactNo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/contact_number" />
+
+                <EditText
+                    android:id="@+id/txtEmailAddress"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/email_address"
+                    android:inputType="textEmailAddress" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr3"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtInvoiceNo"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/invoice_no" />
+
+                <EditText
+                    android:id="@+id/txtAltContactNum"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/alternate_contact_number" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr4"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtAddress1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_edittext_focus"
+                    android:gravity="center"
+                    android:hint="@string/address_1" />
+
+                <EditText
+                    android:id="@+id/txtAddress2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_edittext_focus"
+                    android:gravity="center"
+                    android:hint="@string/address_2" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr5"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtLocality"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/locality" />
+
+                <EditText
+                    android:id="@+id/txtLandMark"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_edittext_focus"
+                    android:gravity="center"
+                    android:hint="@string/landmark" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr6"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtDirectLine"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/direct_line" />
+
+                <EditText
+                    android:id="@+id/txtRegion"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/region" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr7"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtCity"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/city" />
+
+                <EditText
+                    android:id="@+id/txtState"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/state" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tr8"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/txtZipCode"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/edittext_boarder"
+                    android:gravity="center"
+                    android:hint="@string/zipcode" />
+
+                <EditText
+                    android:id="@+id/txtAddressType"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dip"
+                    android:layout_weight=".5"
+                    android:background="@drawable/custom_edittext_focus"
+                    android:gravity="center"
+                    android:hint="@string/address_type" />
+            </TableRow>
+        </RelativeLayout>
+    </ScrollView>
+
+</merge>

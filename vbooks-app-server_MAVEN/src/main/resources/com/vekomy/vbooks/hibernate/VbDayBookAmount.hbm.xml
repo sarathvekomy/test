@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbDayBookAmount" table="vb_day_book_amount">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDayBook" class="com.vekomy.vbooks.app.hibernate.model.VbDayBook" fetch="select">
+            <column name="day_book_id" not-null="true" />
+        </many-to-one>
+        <property name="executiveAllowances" type="java.lang.Float">
+            <column name="executive_allowances" precision="12" />
+        </property>
+        <property name="driverAllowances" type="java.lang.Float">
+            <column name="driver_allowances" precision="12" />
+        </property>
+        <property name="vehicleFuelExpenses" type="java.lang.Float">
+            <column name="vehicle_fuel_expenses" precision="12" />
+        </property>
+        <property name="vehicleMeterReading" type="java.lang.Float">
+            <column name="vehicle_meter_reading" precision="20" />
+        </property>
+        <property name="vehicleMaintenanceExpenses" type="java.lang.Float">
+            <column name="vehicle_maintenance_expenses" precision="12" />
+        </property>
+        <property name="offloadingLoadingCharges" type="java.lang.Float">
+            <column name="offloading_loading_charges" precision="12" />
+        </property>
+        <property name="dealerPartyExpenses" type="java.lang.Float">
+            <column name="dealer_party_expenses" precision="12" />
+        </property>
+        <property name="municipalCityCouncil" type="java.lang.Float">
+            <column name="municipal_city_council" precision="12" />
+        </property>
+        <property name="miscellaneousExpenses" type="java.lang.Float">
+            <column name="miscellaneous_expenses" precision="12" />
+        </property>
+        <property name="reasonMiscellaneousExpenses" type="string">
+            <column name="reason_miscellaneous_expenses" length="65535" />
+        </property>
+        <property name="totalAllowances" type="java.lang.Float">
+            <column name="total_allowances" precision="20" />
+        </property>
+        <property name="customerTotalPayable" type="java.lang.Float">
+            <column name="customer_total_payable" precision="20" />
+        </property>
+        <property name="customerTotalReceived" type="java.lang.Float">
+            <column name="customer_total_received" precision="20" />
+        </property>
+        <property name="customerTotalCredit" type="java.lang.Float">
+            <column name="customer_total_credit" precision="20" />
+        </property>
+        <property name="amountToBank" type="java.lang.Float">
+            <column name="amount_to_bank" precision="20" />
+        </property>
+        <property name="reasonAmountToBank" type="string">
+            <column name="reason_amount_to_bank" length="65535" />
+        </property>
+        <property name="amountToFactory" type="java.lang.Float">
+            <column name="amount_to_factory" precision="20" />
+        </property>
+        <property name="closingBalance" type="java.lang.Float">
+            <column name="closing_balance" precision="20" />
+        </property>
+    </class>
+</hibernate-mapping>

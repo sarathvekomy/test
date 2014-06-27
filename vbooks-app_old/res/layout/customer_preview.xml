@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/customer_info"
+        android:textColor="#5B6D68"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_alignParentTop="true"/>
+
+    <View
+        android:id="@+id/viewBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@id/top"
+        android:background="@android:drawable/bottom_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewBorder" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblCustomerName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_name"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblContactNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_number"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblInvoiceName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/invoice_name"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address_1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/lblState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@android:style/ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" 
+            android:layout_weight="1"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@android:style/ButtonBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+    </TableRow>
+
+</RelativeLayout>

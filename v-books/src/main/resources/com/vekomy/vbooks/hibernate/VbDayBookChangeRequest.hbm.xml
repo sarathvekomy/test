@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 28, 2013 9:51:27 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.hibernate.model.VbDayBookChangeRequest" table="vb_day_book_change_request">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbSalesBook" class="com.vekomy.vbooks.hibernate.model.VbSalesBook" fetch="select">
+            <column name="sales_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="vbOrganization" class="com.vekomy.vbooks.hibernate.model.VbOrganization" fetch="select">
+            <column name="organization_id" not-null="true" />
+        </many-to-one>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <property name="reportingManager" type="string">
+            <column name="reporting_manager" length="50" />
+        </property>
+        <property name="salesExecutive" type="string">
+            <column name="sales_executive" length="50" not-null="true" />
+        </property>
+        <property name="dayBookNo" type="string">
+            <column name="day_book_no" length="50" />
+        </property>
+        <property name="isReturn" type="java.lang.Boolean">
+            <column name="is_return" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" />
+        </property>
+        <property name="flag" type="java.lang.Integer">
+            <column name="flag" />
+        </property>
+        <property name="driverName" type="string">
+            <column name="driver_name" length="50" />
+        </property>
+        <property name="vehicleNo" type="string">
+            <column name="vehicle_no" length="20" not-null="true" />
+        </property>
+        <property name="startingReading" type="string">
+            <column name="starting_reading" length="20" not-null="true" />
+        </property>
+        <property name="endingReading" type="string">
+            <column name="ending_reading" length="20" not-null="true" />
+        </property>
+        <property name="vehicleDetailsRemarks" type="string">
+            <column name="vehicle_details_remarks" length="65535" />
+        </property>
+        <property name="dayBookRemarks" type="string">
+            <column name="day_book_remarks" length="65535" />
+        </property>
+        <property name="crDescription" type="string">
+            <column name="cr_description" length="65535" />
+        </property>
+        <set name="vbDayBookChangeRequestAmounts" table="vb_day_book_change_request_amount" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="day_book_change_request_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDayBookChangeRequestAmount" />
+        </set>
+        <set name="vbDayBookChangeRequestProductses" table="vb_day_book_change_request_products" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="day_book_change_request_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.hibernate.model.VbDayBookChangeRequestProducts" />
+        </set>
+    </class>
+</hibernate-mapping>

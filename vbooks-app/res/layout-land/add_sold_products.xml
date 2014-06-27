@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_border_blue"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <EditText
+            android:id="@+id/txtSoldProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/txt_box_boarder_yellow"
+            android:gravity="center"
+            android:hint="@string/productName"
+            android:imeOptions="actionDone"
+            android:inputType="none"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:textColor="@color/background" />
+
+        <EditText
+            android:id="@+id/txtSoldBatchNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:background="@drawable/txt_box_boarder_yellow"
+            android:gravity="center"
+            android:hint="@string/batchNo"
+            android:imeOptions="actionDone"
+            android:inputType="none"
+            android:maxLength="20"
+            android:padding="5dp"
+            android:textColor="@color/background" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:weightSum="1" >
+
+        <Button
+            android:id="@+id/btnDialogSoldProductAdd"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".3"
+            android:background="@drawable/button_blue"
+            android:text="@string/save"
+            android:textColor="@drawable/text_color_selection"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDialogSoldProductCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight=".3"
+            android:background="@drawable/button_blue"
+            android:text="@string/cancel"
+            android:textColor="@drawable/text_color_selection"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+</LinearLayout>

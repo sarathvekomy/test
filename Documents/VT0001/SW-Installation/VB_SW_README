@@ -1,0 +1,6 @@
+Order to be followed to Install Application to deploy VBooks Application
+
+Installation Order
+1. Java
+2. MySQL Database
+3. Apache Tomcat Web Server

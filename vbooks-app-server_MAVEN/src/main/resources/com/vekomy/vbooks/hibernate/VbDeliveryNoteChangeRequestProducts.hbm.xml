@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNoteChangeRequestProducts" table="vb_delivery_note_change_request_products">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbDeliveryNoteChangeRequest" class="com.vekomy.vbooks.app.hibernate.model.VbDeliveryNoteChangeRequest" fetch="select">
+            <column name="delivery_note_change_request_id" not-null="true" />
+        </many-to-one>
+        <property name="productName" type="string">
+            <column name="product_name" length="100" not-null="true" />
+        </property>
+        <property name="batchNumber" type="string">
+            <column name="batch_number" length="100" not-null="true" />
+        </property>
+        <property name="productQty" type="string">
+            <column name="product_qty" length="10" not-null="true" />
+        </property>
+        <property name="bonusQty" type="string">
+            <column name="bonus_qty" length="10" />
+        </property>
+        <property name="bonusReason" type="string">
+            <column name="bonus_reason" length="65535" />
+        </property>
+        <property name="productCost" type="string">
+            <column name="product_cost" length="20" not-null="true" />
+        </property>
+        <property name="totalCost" type="string">
+            <column name="total_cost" length="20" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

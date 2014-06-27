@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <string name="BASE_URL">http://127.0.0.1:8080/vbooks/app/</string> -->
+    <string name="BASE_URL">http://10.0.2.2:8080/vbooks-app-server/app/</string>
+    <!-- <string name="BASE_URL">http://192.168.1.53:8080/vbooks-app-server/app/</string> -->
+</resources>

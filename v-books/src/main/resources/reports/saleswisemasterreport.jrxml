@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="saleswisemasterreport" language="groovy" pageWidth="770" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="730" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/swarupa/v-books jrxmls/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="MediationImage" class="java.lang.String"/>
+	<parameter name="OptimerImage" class="java.lang.String"/>
+	<parameter name="JasperSubReportDatasource1" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportDatasource2" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportDatasource3" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportDatasource4" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="JasperSubReportLocation1" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperSubReportLocation2" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperSubReportLocation3" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperSubReportLocation4" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="JasperSubReportLocation5" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="businessName" class="java.lang.String"/>
+	<field name="businessName" class="java.lang.String"/>
+	<variable name="presentPayableSum" class="java.lang.Float"/>
+	<variable name="presentPaymentSum" class="java.lang.Float"/>
+	<variable name="totalBalance" class="java.lang.Float"/>
+	<variable name="totalCostSum" class="java.lang.Float"/>
+	<variable name="presentPaymentCollectionSum" class="java.lang.Float"/>
+	<variable name="journalAmount" class="java.lang.Float"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="55" splitType="Stretch">
+			<image>
+				<reportElement mode="Opaque" x="0" y="0" width="450" height="55" backcolor="#C0C0C0"/>
+				<imageExpression><![CDATA[new File($P{MediationImage}, "images/distilleries.png")]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Opaque" x="450" y="0" width="280" height="55" backcolor="#C0C0C0"/>
+				<imageExpression><![CDATA[new File($P{OptimerImage}, "images/customer-reports.png")]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="1" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="61">
+			<staticText>
+				<reportElement x="0" y="0" width="120" height="60"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Business Name : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement stretchType="RelativeToTallestObject" x="120" y="0" width="129" height="60"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{businessName}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="73" splitType="Prevent">
+			<frame>
+				<reportElement x="0" y="0" width="730" height="73" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="710" height="72" isRemoveLineWhenBlank="true"/>
+					<subreportParameter name="businessName">
+						<subreportParameterExpression><![CDATA[$F{businessName}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperSubReportDatasource1}.getData())]]></dataSourceExpression>
+					<returnValue subreportVariable="presentPayableSum" toVariable="presentPayableSum"/>
+					<returnValue subreportVariable="presentPaymentSum" toVariable="presentPaymentSum"/>
+					<returnValue subreportVariable="totalBalance" toVariable="totalBalance"/>
+					<subreportExpression><![CDATA[$P{JasperSubReportLocation1}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="73">
+			<frame>
+				<reportElement x="0" y="0" width="730" height="73" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="710" height="72" isRemoveLineWhenBlank="true"/>
+					<subreportParameter name="businessName">
+						<subreportParameterExpression><![CDATA[$F{businessName}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperSubReportDatasource2}.getData())]]></dataSourceExpression>
+					<returnValue subreportVariable="totalCostSum" toVariable="totalCostSum"/>
+					<subreportExpression><![CDATA[$P{JasperSubReportLocation2}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="73">
+			<frame>
+				<reportElement x="0" y="0" width="730" height="73" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="710" height="72" isRemoveLineWhenBlank="true"/>
+					<subreportParameter name="presentPaymentCollectionSum">
+						<subreportParameterExpression><![CDATA[$V{presentPaymentCollectionSum}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperSubReportDatasource3}.getData())]]></dataSourceExpression>
+					<returnValue subreportVariable="presentPaymentCollectionSum" toVariable="presentPaymentCollectionSum"/>
+					<subreportExpression><![CDATA[$P{JasperSubReportLocation3}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="73">
+			<frame>
+				<reportElement x="0" y="0" width="730" height="73" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="710" height="72" isRemoveLineWhenBlank="true"/>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{JasperSubReportDatasource4}.getData())]]></dataSourceExpression>
+					<returnValue subreportVariable="journalAmount" toVariable="journalAmount"/>
+					<subreportExpression><![CDATA[$P{JasperSubReportLocation4}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+		<band height="73">
+			<frame>
+				<reportElement x="0" y="0" width="730" height="73" isRemoveLineWhenBlank="true"/>
+				<box>
+					<topPen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+				<subreport>
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="710" height="72" isRemoveLineWhenBlank="true"/>
+					<subreportParameter name="businessName">
+						<subreportParameterExpression><![CDATA[$F{businessName}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="presentPayableSum">
+						<subreportParameterExpression><![CDATA[$V{presentPayableSum}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="presentPaymentSum">
+						<subreportParameterExpression><![CDATA[$V{presentPaymentSum}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="totalBalance">
+						<subreportParameterExpression><![CDATA[$V{totalBalance}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="totalCostSum">
+						<subreportParameterExpression><![CDATA[$V{totalCostSum}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="presentPaymentCollectionSum">
+						<subreportParameterExpression><![CDATA[$V{presentPaymentCollectionSum}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter name="journalAmount">
+						<subreportParameterExpression><![CDATA[$V{journalAmount}]]></subreportParameterExpression>
+					</subreportParameter>
+					<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></dataSourceExpression>
+					<subreportExpression><![CDATA[$P{JasperSubReportLocation5}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+	<noData>
+		<band height="50">
+			<staticText>
+				<reportElement x="0" y="0" width="730" height="50" forecolor="#FF0000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[There Are No Matching Records To Display]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

@@ -1,0 +1,403 @@
+X-Account-Key: account1
+X-UIDL: UID1173-1373431375
+X-Mozilla-Status: 0011
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Return-path: <sreekanth@vicdist.com>
+Envelope-to: jaipal.danthawada@vekomy.com
+Delivery-date: Sat, 28 Dec 2013 22:53:22 +0530
+Received: from mail-qe0-f43.google.com ([209.85.128.43]:62633)
+	by mumbai.theserverindia.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.82)
+	(envelope-from <sreekanth@vicdist.com>)
+	id 1Vwxbd-003ik5-P3
+	for jaipal.danthawada@vekomy.com; Sat, 28 Dec 2013 22:53:22 +0530
+Received: by mail-qe0-f43.google.com with SMTP id jy17so9987066qeb.16
+        for <jaipal.danthawada@vekomy.com>; Sat, 28 Dec 2013 09:23:15 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-gm-message-state:mime-version:in-reply-to:references:date
+         :message-id:subject:from:to:cc:content-type;
+        bh=QsuxcBmUwCS9J11hwzgqJD+KFo0Q0s9kcFnugPWyhY4=;
+        b=L86K1nlLkAzqJK1aIkHU9rJXiY/0rdmKiQeYpsqrkqzTkRuEXOdFh+030PWSuZvZN8
+         cPdSc6vWO2ldEnnzS3oLSX4znnXFDpY89+ua3Ws7uPWQXiGao6CBI4yyVl2H2BmdaFZp
+         qiq0VTgfzIdgfEjwnU2z7JFnNulOq9zhgSB7H0oh2j3inlUQYAjI957utctX2HThqL65
+         93uCxgvTweW1uZ6FI2MY1OGWWHx+jtaHmRh5TwuI/QInezP9PMHYBMwrpJvT2jJAOLzM
+         zzusKKWvAtlwgVkj7BoLaCOa1Tn1jyv17UI5uqXUPUGSbY88C+qTolJ2Hgj7DuTy4pGs
+         ijWQ==
+X-Gm-Message-State: ALoCoQnHjA04hnABwtUYi3driAag3BiwHdYf8IlJbdyp2pPqa9vdcNRO9yJWhJFvWF49DkFsEDis
+MIME-Version: 1.0
+X-Received: by 10.224.2.194 with SMTP id 2mr39762930qak.44.1388251395310; Sat,
+ 28 Dec 2013 09:23:15 -0800 (PST)
+Received: by 10.229.231.73 with HTTP; Sat, 28 Dec 2013 09:23:15 -0800 (PST)
+X-Originating-IP: [183.82.97.186]
+In-Reply-To: <52BED1AF.9020302@vekomy.com>
+References: <52B53FCF.9090600@vekomy.com>
+	<CALg-nXjeMD0upCV41EVAiutDmjdSDrsWCvPV4-6AON4-Bif3mw@mail.gmail.com>
+	<52BE665B.6020507@vekomy.com>
+	<CALg-nXjKK9XL3Skp=g0z3Xd+3X-Uh-ckXet5MMvTd1LgyFQZmQ@mail.gmail.com>
+	<52BED1AF.9020302@vekomy.com>
+Date: Sat, 28 Dec 2013 17:23:15 +0000
+Message-ID: <CALg-nXiH6UqvQ0HztFKi9hO6LJ8TJOTfBrT3fXM9=ZSDpAub1w@mail.gmail.com>
+Subject: Re: New Production Release of VBooks Application.
+From: sreekanth reddy <sreekanth@vicdist.com>
+To: Jaipal Vekomy <jaipal.danthawada@vekomy.com>
+Cc: Sudhakar <sudhakar.ummadi@vekomy.com>, sarath kodali <sarath.kodali@vekomy.com>, 
+	Pavan reddy <pavan.reddy@vekomy.com>, nageswar <nageswar.chintakunta@vekomy.com>
+Content-Type: multipart/alternative; boundary=001a11c3e09246d82204ee9b77d7
+
+--001a11c3e09246d82204ee9b77d7
+Content-Type: text/plain; charset=ISO-8859-1
+
+Dear Mr.Jaipal,
+The person who is using tablet i.e Entering data daily have installed new
+version,the other 2 sales executives have not installed as there are in
+market.
+
+Regards,
+Sreekanth.
+
+
+On Sat, Dec 28, 2013 at 1:27 PM, Jaipal Vekomy <jaipal.danthawada@vekomy.com
+> wrote:
+
+>  Dear Mr. Sreekanth,
+>
+> Thank you for the update.
+> Could you please let us know whether all the Sales Executives/users of
+> tablet version, have installed the new VBooks Application Tablet version.
+>
+> Regards,
+>
+> Jaipal
+>
+>
+>
+> On 12/28/2013 01:54 PM, sreekanth reddy wrote:
+>
+>   Dear Mr.Jaipal,
+>
+>  We have installed the new VBooks Application Tablet version and We will
+> inform you if there are any queries .
+>
+>  Regards,
+>  Sreekanth,
+>  M:+233243485812.
+>
+>
+> On Sat, Dec 28, 2013 at 5:49 AM, Jaipal Vekomy <
+> jaipal.danthawada@vekomy.com> wrote:
+>
+>>  Dear Mr. Sreekanth.
+>>
+>> Hope you have installed the new VBooks Application Tablet version and is
+>> working fine.
+>> Please let us know,  when the new VBooks Application Tablet version is
+>> installed and queries/issues, if any.
+>>
+>> Thanks,
+>>
+>> Jaipal
+>>
+>>
+>> On 12/21/2013 01:44 PM, sreekanth reddy wrote:
+>>
+>>   Dear Mr.Jaipal,
+>>  ok We will install APK extension and if there are any Queries I will
+>> inform you.
+>>
+>>  Regards,
+>>  SREEKANTH.
+>>
+>>
+>>  On Sat, Dec 21, 2013 at 7:14 AM, Jaipal Vekomy <
+>> jaipal.danthawada@vekomy.com> wrote:
+>>
+>>>  Good Morning Mr. Sreekanth,
+>>>
+>>> We have created and deployed new production release successfully at the
+>>> Production Server.
+>>> This production release includes major feature at the tablet side,
+>>> 'centralized auto update of VBooks Tablet Version'.
+>>>
+>>> We are sending the ftp details of the VBooks Application Tablet Version
+>>> as below.
+>>>
+>>> *FTP Details to download*
+>>> server :192.168.1.40
+>>> user :release
+>>> password : release2$
+>>> File
+>>>  :V-Books-Production-Release/v-books-patch-1.0f/vbooks-app-release.apk
+>>>
+>>>
+>>> Please download the same from the ftp details provided above and install
+>>> them as per the deployment instructions document attached to this mail.
+>>> It is strongly recommended to install VBooks Application Tablet Version
+>>> as early as possible for operating the VBooks application effectively and
+>>> use the feature ' 'centralized auto update of VBooks Tablet/Android Version'
+>>> We are also sending release notes with release/build information as
+>>> attachment.
+>>>
+>>> Please let us know for any issues/queries.
+>>>
+>>> Thanks,
+>>>
+>>> Jaipal Reddy D
+>>>
+>>> Sr. Tech Lead
+>>>
+>>> Vekomy Technologies
+>>>
+>>> Mobile: +91 9177212637
+>>>
+>>> Contact: +91 40 31006371
+>>> www.vekomy.com
+>>>
+>>
+>>
+>>
+>>   --
+>> Jaipal Reddy D
+>>
+>> Sr. Tech Lead
+>>
+>> Vekomy Technologies
+>>
+>> Mobile: +91 9177212637
+>>
+>> Contact: +91 40 31006371www.vekomy.com
+>>
+>>
+>
+>
+> --
+> Jaipal Reddy D
+>
+> Sr. Tech Lead
+>
+> Vekomy Technologies
+>
+> Mobile: +91 9177212637
+>
+> Contact: +91 40 31006371www.vekomy.com
+>
+>
+
+--001a11c3e09246d82204ee9b77d7
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div>Dear Mr.Jaipal,<br></div>The person who is =
+using tablet i.e Entering data daily have installed new version,the other 2=
+ sales executives have not installed as there are in market.<br><br></div>
+Regards,<br></div>Sreekanth.<br><div><div><div><div><div><div class=3D"gmai=
+l_extra"><br><br><div class=3D"gmail_quote">On Sat, Dec 28, 2013 at 1:27 PM=
+, Jaipal Vekomy <span dir=3D"ltr">&lt;<a href=3D"mailto:jaipal.danthawada@v=
+ekomy.com" target=3D"_blank">jaipal.danthawada@vekomy.com</a>&gt;</span> wr=
+ote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+ =20
+   =20
+ =20
+  <div bgcolor=3D"#FFFFFF" text=3D"#000000">
+    <div>Dear Mr. Sreekanth,<br>
+      <br>
+      Thank you for the update.<br>
+      Could you please let us know whether all the Sales
+      Executives/users of tablet version, have installed the new VBooks
+      Application Tablet version.<br>
+      <br>
+      Regards,<br>
+      <br>
+      Jaipal<div><div class=3D"h5"><br>
+      <br>
+      <br>
+      On 12/28/2013 01:54 PM, sreekanth reddy wrote:<br>
+    </div></div></div><div><div class=3D"h5">
+    <blockquote type=3D"cite">
+      <div dir=3D"ltr">
+        <div>
+          <div>
+            <div>
+              <div>Dear Mr.Jaipal,<br>
+                <br>
+              </div>
+              We have installed the new VBooks Application Tablet
+              version and We will inform you if there are any queries .<br>
+              <br>
+            </div>
+            Regards,<br>
+          </div>
+          Sreekanth,<br>
+        </div>
+        M:+233243485812.<br>
+        <div>
+          <div>
+            <div>
+              <div class=3D"gmail_extra"><br>
+                <br>
+                <div class=3D"gmail_quote">On Sat, Dec 28, 2013 at 5:49
+                  AM, Jaipal Vekomy <span dir=3D"ltr">&lt;<a href=3D"mailto=
+:jaipal.danthawada@vekomy.com" target=3D"_blank">jaipal.danthawada@vekomy.c=
+om</a>&gt;</span>
+                  wrote:<br>
+                  <blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .=
+8ex;border-left:1px #ccc solid;padding-left:1ex">
+                    <div bgcolor=3D"#FFFFFF" text=3D"#000000">
+                      <div>Dear Mr. Sreekanth.<br>
+                        <br>
+                        Hope you have installed the new VBooks
+                        Application Tablet version and is working fine.<br>
+                        Please let us know,=A0 when the new VBooks
+                        Application Tablet version is installed and
+                        queries/issues, if any.<br>
+                        <br>
+                        Thanks,<br>
+                        <br>
+                        Jaipal
+                        <div>
+                          <div><br>
+                            <br>
+                            On 12/21/2013 01:44 PM, sreekanth reddy
+                            wrote:<br>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <blockquote type=3D"cite">
+                            <div dir=3D"ltr">
+                              <div>
+                                <div>
+                                  <div>Dear Mr.Jaipal,<br>
+                                  </div>
+                                  ok We will install APK extension and
+                                  if there are any Queries I will inform
+                                  you.<br>
+                                  <br>
+                                </div>
+                                Regards,<br>
+                              </div>
+                              SREEKANTH.<br>
+                            </div>
+                            <div class=3D"gmail_extra"><br>
+                              <br>
+                              <div class=3D"gmail_quote"> On Sat, Dec 21,
+                                2013 at 7:14 AM, Jaipal Vekomy <span dir=3D=
+"ltr">&lt;<a href=3D"mailto:jaipal.danthawada@vekomy.com" target=3D"_blank"=
+>jaipal.danthawada@vekomy.com</a>&gt;</span>
+                                wrote:<br>
+                                <blockquote class=3D"gmail_quote" style=3D"=
+margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">
+                                  <div bgcolor=3D"#FFFFFF" text=3D"#000000"=
+>
+                                    Good Morning Mr. Sreekanth,<br>
+                                    <br>
+                                    We have created and deployed new
+                                    production release successfully at
+                                    the Production Server.<br>
+                                    This production release includes
+                                    major feature at the tablet side,
+                                    &#39;centralized auto update of VBooks
+                                    Tablet Version&#39;.<br>
+                                    <br>
+                                    We are sending the ftp details of
+                                    the VBooks Application Tablet
+                                    Version=A0 as below.<br>
+                                    <br>
+                                    <b>FTP Details to download</b><br>
+                                    <div>server :192.168.1.40</div>
+                                    <div>user :release</div>
+                                    <div>password : release2$</div>
+                                    <div>File =A0 =A0
+                                      =A0:V-Books-Production-Release/v-book=
+s-patch-1.0f/vbooks-app-release.apk</div>
+                                    <br>
+                                    <br>
+                                    Please download the same from the
+                                    ftp details provided above and
+                                    install them as per the deployment
+                                    instructions document attached to
+                                    this mail.<br>
+                                    It is strongly recommended to
+                                    install VBooks Application Tablet
+                                    Version as early as possible for
+                                    operating the VBooks application
+                                    effectively and use the feature &#39;
+                                    &#39;centralized auto update of VBooks
+                                    Tablet/Android Version&#39;<br>
+                                    We are also sending release notes
+                                    with release/build information as
+                                    attachment.<br>
+                                    <br>
+                                    Please let us know for any
+                                    issues/queries.<br>
+                                    <br>
+                                    Thanks,<br>
+                                    <br>
+                                    Jaipal Reddy D<br>
+                                    <br>
+                                    Sr. Tech Lead<br>
+                                    <br>
+                                    Vekomy Technologies<br>
+                                    <br>
+                                    Mobile: +91 9177212637<br>
+                                    <br>
+                                    Contact: +91 40 31006371<br>
+                                    <a href=3D"http://www.vekomy.com" targe=
+t=3D"_blank">www.vekomy.com</a><br>
+                                  </div>
+                                </blockquote>
+                              </div>
+                              <br>
+                            </div>
+                          </blockquote>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                      <span><font color=3D"#888888">
+                          <pre cols=3D"72">--=20
+Jaipal Reddy D
+
+Sr. Tech Lead
+
+Vekomy Technologies
+
+Mobile: +91 9177212637
+
+Contact: +91 40 31006371
+<a href=3D"http://www.vekomy.com" target=3D"_blank">www.vekomy.com</a></pre=
+>
+                        </font></span></div>
+                  </blockquote>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </blockquote>
+    <br>
+    <br>
+    <pre cols=3D"72">--=20
+Jaipal Reddy D
+
+Sr. Tech Lead
+
+Vekomy Technologies
+
+Mobile: +91 9177212637
+
+Contact: +91 40 31006371
+<a href=3D"http://www.vekomy.com" target=3D"_blank">www.vekomy.com</a></pre=
+>
+  </div></div></div>
+
+</blockquote></div><br></div></div></div></div></div></div></div>
+
+--001a11c3e09246d82204ee9b77d7--
+

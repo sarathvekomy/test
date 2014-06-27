@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/table_bg"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5" >
+
+        <LinearLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/customerInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/delivery_note"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/table_border" >
+
+                    <TableLayout
+                        android:id="@+id/invoiceNoLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/invoice_no"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/invoiceNo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/dateLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/date"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/invoiceDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+                </RelativeLayout>
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:background="@drawable/table_border"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" >
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/business_name"
+                            android:textColor="@color/text_color"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/colon"
+                            android:textColor="@color/text_color"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/businessName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invoice_name"
+                            android:textColor="@color/text_color"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/colon"
+                            android:textColor="@color/text_color"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/invoiceName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:textColor="@color/black"
+                            android:textIsSelectable="false"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@color/blue_stroke_bg"
+                android:weightSum="7" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="product_name"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="batch_number"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="available_qty"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="product_cost"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="product_qty"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/bonus"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/widget_titlebar_bg"
+                    android:gravity="top|center_horizontal"
+                    android:text="@string/bonus_reason"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/salesList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_border" >
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical" >
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_border" >
+
+                    <TableLayout
+                        android:id="@+id/paymentTypelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/payment_type"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/paymentType"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/cheque1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bank_name"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/bankName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/cheque2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/branch_name1"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/branchName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/cheque3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cheque_no"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/chequeNO"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sales_executive"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/salesExecutive"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/customer"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/customer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/paymentLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/paymentTypelayout"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="5dp" >
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/present_payable"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/presentPayable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/advance"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/advance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/previous_credit"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/previousCredit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total_payable"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/totalPayable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/present_payment"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/presentPayment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/balance"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/colon"
+                                android:textColor="@color/text_color"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/balance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textColor="@color/black"
+                                android:textIsSelectable="false"
+                                android:textSize="12sp" />
+                        </TableRow>
+                    </TableLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/paymentLayout"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:weightSum="2" >
+
+                        <Button
+                            android:id="@+id/save"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/save"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/cancel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

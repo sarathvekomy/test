@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical" >
+
+    <!-- delivery Note screen -->
+    <!-- Sales Return screen -->
+
+    <LinearLayout
+        android:id="@+id/llProductsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <ListView
+                android:id="@+id/lvProductlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:clickable="true"
+                android:descendantFocusability="afterDescendants"
+                android:scrollingCache="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llProductsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_border_yellow"
+            android:gravity="center"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btnDNProductsBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.15"
+                android:background="@drawable/back"
+                android:gravity="left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15" />
+
+            <TextView
+                android:id="@+id/lblTotalPriceHdr"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight=".20"
+                android:drawableLeft="@drawable/grand_total"
+                android:gravity="right|center"
+                android:text="@string/grand_toatal"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblTotalPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_weight=".30"
+                android:gravity="left|center"
+                android:paddingLeft="5dp"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPayment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight=".20"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:text="@string/payment"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Sales Return screen -->
+
+        <LinearLayout
+            android:id="@+id/llSalesReturnBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_border_yellow"
+            android:gravity="center"
+            android:padding="3dp"
+            android:visibility="visible"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btnSRProductsBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.15"
+                android:background="@drawable/back"
+                android:gravity="left" />
+
+            <Button
+                android:id="@+id/btnSRAddProduct"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight=".45"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:text="@string/addSRProduct"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSRPreview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight=".3"
+                android:background="@drawable/button_blue"
+                android:gravity="center"
+                android:text="@string/preview"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Payment collection screen -->
+
+    <LinearLayout
+        android:id="@+id/llPaymentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/payment_collection_bg"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9" >
+
+            <include
+                android:id="@+id/paymentview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/sales_delivery_note_payments_view" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPaymentsBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/grid_border_yellow"
+            android:gravity="center"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btnPaymentsBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="0.15"
+                android:background="@drawable/back"
+                android:gravity="left" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight=".2"
+                android:background="@drawable/button_blue"
+                android:text="@string/back"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnPreview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight=".2"
+                android:background="@drawable/button_blue"
+                android:text="@string/preview"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- final Preview screen -->
+
+    <LinearLayout
+        android:id="@+id/llPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.7" >
+
+            <include
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/sales_delivery_note_preview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPreviewPaymentBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="2dp"
+            android:layout_weight="2.2"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="10" >
+
+            <TableRow
+                android:id="@+id/tr1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dip"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:text="@string/present_payable"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblPresentPayablePreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="13"
+                    android:gravity="left"
+                    android:text="@string/total_payable"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblTatalPayablePreViewAdv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/adv"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblTatalPayablePreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="17"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:text="@string/payment_type"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <Spinner
+                    android:id="@+id/cmbPaymentTypePreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:background="@null" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tr2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dip"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:weightSum="100" >
+
+                <TextView
+                    android:id="@+id/lblPreviousBal"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:text="@string/previous_advance"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblPreviousBalPreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="18"
+                    android:gravity="left"
+                    android:text="@string/present_payment"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <EditText
+                    android:id="@+id/txPresentPayPreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="17"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:textColor="@color/background"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:gravity="left"
+                    android:text="@string/remaining_bal"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblBalPreViewAdv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="@string/adv"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:id="@+id/lblBalPreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:textColor="@color/background" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trChequeInfoView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dip"
+                android:layout_weight="2.9"
+                android:gravity="left"
+                android:weightSum="100" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="left"
+                    android:text="@string/cheque_no"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <EditText
+                    android:id="@+id/txChequeNoPreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/background"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="18"
+                    android:text="@string/bank_name"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <EditText
+                    android:id="@+id/txBankNamePreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="17"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/background"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="15"
+                    android:gravity="left"
+                    android:text="Branch And Loc"
+                    android:textSize="12sp"
+                    android:textColor="@color/background" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/colen_sigin"
+                    android:textColor="@color/background" />
+
+                <EditText
+                    android:id="@+id/txBranchAndLocPreView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="16"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/background"
+                    android:textStyle="bold" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPreviwBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="@drawable/grid_border_yellow"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/btnPreviewBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="2"
+                android:background="@drawable/button_blue"
+                android:text="@string/back"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="2"
+                android:background="@drawable/button_blue"
+                android:text="@string/save"
+                android:textColor="@drawable/text_color_selection"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

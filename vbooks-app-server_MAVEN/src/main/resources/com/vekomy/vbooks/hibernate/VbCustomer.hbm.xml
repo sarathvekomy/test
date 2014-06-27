@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 4, 2013 9:22:13 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.vekomy.vbooks.app.hibernate.model.VbCustomer" table="vb_customer">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vbOrganization" class="com.vekomy.vbooks.app.hibernate.model.VbOrganization" fetch="select">
+            <column name="organization_id" not-null="true" />
+        </many-to-one>
+        <property name="businessName" type="string">
+            <column name="business_name" length="100" not-null="true" />
+        </property>
+        <property name="invoiceName" type="string">
+            <column name="invoice_name" length="100" not-null="true" />
+        </property>
+        <property name="customerName" type="string">
+            <column name="customer_name" length="100" not-null="true" />
+        </property>
+        <property name="gender" type="java.lang.Character">
+            <column name="gender" length="1" />
+        </property>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="0" />
+        </property>
+        <property name="createdBy" type="string">
+            <column name="created_by" length="50" />
+        </property>
+        <property name="modifiedOn" type="timestamp">
+            <column name="modified_on" length="0" not-null="true" />
+        </property>
+        <property name="modifiedBy" type="string">
+            <column name="modified_by" length="50" />
+        </property>
+        <property name="creditLimit" type="java.lang.Float">
+            <column name="credit_limit" precision="12" />
+        </property>
+        <property name="creditOverdueDays" type="java.lang.Integer">
+            <column name="credit_overdue_days" />
+        </property>
+        <set name="vbProductCustomerCosts" table="vb_product_customer_cost" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="customer_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbProductCustomerCost" />
+        </set>
+        <set name="vbEmployeeCustomers" table="vb_employee_customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="customer_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbEmployeeCustomer" />
+        </set>
+        <set name="vbCustomerDetails" table="vb_customer_detail" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="customer_id" not-null="true" />
+            </key>
+            <one-to-many class="com.vekomy.vbooks.app.hibernate.model.VbCustomerDetail" />
+        </set>
+    </class>
+</hibernate-mapping>

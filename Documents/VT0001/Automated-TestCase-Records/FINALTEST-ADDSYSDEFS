@@ -1,0 +1,2127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.1.40:8080/v-books-1.0.10/login.jsp" />
+<title>FINALTEST-ADDSYSDEFS</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FINALTEST-ADDSYSDEFS</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/v-books-1.0.10/login.jsp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_username</td>
+	<td>SYS.USER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>Superuser@123</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=submit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[4]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-search-form']/div/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='defaults-exp-coll']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='defaults-exp-coll']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='defaults-exp-coll']/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='defaults-exp-coll']/div)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#payment &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=paymentValue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>CASH</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>CASH PAYMENT</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#address &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=addressValue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#jValue &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=value</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#invoiceNum &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceNo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Invoice No</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#invoicevalue &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceValue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#invoiceNoPeriodLabel &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceValue</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceNoPeriod</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Payment Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=paymentValue</td>
+	<td>DD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>DD PAYMENT</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Address Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressValue</td>
+	<td>PRIMARY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>PRIMARY ADDRESS</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>LOADING CHARGES</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>LOAD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>LOADING CHARGES</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Journal Type</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=value</td>
+	<td>FUAL EXP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNo</td>
+	<td>FEXP</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=types</td>
+	<td>label=Invoice No</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceValue</td>
+	<td>0001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceNoPeriod</td>
+	<td>30</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=default-types</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=span.module-link &gt; a &gt; img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=product-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=product-import</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=product-transaction</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-search-form']/div/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=batchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-search-product-list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-add-damaged-quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-add-arrived-quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=product-form</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#product-form &gt; div.fieldset-row &gt; div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productCategoryName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=brand</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=model</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productName1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[5]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productBatchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[6]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=costPerQuantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='product-form']/div/div/div[7]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SYS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>--</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SYS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=description</td>
+	<td>--</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.report-header-column2.product-category-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.report-header-column2.product-name-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.report-header-column2.batch-number-header</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#row-1479 &gt; #productName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#row-1479 &gt; #batchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='row-1479']/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='row-1479']/div[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=1479</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='1479'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='1479'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#row-1480 &gt; #productCategory</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#row-1480 &gt; #productName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#row-1480 &gt; #batchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='row-1480']/div[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='row-1480']/div[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=1480</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='1480'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='1480'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SY</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SYS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>003</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SYS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>004</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>001</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>10000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-product</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productCategoryName</td>
+	<td>SOFT</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=brand</td>
+	<td>SYS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=model</td>
+	<td>005</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=productBatchNumber</td>
+	<td>002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costPerQuantity</td>
+	<td>2500</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=action-add-arrived-quantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ui-dialog-title-product-add-arrived-quantity-dialog</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#product-add-arrived-quantity-container &gt; div.fieldset-row &gt; div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=quantityArrived</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.report-header-column2.centered</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='addArrivedQuantity']/div/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='addArrivedQuantity']/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.productNumber &gt; #productName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.productNumber &gt; #batchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=qunatityArrived</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//button[@type='button'])[6]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=qunatityArrived</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='qunatityArrived'])[2]</td>
+	<td>1500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='qunatityArrived'])[3]</td>
+	<td>2000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='qunatityArrived'])[4]</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='qunatityArrived'])[5]</td>
+	<td>5000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[3]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-upload</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-import</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-search-form']/div/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-search-form']/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=businessName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-search-form']/div/div[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=locality</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-search-customer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.result-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.tabs-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=businessName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-form']/div[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=invoiceName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customerName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-form']/div[5]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-form']/div[3]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=male</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=female</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-form']/div[5]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#customer-form &gt; div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=Email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customer-form']/div[10]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=creditOverdueDays</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=businessName</td>
+	<td>SYSTEM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>SYSTEM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>SYSTEM</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>7569852341</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditLimit</td>
+	<td>50000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditOverdueDays</td>
+	<td>15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#customers-detail-form &gt; div.fieldset-row &gt; div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=directLine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=alternateMobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[5]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=addressLine1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[7]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=region</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[5]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=addressLine2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[7]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=state</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[5]/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=locality</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[7]/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=city</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[5]/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=landmark</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='customers-detail-form']/div[2]/div[7]/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=zipcode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>KPHB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=region</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#customer-preview-container &gt; div.add-student-tabs &gt; div.step-no-select &gt; div.step-no-select-corner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.display-boxes-colored</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=customer-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=businessName</td>
+	<td>SYS1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceName</td>
+	<td>SYS1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>SYSTEM1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>4567892135</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditLimit</td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=creditOverdueDays</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=customerName</td>
+	<td>SYSTEMA</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>HITECH</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=region</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=div.success-msg</td>
+	<td>Saved Successfully.</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[4]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employee-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employee-import</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=firstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-search-form']/div/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-search-form']/div/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=lastName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-search-form']/div/div[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employeeType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-search-employee</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.result-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=42</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='42'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>xpath=(//div[@id='42'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.tabs-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=username</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-form']/div[2]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=firstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-form']/div[3]/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employeeEmail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-form']/div[3]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=middleName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.fieldset &gt; div.fieldset-row &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employeeType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-form']/div[3]/div/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=lastName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-form']/div[3]/div[3]/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=male</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=female</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>SALES</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>SYSsales@123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=firstName</td>
+	<td>SALES</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastName</td>
+	<td>USER</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=employeeEmail</td>
+	<td>NAG.XYZ@GMAIL.COM</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=employeeType</td>
+	<td>label=Sales Executive</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=#employee-detail-form &gt; div.fieldset-row &gt; div.fieldset &gt; div.form-row &gt; div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=mobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-detail-form']/div[2]/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=bloodGroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-detail-form']/div[2]/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=directLine</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-detail-form']/div[2]/div[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=passPortNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-detail-form']/div[2]/div/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=alternateMobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='employee-detail-form']/div[2]/div[3]/div[3]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=nationality</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>485632154</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bloodGroup</td>
+	<td>O+</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=passPortNumber</td>
+	<td>ASAD545</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=nationality</td>
+	<td>INDIAN</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressLine1</td>
+	<td>KPHB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=locality</td>
+	<td>KPHB</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=city</td>
+	<td>HYD</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=state</td>
+	<td>AP</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=zipcode</td>
+	<td>500001</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=addressType</td>
+	<td>label=PRIMARY</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-next</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='employee-preview-container']/div[2]/div/div/div[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-prev</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=button-save</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ps-exp-col</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.success-msg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=employee-add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[2]/span/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.module-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.page-link-text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//div[@id='droppable1']/div[2]/ul/li[2]/a/div/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=allot-stock</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.label</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=salesExecutive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='allot-stock-form']/div/div[3]/div/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=createdOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='allot-stock-form']/div/div/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=previousClosingBalance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='allot-stock-form']/div/div[3]/div[2]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=openingBalance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='allot-stock-form']/div/div/div[5]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=advance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//form[@id='allot-stock-form']/div/div[3]/div[4]/div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=allotmentType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=button-update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-clear</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=action-cancel</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=salesExecutive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SYS.SALES</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=div.report-header-column2.centered</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=productName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=batchNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=qtyClosingBalance</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=availableQuantity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=quantityAllotted</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=advance</td>
+	<td>10,000.00</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=quantityAllotted</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[2]</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[3]</td>
+	<td>800</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[4]</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[5]</td>
+	<td>1000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=salesExecutive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=SYS.SALES</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[3]</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[4]</td>
+	<td>300</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[5]</td>
+	<td>500</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=(//input[@id='quantityAllotted'])[5]</td>
+	<td>200</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
